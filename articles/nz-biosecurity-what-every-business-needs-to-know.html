@@ -48,7 +48,9 @@
     .nav-links a:hover { color: var(--primary); }
 
     .article-hero {
-      background: linear-gradient(135deg, var(--secondary) 0%, #005a6b 100%);
+      background:
+    linear-gradient(rgba(0,59,73,0.75), rgba(0,59,73,0.75)),
+    url('/images/hero-nz-biosecurity-for-businesses.webp') center/cover no-repeat;
       padding: 72px 24px 60px;
     }
     .article-hero-inner { max-width: 760px; margin: 0 auto; }
@@ -206,6 +208,20 @@
 
     @media (max-width: 640px) { .nav-links { display: none; } }
   </style>
+  <link rel="preload" as="image" href="/images/hero-nz-biosecurity-for-businesses.webp" type="image/webp">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NZ Biosecurity: What Every Business Needs to Know">
+  <meta property="og:description" content="New Zealand's biosecurity system protects a $50B+ economy. Here's what it means for your business, what your obligations are, and how to get your team trained.">
+  <meta property="og:url" content="https://biosecuritytraining.nz/articles/nz-biosecurity-what-every-business-needs-to-know.html">
+  <meta property="og:image" content="https://biosecuritytraining.nz/images/hero-nz-biosecurity-for-businesses.jpg">
+  <meta property="og:image:width" content="1440">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="NZ business managers reviewing biosecurity compliance obligations in a warehouse office">
+  <meta property="og:site_name" content="Biosecurity Training NZ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NZ Biosecurity: What Every Business Needs to Know">
+  <meta name="twitter:description" content="New Zealand's biosecurity system protects a $50B+ economy. Here's what it means for your business, what your obligations are, and how to get your team trained.">
+  <meta name="twitter:image" content="https://biosecuritytraining.nz/images/hero-nz-biosecurity-for-businesses.jpg">
 </head>
 <body>
 
@@ -335,5 +351,27 @@
     </div>
   </footer>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "NZ Biosecurity: What Every Business Needs to Know",
+  "description": "New Zealand's biosecurity system protects a $50B+ economy. Here's what it means for your business and what you need to do.",
+  "url": "https://biosecuritytraining.nz/articles/nz-biosecurity-what-every-business-needs-to-know.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Biosecurity Training NZ",
+    "url": "https://biosecuritytraining.nz"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://biosecuritytraining.nz/images/hero-nz-biosecurity-for-businesses.jpg",
+    "width": 1440,
+    "height": 500,
+    "description": "NZ business managers reviewing biosecurity compliance obligations in a warehouse office"
+  },
+  "inLanguage": "en-NZ"
+}
+</script>
 </body>
 </html>

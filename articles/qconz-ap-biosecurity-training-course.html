@@ -28,7 +28,9 @@
     .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: color 0.2s; }
     .nav-links a:hover { color: var(--primary); }
 
-    .article-hero { background: linear-gradient(135deg, var(--secondary) 0%, #005a6b 100%); padding: 72px 24px 60px; }
+    .article-hero { background:
+    linear-gradient(rgba(0,59,73,0.75), rgba(0,59,73,0.75)),
+    url('/images/hero-qconz-ap-training-course.webp') center/cover no-repeat; padding: 72px 24px 60px; }
     .article-hero-inner { max-width: 760px; margin: 0 auto; }
     .breadcrumb { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; font-size: 0.85rem; }
     .breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; }
@@ -148,6 +150,20 @@
       .course-card-price { text-align: left; }
     }
   </style>
+  <link rel="preload" as="image" href="/images/hero-qconz-ap-training-course.webp" type="image/webp">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="QCONZ AP Biosecurity Training Course — Online MPI-Approved Training">
+  <meta property="og:description" content="QCONZ delivers MPI-approved online AP training for sea container inspection at NZ transitional facilities. Full course, refresher, and free awareness training.">
+  <meta property="og:url" content="https://biosecuritytraining.nz/articles/qconz-ap-biosecurity-training-course.html">
+  <meta property="og:image" content="https://biosecuritytraining.nz/images/hero-qconz-ap-training-course.jpg">
+  <meta property="og:image:width" content="1440">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="Warehouse worker completing the QCONZ MPI-approved Accredited Person online training course">
+  <meta property="og:site_name" content="Biosecurity Training NZ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="QCONZ AP Biosecurity Training Course — Online MPI-Approved Training">
+  <meta name="twitter:description" content="QCONZ delivers MPI-approved online AP training for sea container inspection at NZ transitional facilities. Full course, refresher, and free awareness training.">
+  <meta name="twitter:image" content="https://biosecuritytraining.nz/images/hero-qconz-ap-training-course.jpg">
 </head>
 <body>
 
@@ -352,5 +368,27 @@
     </div>
   </footer>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "QCONZ AP Biosecurity Training Course",
+  "description": "MPI-approved online Accredited Person training for sea container inspection at New Zealand transitional facilities.",
+  "url": "https://biosecuritytraining.nz/articles/qconz-ap-biosecurity-training-course.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Biosecurity Training NZ",
+    "url": "https://biosecuritytraining.nz"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://biosecuritytraining.nz/images/hero-qconz-ap-training-course.jpg",
+    "width": 1440,
+    "height": 500,
+    "description": "Warehouse worker completing the QCONZ MPI-approved Accredited Person online training course"
+  },
+  "inLanguage": "en-NZ"
+}
+</script>
 </body>
 </html>

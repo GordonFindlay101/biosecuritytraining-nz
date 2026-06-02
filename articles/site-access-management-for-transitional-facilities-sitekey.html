@@ -28,7 +28,9 @@
     .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.88rem; font-weight: 600; transition: color 0.2s; }
     .nav-links a:hover { color: var(--primary); }
 
-    .article-hero { background: linear-gradient(135deg, var(--secondary) 0%, #005a6b 100%); padding: 72px 24px 60px; }
+    .article-hero { background:
+    linear-gradient(rgba(0,59,73,0.75), rgba(0,59,73,0.75)),
+    url('/images/hero-transitional-facility-site-access.webp') center/cover no-repeat; padding: 72px 24px 60px; }
     .article-hero-inner { max-width: 760px; margin: 0 auto; }
     .breadcrumb { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; font-size: 0.85rem; }
     .breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
@@ -93,6 +95,20 @@
 
     @media (max-width: 640px) { .nav-links { display: none; } }
   </style>
+  <link rel="preload" as="image" href="/images/hero-transitional-facility-site-access.webp" type="image/webp">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Site Access Management for MPI Approved Transitional Facilities">
+  <meta property="og:description" content="MPI Approved Transitional Facilities face biosecurity, health and safety, and aviation security obligations. SiteKey and AirCertifyNZ help manage them all.">
+  <meta property="og:url" content="https://biosecuritytraining.nz/articles/site-access-management-for-transitional-facilities-sitekey.html">
+  <meta property="og:image" content="https://biosecuritytraining.nz/images/hero-transitional-facility-site-access.jpg">
+  <meta property="og:image:width" content="1440">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="Contractor scanning QR code at NZ transitional facility entrance using SiteKey site access system">
+  <meta property="og:site_name" content="Biosecurity Training NZ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Site Access Management for MPI Approved Transitional Facilities">
+  <meta name="twitter:description" content="MPI Approved Transitional Facilities face biosecurity, health and safety, and aviation security obligations. SiteKey and AirCertifyNZ help manage them all.">
+  <meta name="twitter:image" content="https://biosecuritytraining.nz/images/hero-transitional-facility-site-access.jpg">
 </head>
 <body>
 
@@ -233,5 +249,27 @@
     </div>
   </footer>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Site Access Management for MPI Approved Transitional Facilities",
+  "description": "How SiteKey helps MPI Approved Transitional Facilities manage site access, training compliance, and biosecurity obligations.",
+  "url": "https://biosecuritytraining.nz/articles/site-access-management-for-transitional-facilities-sitekey.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Biosecurity Training NZ",
+    "url": "https://biosecuritytraining.nz"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://biosecuritytraining.nz/images/hero-transitional-facility-site-access.jpg",
+    "width": 1440,
+    "height": 500,
+    "description": "Contractor scanning QR code at NZ transitional facility entrance using SiteKey site access system"
+  },
+  "inLanguage": "en-NZ"
+}
+</script>
 </body>
 </html>

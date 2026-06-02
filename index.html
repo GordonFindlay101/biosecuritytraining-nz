@@ -68,7 +68,9 @@
 
     /* HERO */
     .hero {
-      background: linear-gradient(135deg, var(--secondary) 0%, #005a6b 60%, #007a7a 100%);
+      background:
+    linear-gradient(rgba(0,59,73,0.75), rgba(0,59,73,0.75)),
+    url('/images/hero-home.webp') center/cover no-repeat;
       padding: 96px 24px 80px;
       text-align: center;
       position: relative;
@@ -340,6 +342,20 @@
       .nav-links { display: none; }
     }
   </style>
+  <link rel="preload" as="image" href="/images/hero-home.webp" type="image/webp">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Biosecurity Training NZ — New Zealand's Biosecurity Training Resource">
+  <meta property="og:description" content="New Zealand's dedicated biosecurity training resource. Free courses, AP accreditation, and the Biosecurity Business Pledge. Start learning today.">
+  <meta property="og:url" content="https://biosecuritytraining.nz/">
+  <meta property="og:image" content="https://biosecuritytraining.nz/images/hero-home.jpg">
+  <meta property="og:image:width" content="1440">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="New Zealand warehouse team managing biosecurity-compliant freight operations">
+  <meta property="og:site_name" content="Biosecurity Training NZ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Biosecurity Training NZ — New Zealand's Biosecurity Training Resource">
+  <meta name="twitter:description" content="New Zealand's dedicated biosecurity training resource. Free courses, AP accreditation, and the Biosecurity Business Pledge. Start learning today.">
+  <meta name="twitter:image" content="https://biosecuritytraining.nz/images/hero-home.jpg">
 </head>
 <body>
 
@@ -490,5 +506,26 @@
     </div>
   </footer>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Biosecurity Training NZ",
+  "url": "https://biosecuritytraining.nz/",
+  "description": "New Zealand's dedicated biosecurity training resource for businesses, Accredited Persons, and the Biosecurity Business Pledge.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Capability Solutions",
+    "url": "https://train.capabilitysolutions.co.nz"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://biosecuritytraining.nz/images/hero-home.jpg",
+    "width": 1440,
+    "height": 500,
+    "description": "New Zealand warehouse team managing biosecurity-compliant freight operations"
+  }
+}
+</script>
 </body>
 </html>
