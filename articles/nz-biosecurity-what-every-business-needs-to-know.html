@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NZ Biosecurity: What Every Business Needs to Know | Biosecurity Training NZ</title>
+  <meta name="description" content="New Zealand's biosecurity system protects a $50B+ economy. Here's what it means for your business, what your obligations are, and how to get your team trained.">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #00B5AD;
+      --primary-soft: rgba(0, 181, 173, 0.10);
+      --secondary: #003B49;
+      --heading-text: #003B49;
+      --body-text: #4a4a4a;
+      --bg-light: #ffffff;
+      --bg-offset: #f2f7f7;
+      --radius: 12px;
+    }
+    body { font-family: 'Source Sans Pro', sans-serif; color: var(--body-text); background: var(--bg-light); line-height: 1.7; }
+
+    nav {
+      background: var(--secondary);
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      color: #fff;
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--primary); }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.92rem; font-weight: 600; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--primary); }
+
+    .article-hero {
+      background: linear-gradient(135deg, var(--secondary) 0%, #005a6b 100%);
+      padding: 72px 24px 60px;
+    }
+    .article-hero-inner { max-width: 760px; margin: 0 auto; }
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+      font-size: 0.85rem;
+    }
+    .breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
+    .breadcrumb a:hover { color: var(--primary); }
+    .breadcrumb span { color: rgba(255,255,255,0.35); }
+    .article-kicker {
+      display: inline-block;
+      background: var(--primary-soft);
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 100px;
+      margin-bottom: 18px;
+    }
+    .article-hero h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .article-hero .lead {
+      font-size: 1.12rem;
+      color: rgba(255,255,255,0.78);
+      line-height: 1.7;
+    }
+
+    .article-body {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 24px 72px;
+    }
+    .article-body h2 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.55rem;
+      color: var(--heading-text);
+      margin: 48px 0 16px;
+      line-height: 1.3;
+    }
+    .article-body h2:first-child { margin-top: 0; }
+    .article-body h3 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.2rem;
+      color: var(--heading-text);
+      margin: 32px 0 12px;
+    }
+    .article-body p { margin-bottom: 18px; font-size: 1.05rem; }
+    .article-body ul, .article-body ol {
+      margin: 0 0 18px 24px;
+      font-size: 1.05rem;
+    }
+    .article-body li { margin-bottom: 8px; }
+
+    .callout {
+      background: var(--bg-offset);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 20px 24px;
+      margin: 32px 0;
+    }
+    .callout-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .callout p { margin: 0; font-size: 1rem; }
+
+    .key-takeaway {
+      background: var(--secondary);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin: 40px 0;
+    }
+    .key-takeaway .callout-label { color: var(--primary); }
+    .key-takeaway p { color: rgba(255,255,255,0.85); margin: 0; font-size: 1.05rem; }
+
+    .cta-block {
+      background: linear-gradient(135deg, var(--secondary), #005a6b);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      margin: 48px 0;
+      text-align: center;
+    }
+    .cta-block h3 {
+      font-family: 'Libre Baskerville', serif;
+      color: #fff;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+    .cta-block p { color: rgba(255,255,255,0.75); margin-bottom: 24px; font-size: 1rem; }
+    .btn {
+      display: inline-block;
+      padding: 13px 26px;
+      border-radius: 100px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 0.98rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s;
+      margin: 6px;
+    }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: #009a93; transform: translateY(-1px); }
+    .btn-outline-light { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.45); }
+    .btn-outline-light:hover { border-color: #fff; transform: translateY(-1px); }
+
+    .article-nav {
+      display: flex;
+      gap: 16px;
+      margin-top: 56px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(0,59,73,0.1);
+      flex-wrap: wrap;
+    }
+    .article-nav a {
+      flex: 1;
+      min-width: 200px;
+      background: var(--bg-offset);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      text-decoration: none;
+      transition: box-shadow 0.2s;
+    }
+    .article-nav a:hover { box-shadow: 0 4px 16px rgba(0,59,73,0.1); }
+    .article-nav .nav-dir { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--primary); font-weight: 700; margin-bottom: 4px; }
+    .article-nav .nav-title { font-family: 'Libre Baskerville', serif; font-size: 1rem; color: var(--heading-text); }
+
+    footer {
+      background: var(--secondary);
+      padding: 40px 24px 28px;
+      text-align: center;
+    }
+    .footer-inner { max-width: 700px; margin: 0 auto; }
+    .footer-logo { font-family: 'Libre Baskerville', serif; font-size: 1.1rem; color: #fff; font-weight: 700; margin-bottom: 10px; }
+    .footer-logo span { color: var(--primary); }
+    footer p { color: rgba(255,255,255,0.5); font-size: 0.85rem; margin-bottom: 6px; }
+    .footer-links { display: flex; gap: 18px; justify-content: center; margin: 16px 0; flex-wrap: wrap; }
+    .footer-links a { color: rgba(255,255,255,0.55); font-size: 0.85rem; text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--primary); }
+
+    @media (max-width: 640px) { .nav-links { display: none; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Biosecurity Training <span>NZ</span></a>
+      <ul class="nav-links">
+        <li><a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a></li>
+        <li><a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a></li>
+        <li><a href="/articles/what-is-the-biosecurity-business-pledge.html">Business Pledge</a></li>
+        <li><a href="/articles/qconz-ap-biosecurity-training-course.html">QCONZ Course</a></li>
+        <li><a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener">Free Courses</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="article-hero">
+    <div class="article-hero-inner">
+      <nav class="breadcrumb">
+        <a href="/">Home</a>
+        <span>›</span>
+        <span style="color: rgba(255,255,255,0.7);">NZ Biosecurity for Businesses</span>
+      </nav>
+      <span class="article-kicker">For Business</span>
+      <h1>NZ Biosecurity: What Every Business Needs to Know</h1>
+      <p class="lead">New Zealand's biosecurity system protects our economy, environment, and way of life. If your business imports, exports, transports, or handles goods — biosecurity is your responsibility too.</p>
+    </div>
+  </div>
+
+  <div class="article-body">
+
+    <h2>Why Biosecurity Matters for New Zealand Business</h2>
+    <p>New Zealand has one of the most distinctive natural environments on earth — and one of the most biosecurity-dependent economies. Our primary sector alone contributes over $20 billion annually in export earnings. A single significant incursion could cost billions and affect New Zealand's market access for years.</p>
+    <p>But biosecurity isn't just about agriculture. It affects logistics companies, freight forwarders, importers, retailers, manufacturers, and any business that moves goods into or around New Zealand. The Ministry for Primary Industries (MPI) and Biosecurity New Zealand oversee a system that depends on business compliance to function.</p>
+
+    <div class="callout">
+      <div class="callout-label">Key Consideration</div>
+      <p>You don't need to be a farm or an orchard to have biosecurity obligations. If your business imports goods, handles international freight, or operates in a regulated supply chain — biosecurity rules apply to you.</p>
+    </div>
+
+    <h2>New Zealand's Biosecurity Framework</h2>
+    <p>The <strong>Biosecurity Act 1993</strong> is the foundation of New Zealand's biosecurity system. It establishes the rules for managing pests and diseases that could harm New Zealand's primary industries, environment, or human health.</p>
+    <p>Within this framework, several bodies and programmes are relevant to business:</p>
+
+    <h3>Ministry for Primary Industries (MPI)</h3>
+    <p>MPI is the lead government agency for biosecurity. It sets Import Health Standards (IHS), manages border clearance, and authorises Accredited Persons. If your business imports regulated goods, you are operating within MPI's framework.</p>
+
+    <h3>Biosecurity New Zealand</h3>
+    <p>The operational arm within MPI that manages border, pre-border, and post-border biosecurity activities. They run surveillance, incursion response, and industry partnership programmes.</p>
+
+    <h3>Government Industry Agreements (GIA)</h3>
+    <p>GIA is a co-investment framework between government and industry for biosecurity preparedness and response. Many primary sector industries have signed GIA Deeds — meaning they share both the costs and responsibilities of responding to incursions. If your industry is a GIA signatory, your business may have specific obligations.</p>
+
+    <h3>Import Health Standards (IHS)</h3>
+    <p>Import Health Standards set out the conditions that must be met before certain goods can enter New Zealand. If your business imports goods covered by an IHS — food products, plant material, timber, certain machinery — compliance is mandatory, not optional.</p>
+
+    <div class="key-takeaway">
+      <div class="callout-label">Key Takeaway</div>
+      <p>New Zealand's biosecurity system is not a government problem that businesses watch from a distance. It is a shared system that depends on every business in the supply chain playing its part.</p>
+    </div>
+
+    <h2>What Biosecurity Risk Looks Like in Practice</h2>
+    <p>For most businesses, biosecurity risk shows up in practical, operational ways:</p>
+    <ul>
+      <li><strong>Import compliance</strong> — ensuring goods meet Import Health Standards before they arrive, and that correct documentation accompanies shipments</li>
+      <li><strong>Pest and disease awareness</strong> — knowing what to look for and what to report if something looks wrong with an imported consignment</li>
+      <li><strong>Staff knowledge</strong> — employees handling goods need to understand their obligations, especially those working at borders, ports, or in primary industries</li>
+      <li><strong>Accredited Persons</strong> — some activities (inspections, treatments, clearances) must be carried out by or supervised by an MPI-authorised Accredited Person</li>
+      <li><strong>Record keeping</strong> — maintaining the records required to demonstrate compliance with biosecurity conditions</li>
+    </ul>
+
+    <h2>Your Business's Obligations</h2>
+    <p>The level of obligation varies significantly depending on your industry and the nature of your imports. At a minimum, every business handling imported goods should:</p>
+    <ol>
+      <li>Understand whether any Import Health Standards apply to the goods you handle</li>
+      <li>Know whether your activities require an Accredited Person on staff</li>
+      <li>Ensure relevant staff have received basic biosecurity awareness training</li>
+      <li>Have a clear process for reporting suspected pests or diseases — to MPI's exotic pest and disease hotline: <strong>0800 80 99 66</strong></li>
+    </ol>
+
+    <div class="callout">
+      <div class="callout-label">Leadership Note</div>
+      <p>You already manage health and safety risk at a leadership level. Biosecurity risk works the same way — it needs leadership visibility, clear roles, staff capability, and a response plan. The businesses that manage it well treat it as a risk management issue, not a compliance tick-box.</p>
+    </div>
+
+    <h2>The Cost of Getting It Wrong</h2>
+    <p>Biosecurity failures have real consequences for businesses — beyond the regulatory penalties. A business implicated in a biosecurity incursion faces reputational damage with customers and supply chain partners, potential civil liability, and the very real possibility of contributing to an industry-wide response that costs millions and disrupts the entire sector.</p>
+    <p>No one wants to be the business whose container was the source of a biosecurity incursion. The good news: this is a manageable risk if you lead it properly.</p>
+
+    <div class="cta-block">
+      <h3>Build Your Team's Biosecurity Knowledge</h3>
+      <p>Our free Biosecurity Risk Leadership course is designed for business owners and managers. Understand the system, your obligations, and how to lead biosecurity risk in your organisation.</p>
+      <a href="https://train.capabilitysolutions.co.nz/courses/biosecurity-risk-leadership" target="_blank" rel="noopener" class="btn btn-primary">Enrol Free — Biosecurity Risk Leadership</a>
+      <a href="/articles/what-is-an-accredited-person-ap-new-zealand.html" class="btn btn-outline-light">Does your business need an AP?</a>
+    </div>
+
+    <h2>Where to Start</h2>
+    <p>If you are new to biosecurity compliance, here is a practical starting point:</p>
+    <ol>
+      <li><strong>Assess your exposure</strong> — does your business import goods, handle international freight, or operate in a primary industry? If yes, biosecurity rules apply to you.</li>
+      <li><strong>Check for IHS requirements</strong> — search MPI's Import Health Standards database for the goods your business handles.</li>
+      <li><strong>Determine if you need an Accredited Person</strong> — <a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">read our guide on Accredited Persons</a> to find out.</li>
+      <li><strong>Train your team</strong> — start with our free courses, then consider whether AP training is appropriate for key staff.</li>
+      <li><strong>Consider the Biosecurity Business Pledge</strong> — a collective commitment by NZ businesses to lead biosecurity risk. <a href="/articles/what-is-the-biosecurity-business-pledge.html">Find out more.</a></li>
+    </ol>
+
+    <div class="article-nav">
+      <a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">
+        <div class="nav-dir">Next Article</div>
+        <div class="nav-title">What is an Accredited Person (AP) in New Zealand? →</div>
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Biosecurity Training <span>NZ</span></div>
+      <p>A Capability Solutions resource. Training delivered at <a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener" style="color: var(--primary);">train.capabilitysolutions.co.nz</a></p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a>
+        <a href="/articles/what-is-the-biosecurity-business-pledge.html">Business Pledge</a>
+        <a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener">Free Courses</a>
+      </div>
+      <p>&copy; 2026 Biosecurity Training NZ.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+[build]
+  publish = "."
+
+# Clean URLs — optional: lets /articles/what-is-an-accredited-person-ap-new-zealand work without .html
+[[redirects]]
+  from = "/articles/:slug"
+  to = "/articles/:slug.html"
+  status = 200
+  conditions = {Language = ["en"]}
+
+# 404 fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404

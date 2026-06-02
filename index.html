@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biosecurity Training NZ — New Zealand's Biosecurity Training Resource</title>
+  <meta name="description" content="New Zealand's dedicated biosecurity training resource. Free courses, Accredited Person training, and the Biosecurity Business Pledge. Start learning today.">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #00B5AD;
+      --primary-soft: rgba(0, 181, 173, 0.10);
+      --secondary: #003B49;
+      --heading-text: #003B49;
+      --body-text: #4a4a4a;
+      --bg-light: #ffffff;
+      --bg-offset: #f2f7f7;
+      --radius: 12px;
+    }
+
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      color: var(--body-text);
+      background: var(--bg-light);
+      line-height: 1.7;
+    }
+
+    /* NAV */
+    nav {
+      background: var(--secondary);
+      padding: 0 24px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      color: #fff;
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+    .nav-logo span { color: var(--primary); }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--primary); }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--secondary) 0%, #005a6b 60%, #007a7a 100%);
+      padding: 96px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(0,181,173,0.18) 0%, transparent 65%);
+    }
+    .hero-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .hero-kicker {
+      display: inline-block;
+      background: var(--primary-soft);
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .hero h1 em {
+      color: var(--primary);
+      font-style: normal;
+    }
+    .hero p {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.82);
+      max-width: 580px;
+      margin: 0 auto 36px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 100px;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover { background: #009a93; transform: translateY(-1px); }
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.5);
+    }
+    .btn-outline:hover { border-color: #fff; transform: translateY(-1px); }
+
+    /* TRUST BAR */
+    .trust-bar {
+      background: var(--bg-offset);
+      border-bottom: 1px solid rgba(0,59,73,0.08);
+      padding: 18px 24px;
+      text-align: center;
+    }
+    .trust-bar p {
+      font-size: 0.9rem;
+      color: #666;
+      font-weight: 600;
+    }
+    .trust-bar strong { color: var(--secondary); }
+
+    /* SECTIONS */
+    section { padding: 72px 24px; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: var(--heading-text);
+      line-height: 1.25;
+      margin-bottom: 14px;
+    }
+    .section-sub {
+      font-size: 1.05rem;
+      color: #666;
+      max-width: 560px;
+      margin-bottom: 48px;
+    }
+
+    /* COURSE CARDS */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    .course-card {
+      background: var(--bg-light);
+      border: 1px solid rgba(0,59,73,0.1);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 2px 12px rgba(0,59,73,0.06);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .course-card:hover { box-shadow: 0 6px 24px rgba(0,59,73,0.12); transform: translateY(-2px); }
+    .card-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-bottom: 14px;
+    }
+    .tag-free { background: #d1fae5; color: #065f46; }
+    .tag-paid { background: #fef3c7; color: #92400e; }
+    .tag-pledge { background: var(--primary-soft); color: var(--secondary); border: 1px solid rgba(0,181,173,0.3); }
+    .course-card h3 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.2rem;
+      color: var(--heading-text);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .course-card p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: gap 0.2s;
+    }
+    .card-link:hover { gap: 10px; }
+    .card-link::after { content: '→'; }
+
+    /* AP HIGHLIGHT BAND */
+    .ap-band {
+      background: var(--secondary);
+      padding: 72px 24px;
+    }
+    .ap-band-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .ap-band h2 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 16px;
+    }
+    .ap-band h2 em { color: var(--primary); font-style: normal; }
+    .ap-band p { color: rgba(255,255,255,0.78); font-size: 1.05rem; margin-bottom: 14px; line-height: 1.7; }
+    .ap-checklist { list-style: none; margin: 20px 0 32px; }
+    .ap-checklist li {
+      color: rgba(255,255,255,0.85);
+      padding: 6px 0 6px 28px;
+      position: relative;
+      font-size: 0.98rem;
+    }
+    .ap-checklist li::before {
+      content: '✓';
+      color: var(--primary);
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+    }
+    .ap-stat-block {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(0,181,173,0.25);
+      border-radius: var(--radius);
+      padding: 32px;
+    }
+    .ap-stat {
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .ap-stat:last-child { border-bottom: none; }
+    .ap-stat-number {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 2.4rem;
+      color: var(--primary);
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .ap-stat-label { color: rgba(255,255,255,0.65); font-size: 0.88rem; }
+
+    /* ARTICLES */
+    .articles-section { background: var(--bg-offset); }
+    .article-card {
+      background: var(--bg-light);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 2px 8px rgba(0,59,73,0.06);
+      border-left: 4px solid var(--primary);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .article-card:hover { box-shadow: 0 6px 20px rgba(0,59,73,0.1); transform: translateY(-2px); }
+    .article-card .section-label { margin-bottom: 8px; }
+    .article-card h3 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.2rem;
+      color: var(--heading-text);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .article-card p { font-size: 0.95rem; color: #666; margin-bottom: 18px; }
+
+    /* FOOTER */
+    footer {
+      background: var(--secondary);
+      padding: 48px 24px 32px;
+      text-align: center;
+    }
+    .footer-inner { max-width: 700px; margin: 0 auto; }
+    .footer-logo {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.2rem;
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .footer-logo span { color: var(--primary); }
+    footer p { color: rgba(255,255,255,0.55); font-size: 0.88rem; line-height: 1.7; margin-bottom: 8px; }
+    .footer-links { display: flex; gap: 20px; justify-content: center; margin: 20px 0; flex-wrap: wrap; }
+    .footer-links a { color: rgba(255,255,255,0.6); font-size: 0.88rem; text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--primary); }
+
+    @media (max-width: 768px) {
+      .ap-band-inner { grid-template-columns: 1fr; gap: 40px; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Biosecurity Training <span>NZ</span></a>
+      <ul class="nav-links">
+        <li><a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a></li>
+        <li><a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a></li>
+        <li><a href="/articles/what-is-the-biosecurity-business-pledge.html">Business Pledge</a></li>
+        <li><a href="/articles/qconz-ap-biosecurity-training-course.html">QCONZ Course</a></li>
+        <li><a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener">Free Courses</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-kicker">New Zealand Biosecurity Training</span>
+      <h1>Protect New Zealand.<br>Lead <em>Biosecurity Risk</em> Well.</h1>
+      <p>Free courses, professional accreditation, and the resources your business needs to manage biosecurity risk in New Zealand.</p>
+      <div class="hero-actions">
+        <a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener" class="btn btn-primary">Start Free Training</a>
+        <a href="/articles/what-is-an-accredited-person-ap-new-zealand.html" class="btn btn-outline">Become an Accredited Person</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <p>Training resources for <strong>New Zealand businesses, importers, exporters, and logistics professionals</strong> — aligned with MPI and Biosecurity New Zealand requirements.</p>
+  </div>
+
+  <!-- FREE COURSES -->
+  <section>
+    <div class="section-inner">
+      <p class="section-label">Free Training</p>
+      <h2 class="section-title">Start Learning — At No Cost</h2>
+      <p class="section-sub">Two free courses to build your biosecurity knowledge and prepare your organisation.</p>
+      <div class="card-grid">
+        <div class="course-card">
+          <span class="card-tag tag-free">Free Course</span>
+          <h3>Biosecurity Risk Leadership</h3>
+          <p>For CEOs, managers, and operational leaders. Understand how to lead biosecurity risk within your organisation the same way you manage health and safety.</p>
+          <a href="https://train.capabilitysolutions.co.nz/courses/biosecurity-risk-leadership" target="_blank" rel="noopener" class="card-link">Enrol free</a>
+        </div>
+        <div class="course-card">
+          <span class="card-tag tag-free">Free Course</span>
+          <h3>Biosecurity Awareness for New Zealand Business</h3>
+          <p>An introduction to New Zealand's biosecurity system — what it is, why it matters, and what your role is as a business operating in NZ.</p>
+          <a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener" class="card-link">Enrol free</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AP BAND -->
+  <div class="ap-band">
+    <div class="ap-band-inner">
+      <div>
+        <p class="section-label" style="color: var(--primary);">Professional Accreditation</p>
+        <h2>Does Your Business Need an <em>Accredited Person</em>?</h2>
+        <p>An Accredited Person (AP) is a qualified individual authorised to carry out specific biosecurity activities on behalf of a business — including inspections, treatments, and clearance procedures.</p>
+        <p>Many New Zealand businesses in logistics, horticulture, and import/export are required to have an AP on staff. QCONZ offers the recognised AP training programme.</p>
+        <ul class="ap-checklist">
+          <li>Required for many import and export operations</li>
+          <li>Authorised by the Ministry for Primary Industries (MPI)</li>
+          <li>Covers inspection, treatment, and clearance procedures</li>
+          <li>Nationally recognised qualification</li>
+        </ul>
+        <a href="https://biosecuritytraining.qconz.co.nz/" target="_blank" rel="noopener" class="btn btn-primary">AP Training via QCONZ</a>
+      </div>
+      <div class="ap-stat-block">
+        <div class="ap-stat">
+          <div class="ap-stat-number">$50B+</div>
+          <div class="ap-stat-label">New Zealand's biosecurity system protects annually</div>
+        </div>
+        <div class="ap-stat">
+          <div class="ap-stat-number">MPI</div>
+          <div class="ap-stat-label">Ministry for Primary Industries — the authorising body for Accredited Persons</div>
+        </div>
+        <div class="ap-stat">
+          <div class="ap-stat-number">GIA</div>
+          <div class="ap-stat-label">Government Industry Agreements — industry co-investment in NZ's biosecurity</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARTICLES -->
+  <section class="articles-section">
+    <div class="section-inner">
+      <p class="section-label">Resources</p>
+      <h2 class="section-title">Understand the NZ Biosecurity Landscape</h2>
+      <p class="section-sub">Practical guides for New Zealand businesses, leaders, and professionals.</p>
+      <div class="card-grid">
+        <div class="article-card">
+          <p class="section-label">For Business</p>
+          <h3>NZ Biosecurity: What Every Business Needs to Know</h3>
+          <p>New Zealand's biosecurity system protects our economy and environment. Here's what it means for your business — and what you need to do.</p>
+          <a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html" class="card-link">Read article</a>
+        </div>
+        <div class="article-card">
+          <p class="section-label">Accreditation</p>
+          <h3>What is an Accredited Person (AP) in New Zealand?</h3>
+          <p>The role, the requirements, and how to become one. If your business handles imports, exports, or regulated goods — this applies to you.</p>
+          <a href="/articles/what-is-an-accredited-person-ap-new-zealand.html" class="card-link">Read article</a>
+        </div>
+        <div class="article-card">
+          <p class="section-label">Commitment</p>
+          <h3>What is the Biosecurity Business Pledge?</h3>
+          <p>New Zealand businesses are signing a collective commitment to lead biosecurity risk. Find out what it means and whether your organisation should join.</p>
+          <a href="/articles/what-is-the-biosecurity-business-pledge.html" class="card-link">Read article</a>
+        </div>
+        <div class="article-card">
+          <p class="section-label">MPI-Approved Training</p>
+          <h3>The QCONZ AP Biosecurity Training Course</h3>
+          <p>Online MPI-approved training for Accredited Persons handling imported sea containers. Full course, refresher, and free awareness training — all available now.</p>
+          <a href="/articles/qconz-ap-biosecurity-training-course.html" class="card-link">Read article</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Biosecurity Training <span>NZ</span></div>
+      <p>New Zealand's dedicated biosecurity training resource. Free courses, professional accreditation pathways, and resources for businesses.</p>
+      <p>Training delivered via <a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener" style="color: var(--primary);">Capability Solutions</a> — New Zealand.</p>
+      <div class="footer-links">
+        <a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a>
+        <a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a>
+        <a href="/articles/what-is-the-biosecurity-business-pledge.html">Business Pledge</a>
+        <a href="/articles/qconz-ap-biosecurity-training-course.html">QCONZ Course</a>
+        <a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener">Free Courses</a>
+        <a href="https://bbpledge.nz" target="_blank" rel="noopener">bbpledge.nz</a>
+      </div>
+      <p>&copy; 2026 Biosecurity Training NZ. A Capability Solutions resource.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

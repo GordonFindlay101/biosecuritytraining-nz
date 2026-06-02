@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QCONZ AP Biosecurity Training Course — Online MPI-Approved Training | Biosecurity Training NZ</title>
+  <meta name="description" content="QCONZ delivers MPI-approved Accredited Person biosecurity training online. Full AP sea container course, refresher course, and free awareness training for TF staff.">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #00B5AD;
+      --primary-soft: rgba(0, 181, 173, 0.10);
+      --secondary: #003B49;
+      --heading-text: #003B49;
+      --body-text: #4a4a4a;
+      --bg-light: #ffffff;
+      --bg-offset: #f2f7f7;
+      --radius: 12px;
+    }
+    body { font-family: 'Source Sans Pro', sans-serif; color: var(--body-text); background: var(--bg-light); line-height: 1.7; }
+
+    nav { background: var(--secondary); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { color: #fff; font-family: 'Libre Baskerville', serif; font-size: 1.1rem; font-weight: 700; text-decoration: none; }
+    .nav-logo span { color: var(--primary); }
+    .nav-links { display: flex; gap: 22px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--primary); }
+
+    .article-hero { background: linear-gradient(135deg, var(--secondary) 0%, #005a6b 100%); padding: 72px 24px 60px; }
+    .article-hero-inner { max-width: 760px; margin: 0 auto; }
+    .breadcrumb { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; font-size: 0.85rem; }
+    .breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--primary); }
+    .breadcrumb span { color: rgba(255,255,255,0.35); }
+    .article-kicker { display: inline-block; background: var(--primary-soft); border: 1px solid var(--primary); color: var(--primary); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; margin-bottom: 18px; }
+    .article-hero h1 { font-family: 'Libre Baskerville', serif; font-size: clamp(1.8rem, 4vw, 2.6rem); color: #fff; line-height: 1.2; margin-bottom: 16px; }
+    .article-hero .lead { font-size: 1.12rem; color: rgba(255,255,255,0.78); line-height: 1.7; }
+
+    .article-body { max-width: 760px; margin: 0 auto; padding: 56px 24px 72px; }
+    .article-body h2 { font-family: 'Libre Baskerville', serif; font-size: 1.55rem; color: var(--heading-text); margin: 48px 0 16px; line-height: 1.3; }
+    .article-body h2:first-child { margin-top: 0; }
+    .article-body h3 { font-family: 'Libre Baskerville', serif; font-size: 1.2rem; color: var(--heading-text); margin: 32px 0 12px; }
+    .article-body p { margin-bottom: 18px; font-size: 1.05rem; }
+    .article-body ul, .article-body ol { margin: 0 0 18px 24px; font-size: 1.05rem; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body a { color: var(--primary); font-weight: 600; text-decoration: none; }
+    .article-body a:hover { text-decoration: underline; }
+
+    .callout { background: var(--bg-offset); border-left: 4px solid var(--primary); border-radius: 0 var(--radius) var(--radius) 0; padding: 20px 24px; margin: 32px 0; }
+    .callout-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--primary); margin-bottom: 8px; }
+    .callout p { margin: 0; font-size: 1rem; }
+
+    /* COURSE CARDS */
+    .course-cards { display: grid; gap: 20px; margin: 28px 0; }
+    .course-card {
+      border: 1px solid rgba(0,59,73,0.1);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 2px 8px rgba(0,59,73,0.05);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: start;
+    }
+    .course-card-content h3 { font-family: 'Libre Baskerville', serif; font-size: 1.15rem; color: var(--heading-text); margin-bottom: 8px; }
+    .course-card-content p { font-size: 0.97rem; color: #666; margin: 0; line-height: 1.6; }
+    .course-card-price { text-align: right; min-width: 100px; }
+    .price-amount { font-family: 'Libre Baskerville', serif; font-size: 1.5rem; color: var(--heading-text); font-weight: 700; line-height: 1; }
+    .price-note { font-size: 0.78rem; color: #888; margin-top: 2px; }
+    .price-free { font-family: 'Libre Baskerville', serif; font-size: 1.3rem; color: #065f46; font-weight: 700; }
+    .card-tag { display: inline-block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; padding: 3px 9px; border-radius: 100px; margin-bottom: 10px; }
+    .tag-mpi { background: #dbeafe; color: #1e40af; }
+    .tag-refresher { background: #fef3c7; color: #92400e; }
+    .tag-free { background: #d1fae5; color: #065f46; }
+    .enrol-btn { display: inline-block; margin-top: 14px; padding: 9px 20px; background: var(--primary); color: #fff; font-size: 0.9rem; font-weight: 700; border-radius: 100px; text-decoration: none; transition: background 0.2s; }
+    .enrol-btn:hover { background: #009a93; }
+
+    /* TESTIMONIALS */
+    .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 28px 0; }
+    .testimonial {
+      background: var(--bg-offset);
+      border-radius: var(--radius);
+      padding: 24px;
+      position: relative;
+    }
+    .testimonial::before {
+      content: '"';
+      font-family: 'Libre Baskerville', serif;
+      font-size: 3rem;
+      color: var(--primary);
+      opacity: 0.4;
+      position: absolute;
+      top: 12px;
+      left: 18px;
+      line-height: 1;
+    }
+    .testimonial p {
+      font-size: 0.97rem;
+      color: var(--body-text);
+      margin-bottom: 16px;
+      padding-top: 16px;
+      font-style: italic;
+      line-height: 1.65;
+    }
+    .testimonial-author { display: flex; flex-direction: column; }
+    .testimonial-name { font-weight: 700; font-size: 0.92rem; color: var(--heading-text); }
+    .testimonial-role { font-size: 0.82rem; color: #888; }
+
+    .key-takeaway { background: var(--secondary); border-radius: var(--radius); padding: 28px 32px; margin: 40px 0; }
+    .key-takeaway .callout-label { color: var(--primary); }
+    .key-takeaway p { color: rgba(255,255,255,0.85); margin: 0; font-size: 1.05rem; }
+
+    .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin: 20px 0 28px; }
+    .benefit { background: var(--bg-offset); border-radius: var(--radius); padding: 18px 20px; border-left: 3px solid var(--primary); }
+    .benefit-icon { font-size: 1.4rem; margin-bottom: 8px; }
+    .benefit h4 { font-weight: 700; font-size: 0.95rem; color: var(--heading-text); margin-bottom: 4px; }
+    .benefit p { font-size: 0.88rem; color: #666; margin: 0; line-height: 1.5; }
+
+    .cta-block { background: linear-gradient(135deg, var(--secondary), #005a6b); border-radius: var(--radius); padding: 36px 32px; margin: 48px 0; text-align: center; }
+    .cta-block h3 { font-family: 'Libre Baskerville', serif; color: #fff; font-size: 1.4rem; margin-bottom: 10px; }
+    .cta-block p { color: rgba(255,255,255,0.75); margin-bottom: 24px; font-size: 1rem; }
+    .btn { display: inline-block; padding: 13px 26px; border-radius: 100px; font-family: 'Source Sans Pro', sans-serif; font-size: 0.98rem; font-weight: 700; text-decoration: none; transition: all 0.2s; margin: 6px; }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: #009a93; transform: translateY(-1px); }
+    .btn-outline-light { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.45); }
+    .btn-outline-light:hover { border-color: #fff; transform: translateY(-1px); }
+
+    .article-nav { display: flex; gap: 16px; margin-top: 56px; padding-top: 32px; border-top: 1px solid rgba(0,59,73,0.1); flex-wrap: wrap; }
+    .article-nav a { flex: 1; min-width: 200px; background: var(--bg-offset); border-radius: var(--radius); padding: 18px 20px; text-decoration: none; transition: box-shadow 0.2s; }
+    .article-nav a:hover { box-shadow: 0 4px 16px rgba(0,59,73,0.1); }
+    .article-nav .nav-dir { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--primary); font-weight: 700; margin-bottom: 4px; }
+    .article-nav .nav-title { font-family: 'Libre Baskerville', serif; font-size: 1rem; color: var(--heading-text); }
+
+    footer { background: var(--secondary); padding: 40px 24px 28px; text-align: center; }
+    .footer-inner { max-width: 700px; margin: 0 auto; }
+    .footer-logo { font-family: 'Libre Baskerville', serif; font-size: 1.1rem; color: #fff; font-weight: 700; margin-bottom: 10px; }
+    .footer-logo span { color: var(--primary); }
+    footer p { color: rgba(255,255,255,0.5); font-size: 0.85rem; margin-bottom: 6px; }
+    .footer-links { display: flex; gap: 18px; justify-content: center; margin: 16px 0; flex-wrap: wrap; }
+    .footer-links a { color: rgba(255,255,255,0.55); font-size: 0.85rem; text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--primary); }
+
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .course-card { grid-template-columns: 1fr; }
+      .course-card-price { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Biosecurity Training <span>NZ</span></a>
+      <ul class="nav-links">
+        <li><a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a></li>
+        <li><a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a></li>
+        <li><a href="/articles/what-is-the-biosecurity-business-pledge.html">Business Pledge</a></li>
+        <li><a href="/articles/qconz-ap-biosecurity-training-course.html">QCONZ Course</a></li>
+        <li><a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener">Free Courses</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="article-hero">
+    <div class="article-hero-inner">
+      <nav class="breadcrumb">
+        <a href="/">Home</a>
+        <span>›</span>
+        <span style="color: rgba(255,255,255,0.7);">QCONZ AP Biosecurity Training</span>
+      </nav>
+      <span class="article-kicker">MPI-Approved Training</span>
+      <h1>The QCONZ AP Biosecurity Training Course</h1>
+      <p class="lead">QCONZ delivers the MPI-approved online training for New Zealand Accredited Persons. If your business handles imported sea containers at a Transitional Facility, this is the course you need.</p>
+    </div>
+  </div>
+
+  <div class="article-body">
+
+    <h2>Why QCONZ?</h2>
+    <p>QCONZ is the recognised provider of Accredited Person biosecurity training in New Zealand. Their courses are developed to meet MPI's requirements and are designed specifically for the people doing the work — the APs at Transitional Facilities who inspect and oversee the unpacking of imported sea containers every day.</p>
+    <p>The training is delivered entirely online, which means no travel, no venue costs, and the flexibility to complete modules when it suits your schedule. This makes it practical for individuals and for businesses training multiple staff across different sites.</p>
+
+    <div class="callout">
+      <div class="callout-label">MPI Approved</div>
+      <p>QCONZ's AP training is approved by the Ministry for Primary Industries. Completion of the appropriate course is a required step in the MPI accreditation process for Accredited Persons handling imported sea containers.</p>
+    </div>
+
+    <h2>The Courses Available</h2>
+    <p>QCONZ offers three courses, covering first-time APs, existing APs due for recertification, and all staff at Transitional Facilities who need general biosecurity awareness.</p>
+
+    <div class="course-cards">
+      <div class="course-card">
+        <div class="course-card-content">
+          <span class="card-tag tag-mpi">Full Course</span>
+          <h3>MPI Accredited Person Sea Container Course</h3>
+          <p>The full course for first-time Accredited Persons. Covers everything you need to know to receive, inspect, and manage imported sea containers at a Transitional Facility. This eLearning course must be completed as part of the MPI accreditation process.</p>
+          <a href="https://biosecuritytraining.qconz.co.nz/product/mpi-accredited-person-sea-container-course/" target="_blank" rel="noopener" class="enrol-btn">Enrol Now</a>
+        </div>
+        <div class="course-card-price">
+          <div class="price-amount">$125</div>
+          <div class="price-note">+GST</div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-card-content">
+          <span class="card-tag tag-refresher">Refresher</span>
+          <h3>MPI Accredited Person Sea Container Refresher Course</h3>
+          <p>For APs who completed the full course and need to recertify. To maintain your Accredited Person status, this refresher must be completed within two years of your last full course. Same $125 investment, keeps your accreditation current.</p>
+          <a href="https://biosecuritytraining.qconz.co.nz/product/mpi-accredited-person-sea-container-refresher-course/" target="_blank" rel="noopener" class="enrol-btn">Enrol Now</a>
+        </div>
+        <div class="course-card-price">
+          <div class="price-amount">$125</div>
+          <div class="price-note">+GST</div>
+        </div>
+      </div>
+
+      <div class="course-card">
+        <div class="course-card-content">
+          <span class="card-tag tag-free">Free</span>
+          <h3>MPI Biosecurity Awareness for Transitional Facilities</h3>
+          <p>Developed by MPI for all staff working at a Transitional Facility. Covers general biosecurity awareness and the risks associated with unwanted pests and diseases arriving in New Zealand. An excellent complement to the AP course for your wider team.</p>
+          <a href="https://biosecuritytraining.qconz.co.nz/product/mpi-biosecurity-awareness-course/" target="_blank" rel="noopener" class="enrol-btn" style="background: #059669;">Enrol Free</a>
+        </div>
+        <div class="course-card-price">
+          <div class="price-free">Free</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Why Online Training Works for Biosecurity</h2>
+    <p>Traditional face-to-face biosecurity training requires staff to travel, businesses to cover shifts, and significant coordination — especially for teams spread across multiple sites. QCONZ's online format removes all of that friction.</p>
+
+    <div class="benefits-grid">
+      <div class="benefit">
+        <div class="benefit-icon">💻</div>
+        <h4>100% Online</h4>
+        <p>Complete on-site or at home, on any device. No travel or venue costs.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">⏰</div>
+        <h4>Flexible Access</h4>
+        <p>Complete one module at a time. Return to the course when it suits you.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">✅</div>
+        <h4>MPI-Approved</h4>
+        <p>Meets the MPI requirement for AP accreditation. No equivalency questions.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">💰</div>
+        <h4>Cost Effective</h4>
+        <p>$125 +GST per person. Ideal for individuals or teams across multiple sites.</p>
+      </div>
+    </div>
+
+    <h2>What the Course Covers</h2>
+    <p>The full AP Sea Container Course teaches you everything required to safely receive, inspect, and manage imported sea containers at an MPI-approved Transitional Facility. This includes:</p>
+    <ul>
+      <li>New Zealand's biosecurity legislative framework and the role of the AP within it</li>
+      <li>How to inspect an imported sea container — what to look for, how to document it</li>
+      <li>How to identify and respond to biosecurity risks found during inspection</li>
+      <li>Supervising the unpacking of containers and managing biosecurity risks during devanning</li>
+      <li>Using the AP Resource Book effectively — the reference guide APs use in the field</li>
+      <li>Record-keeping obligations and MPI reporting requirements</li>
+    </ul>
+    <p>The course uses video demonstrations, practical scenarios, and interactive exercises to make the content accessible and easy to apply on the job.</p>
+
+    <h2>What People Are Saying</h2>
+    <p>Here is what New Zealand APs and TF staff say about the QCONZ training:</p>
+
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>I found the course easy to follow and very informative and interesting. I also liked being able to complete one or two modules at a time and then come back to the course as time allowed. I would definitely recommend this online training course.</p>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Steve Pizzey</span>
+          <span class="testimonial-role">Team Global Express</span>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>This is a great course. I especially liked the videos that showed what to look for and how to find things in the AP resource book. There was a lot of information, but it was explained really well and made easy to understand.</p>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Jessica Gregg</span>
+          <span class="testimonial-role">Health &amp; Safety Coordinator</span>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>The course was well structured, engaging, and easy to follow. The content was concise without being overwhelming, which helped maintain focus throughout.</p>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Leonid Sverdlov</span>
+          <span class="testimonial-role">3PL Warehouse Coordinator</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="key-takeaway">
+      <div class="callout-label">Key Takeaway</div>
+      <p>QCONZ's online format was specifically designed for APs working at remote Transitional Facilities — where travel to in-person training is expensive and disruptive. The flexibility to train on-site when it suits the business makes it the practical choice for NZ's logistics sector.</p>
+    </div>
+
+    <h2>Who Needs to Complete the Course?</h2>
+    <p>The AP Sea Container Course is required for:</p>
+    <ul>
+      <li><strong>First-time APs</strong> — anyone applying for MPI Accredited Person status for sea container inspection at a Transitional Facility must complete the full course as part of their accreditation application</li>
+      <li><strong>Existing APs due for renewal</strong> — APs must complete the Refresher Course within two years of their previous full course to maintain their accreditation</li>
+    </ul>
+    <p>The free Biosecurity Awareness course is recommended for all staff at Transitional Facilities — not just APs. It builds foundational knowledge across your team and contributes to your business's biosecurity culture.</p>
+
+    <div class="cta-block">
+      <h3>Ready to Enrol?</h3>
+      <p>Visit the QCONZ biosecurity training site to select your course and enrol. Full course, refresher, or free awareness training — all available online, all MPI-approved.</p>
+      <a href="https://biosecuritytraining.qconz.co.nz/" target="_blank" rel="noopener" class="btn btn-primary">Go to QCONZ Training</a>
+      <a href="/articles/what-is-an-accredited-person-ap-new-zealand.html" class="btn btn-outline-light">What is an Accredited Person?</a>
+    </div>
+
+    <h2>Before You Start the AP Course</h2>
+    <p>If you or your team are new to biosecurity, it is worth building foundational knowledge before diving into AP training. Our free courses on Thinkific cover the NZ biosecurity framework, the role of business in the system, and what biosecurity risk management looks like at a leadership level.</p>
+    <p>These are free, online, and a useful primer before the more technical AP training content:</p>
+    <ul>
+      <li><a href="https://train.capabilitysolutions.co.nz/courses/biosecurity-risk-leadership" target="_blank" rel="noopener">Biosecurity Risk Leadership</a> — for managers and business owners</li>
+      <li><a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener">Biosecurity Awareness for NZ Business</a> — for all staff</li>
+    </ul>
+
+    <div class="article-nav">
+      <a href="/articles/what-is-the-biosecurity-business-pledge.html">
+        <div class="nav-dir">← Previous</div>
+        <div class="nav-title">What is the Biosecurity Business Pledge?</div>
+      </a>
+      <a href="/">
+        <div class="nav-dir">↑ Home</div>
+        <div class="nav-title">Biosecurity Training NZ — All Resources</div>
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Biosecurity Training <span>NZ</span></div>
+      <p>A Capability Solutions resource. Training delivered at <a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener" style="color: var(--primary);">train.capabilitysolutions.co.nz</a></p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a>
+        <a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a>
+        <a href="/articles/what-is-the-biosecurity-business-pledge.html">Business Pledge</a>
+        <a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener">Free Courses</a>
+      </div>
+      <p>&copy; 2026 Biosecurity Training NZ.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

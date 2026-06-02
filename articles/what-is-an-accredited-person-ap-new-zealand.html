@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is an Accredited Person (AP) in New Zealand? | Biosecurity Training NZ</title>
+  <meta name="description" content="An Accredited Person (AP) is authorised by MPI to carry out biosecurity activities in New Zealand. Find out who needs one, what they do, and how to become one.">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #00B5AD;
+      --primary-soft: rgba(0, 181, 173, 0.10);
+      --secondary: #003B49;
+      --heading-text: #003B49;
+      --body-text: #4a4a4a;
+      --bg-light: #ffffff;
+      --bg-offset: #f2f7f7;
+      --radius: 12px;
+    }
+    body { font-family: 'Source Sans Pro', sans-serif; color: var(--body-text); background: var(--bg-light); line-height: 1.7; }
+
+    nav { background: var(--secondary); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { color: #fff; font-family: 'Libre Baskerville', serif; font-size: 1.1rem; font-weight: 700; text-decoration: none; }
+    .nav-logo span { color: var(--primary); }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.92rem; font-weight: 600; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--primary); }
+
+    .article-hero { background: linear-gradient(135deg, var(--secondary) 0%, #005a6b 100%); padding: 72px 24px 60px; }
+    .article-hero-inner { max-width: 760px; margin: 0 auto; }
+    .breadcrumb { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; font-size: 0.85rem; }
+    .breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
+    .breadcrumb a:hover { color: var(--primary); }
+    .breadcrumb span { color: rgba(255,255,255,0.35); }
+    .article-kicker { display: inline-block; background: var(--primary-soft); border: 1px solid var(--primary); color: var(--primary); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; margin-bottom: 18px; }
+    .article-hero h1 { font-family: 'Libre Baskerville', serif; font-size: clamp(1.8rem, 4vw, 2.6rem); color: #fff; line-height: 1.2; margin-bottom: 16px; }
+    .article-hero .lead { font-size: 1.12rem; color: rgba(255,255,255,0.78); line-height: 1.7; }
+
+    .article-body { max-width: 760px; margin: 0 auto; padding: 56px 24px 72px; }
+    .article-body h2 { font-family: 'Libre Baskerville', serif; font-size: 1.55rem; color: var(--heading-text); margin: 48px 0 16px; line-height: 1.3; }
+    .article-body h2:first-child { margin-top: 0; }
+    .article-body h3 { font-family: 'Libre Baskerville', serif; font-size: 1.2rem; color: var(--heading-text); margin: 32px 0 12px; }
+    .article-body p { margin-bottom: 18px; font-size: 1.05rem; }
+    .article-body ul, .article-body ol { margin: 0 0 18px 24px; font-size: 1.05rem; }
+    .article-body li { margin-bottom: 8px; }
+
+    .callout { background: var(--bg-offset); border-left: 4px solid var(--primary); border-radius: 0 var(--radius) var(--radius) 0; padding: 20px 24px; margin: 32px 0; }
+    .callout-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--primary); margin-bottom: 8px; }
+    .callout p { margin: 0; font-size: 1rem; }
+
+    .key-takeaway { background: var(--secondary); border-radius: var(--radius); padding: 28px 32px; margin: 40px 0; }
+    .key-takeaway .callout-label { color: var(--primary); }
+    .key-takeaway p { color: rgba(255,255,255,0.85); margin: 0; font-size: 1.05rem; }
+
+    .step-list { list-style: none; margin: 0 0 24px; counter-reset: steps; }
+    .step-list li {
+      counter-increment: steps;
+      padding: 16px 16px 16px 60px;
+      position: relative;
+      background: var(--bg-offset);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      font-size: 1.02rem;
+    }
+    .step-list li::before {
+      content: counter(steps);
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.88rem;
+    }
+    .step-list li strong { color: var(--heading-text); }
+
+    .cta-block { background: linear-gradient(135deg, var(--secondary), #005a6b); border-radius: var(--radius); padding: 36px 32px; margin: 48px 0; text-align: center; }
+    .cta-block h3 { font-family: 'Libre Baskerville', serif; color: #fff; font-size: 1.4rem; margin-bottom: 10px; }
+    .cta-block p { color: rgba(255,255,255,0.75); margin-bottom: 24px; font-size: 1rem; }
+    .btn { display: inline-block; padding: 13px 26px; border-radius: 100px; font-family: 'Source Sans Pro', sans-serif; font-size: 0.98rem; font-weight: 700; text-decoration: none; transition: all 0.2s; margin: 6px; }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: #009a93; transform: translateY(-1px); }
+    .btn-outline-light { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.45); }
+    .btn-outline-light:hover { border-color: #fff; transform: translateY(-1px); }
+
+    .article-nav { display: flex; gap: 16px; margin-top: 56px; padding-top: 32px; border-top: 1px solid rgba(0,59,73,0.1); flex-wrap: wrap; }
+    .article-nav a { flex: 1; min-width: 200px; background: var(--bg-offset); border-radius: var(--radius); padding: 18px 20px; text-decoration: none; transition: box-shadow 0.2s; }
+    .article-nav a:hover { box-shadow: 0 4px 16px rgba(0,59,73,0.1); }
+    .article-nav .nav-dir { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--primary); font-weight: 700; margin-bottom: 4px; }
+    .article-nav .nav-title { font-family: 'Libre Baskerville', serif; font-size: 1rem; color: var(--heading-text); }
+
+    footer { background: var(--secondary); padding: 40px 24px 28px; text-align: center; }
+    .footer-inner { max-width: 700px; margin: 0 auto; }
+    .footer-logo { font-family: 'Libre Baskerville', serif; font-size: 1.1rem; color: #fff; font-weight: 700; margin-bottom: 10px; }
+    .footer-logo span { color: var(--primary); }
+    footer p { color: rgba(255,255,255,0.5); font-size: 0.85rem; margin-bottom: 6px; }
+    .footer-links { display: flex; gap: 18px; justify-content: center; margin: 16px 0; flex-wrap: wrap; }
+    .footer-links a { color: rgba(255,255,255,0.55); font-size: 0.85rem; text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--primary); }
+
+    @media (max-width: 640px) { .nav-links { display: none; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Biosecurity Training <span>NZ</span></a>
+      <ul class="nav-links">
+        <li><a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a></li>
+        <li><a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a></li>
+        <li><a href="/articles/what-is-the-biosecurity-business-pledge.html">Business Pledge</a></li>
+        <li><a href="/articles/qconz-ap-biosecurity-training-course.html">QCONZ Course</a></li>
+        <li><a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener">Free Courses</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="article-hero">
+    <div class="article-hero-inner">
+      <nav class="breadcrumb">
+        <a href="/">Home</a>
+        <span>›</span>
+        <span style="color: rgba(255,255,255,0.7);">What is an Accredited Person?</span>
+      </nav>
+      <span class="article-kicker">Accreditation</span>
+      <h1>What is an Accredited Person (AP) in New Zealand?</h1>
+      <p class="lead">An Accredited Person is authorised by the Ministry for Primary Industries to carry out specific biosecurity activities. Many New Zealand businesses in logistics, horticulture, and import/export are required to have one.</p>
+    </div>
+  </div>
+
+  <div class="article-body">
+
+    <h2>The Role of an Accredited Person</h2>
+    <p>An Accredited Person (AP) is an individual who has been authorised by the Ministry for Primary Industries (MPI) to carry out regulated biosecurity activities on behalf of a business. These activities include — depending on their specific accreditation — inspections of imported goods, treatments such as fumigation, and the clearance of consignments at the border.</p>
+    <p>The AP system exists because MPI cannot inspect every consignment that enters New Zealand. Accredited Persons allow MPI to extend the reach of the biosecurity system through trusted, qualified individuals operating within businesses across the supply chain.</p>
+
+    <div class="callout">
+      <div class="callout-label">Key Consideration</div>
+      <p>An AP acts on behalf of MPI when they carry out regulated activities. This is a significant responsibility — and one that requires formal training, assessment, and ongoing authorisation to maintain.</p>
+    </div>
+
+    <h2>What Activities Require an Accredited Person?</h2>
+    <p>Not all biosecurity activities require an AP — but several critical ones do. Depending on your industry and the nature of your imports, you may need an AP to:</p>
+    <ul>
+      <li>Inspect imported goods under an Import Health Standard (IHS)</li>
+      <li>Carry out or supervise biosecurity treatments (e.g. fumigation, heat treatment)</li>
+      <li>Issue phytosanitary certificates for exports</li>
+      <li>Conduct transitional facility operations (approved premises where imported goods are held pending clearance)</li>
+      <li>Carry out forestry or wood products clearance procedures</li>
+    </ul>
+    <p>The specific activities an AP is authorised to perform depend on the type of accreditation they hold. There are multiple AP categories, each covering a different scope of work.</p>
+
+    <h2>Which Businesses Need an Accredited Person?</h2>
+    <p>Your business may need an AP if you operate in any of the following areas:</p>
+    <ul>
+      <li><strong>Freight and logistics</strong> — handling, storing, or transporting imported goods subject to biosecurity conditions</li>
+      <li><strong>Horticulture and primary industries</strong> — importing plant material, seeds, or produce, or exporting goods that require phytosanitary certification</li>
+      <li><strong>Transitional facilities</strong> — operating a cold store, container terminal, or other facility where imported goods are held before clearance</li>
+      <li><strong>Fumigation and treatment providers</strong> — carrying out MPI-regulated treatments on imported goods</li>
+      <li><strong>Timber and wood products</strong> — importing or processing timber subject to Import Health Standards</li>
+    </ul>
+
+    <div class="callout">
+      <div class="callout-label">Leadership Note</div>
+      <p>If you are unsure whether your business needs an AP, the safest approach is to check directly with MPI or speak with QCONZ, who deliver the AP training programme and can advise on whether accreditation applies to your operations.</p>
+    </div>
+
+    <h2>How to Become an Accredited Person</h2>
+    <p>Becoming an AP involves formal training, assessment, and application to MPI for authorisation. The process typically follows these steps:</p>
+    <ol class="step-list">
+      <li><strong>Confirm your AP category</strong> — identify which type of AP accreditation your role requires based on the activities you'll perform</li>
+      <li><strong>Complete the AP training programme</strong> — QCONZ delivers the recognised AP training for New Zealand, covering biosecurity legislation, inspection procedures, risk assessment, and record-keeping</li>
+      <li><strong>Pass the assessment</strong> — training includes a formal assessment to demonstrate competency</li>
+      <li><strong>Apply to MPI for authorisation</strong> — once training is complete, your business applies to MPI to have you formally recognised as an Accredited Person</li>
+      <li><strong>Maintain your accreditation</strong> — APs are subject to ongoing MPI oversight, including audits and recertification requirements</li>
+    </ol>
+
+    <h2>The QCONZ AP Training Programme</h2>
+    <p>QCONZ is the recognised training provider for AP accreditation in New Zealand. Their programme is designed to meet MPI's requirements and prepare candidates for both the assessment and the practical realities of working as an Accredited Person.</p>
+    <p>Training covers:</p>
+    <ul>
+      <li>New Zealand's biosecurity legislative framework</li>
+      <li>Inspection techniques and risk assessment</li>
+      <li>Biosecurity treatments — types, application, and documentation</li>
+      <li>Record-keeping and MPI reporting obligations</li>
+      <li>Practical scenarios relevant to your AP category</li>
+    </ul>
+
+    <div class="cta-block">
+      <h3>Ready to Become an Accredited Person?</h3>
+      <p>QCONZ delivers the AP training programme recognised by MPI. Enrol through the link below — and if you want to build foundational biosecurity knowledge first, start with our free courses.</p>
+      <a href="https://biosecuritytraining.qconz.co.nz/" target="_blank" rel="noopener" class="btn btn-primary">AP Training via QCONZ</a>
+      <a href="https://train.capabilitysolutions.co.nz/courses/biosecurity-risk-leadership" target="_blank" rel="noopener" class="btn btn-outline-light">Free Biosecurity Courses First</a>
+    </div>
+
+    <h2>Responsibilities of an Accredited Person</h2>
+    <p>Holding AP status comes with ongoing obligations. An AP must:</p>
+    <ul>
+      <li>Carry out regulated activities in accordance with MPI's requirements and any applicable Import Health Standards</li>
+      <li>Maintain accurate records of all regulated activities</li>
+      <li>Report findings to MPI as required — including any suspected pest or disease detections</li>
+      <li>Comply with MPI audits and inspections</li>
+      <li>Maintain their competency and recertify as required</li>
+    </ul>
+
+    <div class="key-takeaway">
+      <div class="callout-label">Key Takeaway</div>
+      <p>An Accredited Person is not just a job title — it is a formal MPI authorisation that carries real responsibility. Businesses that rely on an AP must ensure that person is properly trained, current with their obligations, and operating within the scope of their accreditation.</p>
+    </div>
+
+    <h2>What Happens if You Don't Have an AP When You Need One?</h2>
+    <p>Operating without an AP when one is required is a breach of biosecurity law. Consequences can include:</p>
+    <ul>
+      <li>Goods being held or refused clearance at the border</li>
+      <li>MPI enforcement action, including infringement notices and fines</li>
+      <li>Loss of approved transitional facility status</li>
+      <li>Reputational damage with customers and supply chain partners</li>
+    </ul>
+    <p>The cost of getting AP accreditation in place is modest compared to the cost of a biosecurity compliance failure.</p>
+
+    <div class="article-nav">
+      <a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">
+        <div class="nav-dir">← Previous</div>
+        <div class="nav-title">NZ Biosecurity: What Every Business Needs to Know</div>
+      </a>
+      <a href="/articles/what-is-the-biosecurity-business-pledge.html">
+        <div class="nav-dir">Next Article →</div>
+        <div class="nav-title">What is the Biosecurity Business Pledge?</div>
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Biosecurity Training <span>NZ</span></div>
+      <p>A Capability Solutions resource. Training delivered at <a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener" style="color: var(--primary);">train.capabilitysolutions.co.nz</a></p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a>
+        <a href="/articles/what-is-the-biosecurity-business-pledge.html">Business Pledge</a>
+        <a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener">Free Courses</a>
+      </div>
+      <p>&copy; 2026 Biosecurity Training NZ.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
