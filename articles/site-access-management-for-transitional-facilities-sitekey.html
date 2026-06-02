@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Access Management for MPI Approved Transitional Facilities | Biosecurity Training NZ</title>
+  <meta name="description" content="MPI Approved Transitional Facilities face overlapping compliance obligations — biosecurity, health and safety, and aviation security. SiteKey helps manage them all.">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #00B5AD;
+      --primary-soft: rgba(0, 181, 173, 0.10);
+      --secondary: #003B49;
+      --heading-text: #003B49;
+      --body-text: #4a4a4a;
+      --bg-light: #ffffff;
+      --bg-offset: #f2f7f7;
+      --radius: 12px;
+    }
+    body { font-family: 'Source Sans Pro', sans-serif; color: var(--body-text); background: var(--bg-light); line-height: 1.7; }
+
+    nav { background: var(--secondary); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { color: #fff; font-family: 'Libre Baskerville', serif; font-size: 1.1rem; font-weight: 700; text-decoration: none; }
+    .nav-logo span { color: var(--primary); }
+    .nav-links { display: flex; gap: 20px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.88rem; font-weight: 600; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--primary); }
+
+    .article-hero { background: linear-gradient(135deg, var(--secondary) 0%, #005a6b 100%); padding: 72px 24px 60px; }
+    .article-hero-inner { max-width: 760px; margin: 0 auto; }
+    .breadcrumb { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; font-size: 0.85rem; }
+    .breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
+    .breadcrumb a:hover { color: var(--primary); }
+    .breadcrumb span { color: rgba(255,255,255,0.35); }
+    .article-kicker { display: inline-block; background: var(--primary-soft); border: 1px solid var(--primary); color: var(--primary); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; margin-bottom: 18px; }
+    .article-hero h1 { font-family: 'Libre Baskerville', serif; font-size: clamp(1.8rem, 4vw, 2.6rem); color: #fff; line-height: 1.2; margin-bottom: 16px; }
+    .article-hero .lead { font-size: 1.12rem; color: rgba(255,255,255,0.78); line-height: 1.7; }
+
+    .article-body { max-width: 760px; margin: 0 auto; padding: 56px 24px 72px; }
+    .article-body h2 { font-family: 'Libre Baskerville', serif; font-size: 1.55rem; color: var(--heading-text); margin: 48px 0 16px; line-height: 1.3; }
+    .article-body h2:first-child { margin-top: 0; }
+    .article-body h3 { font-family: 'Libre Baskerville', serif; font-size: 1.2rem; color: var(--heading-text); margin: 32px 0 12px; }
+    .article-body p { margin-bottom: 18px; font-size: 1.05rem; }
+    .article-body ul, .article-body ol { margin: 0 0 18px 24px; font-size: 1.05rem; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body a { color: var(--primary); font-weight: 600; text-decoration: none; }
+    .article-body a:hover { text-decoration: underline; }
+
+    .callout { background: var(--bg-offset); border-left: 4px solid var(--primary); border-radius: 0 var(--radius) var(--radius) 0; padding: 20px 24px; margin: 32px 0; }
+    .callout-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--primary); margin-bottom: 8px; }
+    .callout p { margin: 0; font-size: 1rem; }
+
+    .key-takeaway { background: var(--secondary); border-radius: var(--radius); padding: 28px 32px; margin: 40px 0; }
+    .key-takeaway .callout-label { color: var(--primary); }
+    .key-takeaway p { color: rgba(255,255,255,0.85); margin: 0; font-size: 1.05rem; }
+
+    .compliance-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 24px 0 32px; }
+    .compliance-item { background: var(--bg-offset); border-radius: var(--radius); padding: 20px; border-top: 3px solid var(--primary); }
+    .compliance-item h4 { font-family: 'Libre Baskerville', serif; font-size: 1rem; color: var(--heading-text); margin-bottom: 8px; }
+    .compliance-item p { font-size: 0.92rem; color: #666; margin: 0; line-height: 1.55; }
+
+    .feature-list { list-style: none; margin: 0 0 24px; padding: 0; }
+    .feature-list li { padding: 10px 0 10px 28px; position: relative; border-bottom: 1px solid rgba(0,59,73,0.07); font-size: 1.02rem; }
+    .feature-list li:last-child { border-bottom: none; }
+    .feature-list li::before { content: '✓'; color: var(--primary); position: absolute; left: 0; font-weight: 700; }
+    .feature-list li strong { color: var(--heading-text); }
+
+    .cta-block { background: linear-gradient(135deg, var(--secondary), #005a6b); border-radius: var(--radius); padding: 36px 32px; margin: 48px 0; text-align: center; }
+    .cta-block h3 { font-family: 'Libre Baskerville', serif; color: #fff; font-size: 1.4rem; margin-bottom: 10px; }
+    .cta-block p { color: rgba(255,255,255,0.75); margin-bottom: 24px; font-size: 1rem; }
+    .btn { display: inline-block; padding: 13px 26px; border-radius: 100px; font-family: 'Source Sans Pro', sans-serif; font-size: 0.98rem; font-weight: 700; text-decoration: none; transition: all 0.2s; margin: 6px; }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: #009a93; transform: translateY(-1px); }
+    .btn-outline-light { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.45); }
+    .btn-outline-light:hover { border-color: #fff; transform: translateY(-1px); }
+
+    .article-nav { display: flex; gap: 16px; margin-top: 56px; padding-top: 32px; border-top: 1px solid rgba(0,59,73,0.1); flex-wrap: wrap; }
+    .article-nav a { flex: 1; min-width: 200px; background: var(--bg-offset); border-radius: var(--radius); padding: 18px 20px; text-decoration: none; transition: box-shadow 0.2s; }
+    .article-nav a:hover { box-shadow: 0 4px 16px rgba(0,59,73,0.1); }
+    .article-nav .nav-dir { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--primary); font-weight: 700; margin-bottom: 4px; }
+    .article-nav .nav-title { font-family: 'Libre Baskerville', serif; font-size: 1rem; color: var(--heading-text); }
+
+    footer { background: var(--secondary); padding: 40px 24px 28px; text-align: center; }
+    .footer-inner { max-width: 700px; margin: 0 auto; }
+    .footer-logo { font-family: 'Libre Baskerville', serif; font-size: 1.1rem; color: #fff; font-weight: 700; margin-bottom: 10px; }
+    .footer-logo span { color: var(--primary); }
+    footer p { color: rgba(255,255,255,0.5); font-size: 0.85rem; margin-bottom: 6px; }
+    .footer-links { display: flex; gap: 18px; justify-content: center; margin: 16px 0; flex-wrap: wrap; }
+    .footer-links a { color: rgba(255,255,255,0.55); font-size: 0.85rem; text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--primary); }
+
+    @media (max-width: 640px) { .nav-links { display: none; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Biosecurity Training <span>NZ</span></a>
+      <ul class="nav-links">
+        <li><a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a></li>
+        <li><a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a></li>
+        <li><a href="/articles/what-is-the-biosecurity-business-pledge.html">Business Pledge</a></li>
+        <li><a href="/articles/qconz-ap-biosecurity-training-course.html">QCONZ Course</a></li>
+        <li><a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener">Free Courses</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="article-hero">
+    <div class="article-hero-inner">
+      <nav class="breadcrumb">
+        <a href="/">Home</a>
+        <span>›</span>
+        <span style="color: rgba(255,255,255,0.7);">Site Access Management for Transitional Facilities</span>
+      </nav>
+      <span class="article-kicker">Transitional Facilities</span>
+      <h1>Site Access Management for MPI Approved Transitional Facilities</h1>
+      <p class="lead">Running an MPI Approved Transitional Facility means managing overlapping compliance obligations — biosecurity, health and safety, and for many, aviation security too. SiteKey provides the site access layer that ties it all together.</p>
+    </div>
+  </div>
+
+  <div class="article-body">
+
+    <h2>The Compliance Reality for Transitional Facilities</h2>
+    <p>An MPI Approved Transitional Facility (TF) is an approved premises where imported goods are held, inspected, or treated before being granted biosecurity clearance. Cold stores, container yards, freight terminals, and bonded warehouses all fall under this definition.</p>
+    <p>Operating a TF means you are not just a logistics business. You are an authorised part of New Zealand's biosecurity border — and MPI holds you to that standard. Your site must be managed accordingly: the right people, with the right training, carrying out the right activities, with records to prove it.</p>
+    <p>For many TFs — particularly those handling air freight — there is a second layer of compliance on top of MPI: the Civil Aviation Authority's requirements for air cargo security. Managing both simultaneously, across a workforce that often includes contractors and casuals, is the day-to-day operational reality.</p>
+
+    <div class="callout">
+      <div class="callout-label">Key Consideration</div>
+      <p>Every person who enters a Transitional Facility to carry out regulated activities must be authorised to do so. That means knowing who is on site, that they hold the right training, and that your records are accurate enough to withstand an MPI audit.</p>
+    </div>
+
+    <h2>Three Compliance Layers Every TF Needs to Manage</h2>
+
+    <div class="compliance-grid">
+      <div class="compliance-item">
+        <h4>MPI Biosecurity</h4>
+        <p>Accredited Person requirements, inspection procedures, treatment records, and site access controls for imported goods handling.</p>
+      </div>
+      <div class="compliance-item">
+        <h4>Health &amp; Safety</h4>
+        <p>HSWA 2015 obligations — site inductions, contractor management, accurate on-site records, and live evacuation capability.</p>
+      </div>
+      <div class="compliance-item">
+        <h4>Aviation Security</h4>
+        <p>For air freight TFs — CAA's Civil Aviation Rules around Regulated Air Cargo Agents and known customer obligations.</p>
+      </div>
+    </div>
+
+    <p>These three frameworks overlap significantly. A contractor arriving at your TF needs to have completed biosecurity induction, hold current site induction, and — if your facility handles air cargo — may also need to be validated against your aviation security obligations. Managing this manually, through spreadsheets and paper sign-in sheets, is how compliance gaps appear.</p>
+
+    <h2>How SiteKey Addresses the Site Access Problem</h2>
+    <p><a href="https://sitekey.nz" target="_blank" rel="noopener">SiteKey</a> is a New Zealand site access and visitor management platform built for operational sites — warehouses, logistics facilities, and distribution centres. For Transitional Facilities, it addresses the practical access control and training verification challenges that sit at the intersection of all three compliance frameworks.</p>
+    <p>SiteKey's compliance gate is the key feature for TF operators. Rather than relying on a manager to manually check whether an arriving contractor has completed their biosecurity induction or holds current AP training, SiteKey automates it at the gate. If the training isn't current, the gate doesn't open.</p>
+
+    <ul class="feature-list">
+      <li><strong>QR pass check-in</strong> — staff, contractors, and visitors scan in and out. No clipboards, no paper.</li>
+      <li><strong>Training compliance gate</strong> — linked to your training platform, SiteKey blocks entry for anyone whose induction or AP training has lapsed.</li>
+      <li><strong>Live evacuation list</strong> — real-time record of who is on-site, accessible instantly from any device. Audit-ready at all times.</li>
+      <li><strong>Contractor pre-registration</strong> — contractors complete required training before they arrive. They scan in on day one, verified and ready.</li>
+      <li><strong>Automatic sign-out</strong> — anyone still showing as on-site at end of shift is automatically signed out. Records stay clean.</li>
+      <li><strong>Full audit trail</strong> — who was on-site, when, and for how long — exportable for MPI or WorkSafe if required.</li>
+    </ul>
+
+    <div class="callout">
+      <div class="callout-label">Leadership Note</div>
+      <p>MPI audits of Transitional Facilities increasingly focus on whether the operator can demonstrate that the right people were on-site doing the right things — not just whether the physical infrastructure is compliant. SiteKey provides that evidence without requiring manual record-keeping.</p>
+    </div>
+
+    <h2>Connecting AP Training to Site Access</h2>
+    <p>The most direct application for TF operators is connecting Accredited Person training verification to the site access gate. Under MPI requirements, activities at a Transitional Facility that require an Accredited Person must be carried out by someone who actually holds current AP accreditation. That sounds obvious — but in practice, tracking AP certification currency across a team of contractors and casuals is operationally difficult.</p>
+    <p>SiteKey's integration with training platforms means you can link AP training completion directly to gate access. An AP whose QCONZ training has expired will be flagged at the gate before they attempt to carry out regulated activities — not discovered during an MPI audit after the fact.</p>
+    <p>For businesses that also need the AP training built and hosted, SiteKey is delivered alongside a bespoke digital learning management system through Capability Solutions — the training and the compliance gate from one supplier, connected end to end.</p>
+
+    <h2>AirCertifyNZ and CAA Obligations for Air Freight TFs</h2>
+    <p>For Transitional Facilities that operate as Regulated Air Cargo Agents (RACAs), there is a second compliance framework running alongside MPI: the Civil Aviation Authority's Civil Aviation Rule 109 (CAR 109), which governs the security of air cargo entering New Zealand's aviation supply chain.</p>
+    <p>Under CAR 109, RACAs are responsible for validating and maintaining oversight of their 'known customers' — exporters and freight principals whose cargo they accept and vouch for within the secure supply chain. <a href="https://www.cbaff.org.nz/air-certify-nz" target="_blank" rel="noopener">AirCertifyNZ</a>, a programme run by the Customs Brokers and Freight Forwarders Federation of New Zealand (CBAFF) in collaboration with OneReg and IVS, is designed to help RACAs meet these obligations efficiently. The programme provides a unified, industry-driven approach to known customer validation — simplifying what is otherwise a labour-intensive compliance process for air freight operators.</p>
+    <p>For TFs that straddle both MPI biosecurity and CAA air cargo security obligations, the operational picture is complex. SiteKey handles the site access and workforce compliance layer — who is on-site, whether they are trained and authorised — while AirCertifyNZ addresses the customer-facing aviation security obligations at the cargo supply chain level. Both are relevant; neither replaces the other.</p>
+
+    <div class="key-takeaway">
+      <div class="callout-label">Key Takeaway</div>
+      <p>MPI Approved Transitional Facilities that also handle air freight face compliance obligations from two separate regulatory frameworks — MPI and the CAA. Managing site access and training verification through SiteKey, and air cargo known-customer obligations through AirCertifyNZ, gives operators a structured approach to both.</p>
+    </div>
+
+    <h2>What Good Looks Like for a TF Operator</h2>
+    <p>A well-run Transitional Facility manages compliance not as a series of separate checklists, but as an integrated system. That means:</p>
+    <ul>
+      <li>Every person on-site is registered, their training is current, and their presence is recorded automatically</li>
+      <li>Accredited Persons are verified at the gate — not assumed</li>
+      <li>An accurate on-site record exists at all times, exportable for MPI, WorkSafe, or CAA on request</li>
+      <li>Contractors arrive pre-registered and pre-inducted — no delays, no paperwork on the day</li>
+      <li>Air cargo security obligations are managed through a recognised programme, not ad-hoc record-keeping</li>
+    </ul>
+    <p>This is achievable without expensive enterprise software or large compliance teams. The right tools, configured correctly for your specific facility, handle the routine work — so your people can focus on the operational work that matters.</p>
+
+    <div class="cta-block">
+      <h3>Manage Your TF Site Access with SiteKey</h3>
+      <p>SiteKey is built for New Zealand operational sites. QR check-in, training compliance gates, and live evacuation lists — from $30/month. Start with the free courses on biosecurity training, then talk to us about connecting SiteKey to your facility.</p>
+      <a href="https://sitekey.nz" target="_blank" rel="noopener" class="btn btn-primary">Visit SiteKey</a>
+      <a href="https://train.capabilitysolutions.co.nz/courses/biosecurity-risk-leadership" target="_blank" rel="noopener" class="btn btn-outline-light">Free Biosecurity Training</a>
+    </div>
+
+    <div class="article-nav">
+      <a href="/articles/qconz-ap-biosecurity-training-course.html">
+        <div class="nav-dir">← Previous</div>
+        <div class="nav-title">The QCONZ AP Biosecurity Training Course</div>
+      </a>
+      <a href="/">
+        <div class="nav-dir">↑ Home</div>
+        <div class="nav-title">Biosecurity Training NZ — All Resources</div>
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Biosecurity Training <span>NZ</span></div>
+      <p>A Capability Solutions resource. Training delivered at <a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener" style="color: var(--primary);">train.capabilitysolutions.co.nz</a></p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a>
+        <a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a>
+        <a href="/articles/qconz-ap-biosecurity-training-course.html">QCONZ Course</a>
+        <a href="https://sitekey.nz" target="_blank" rel="noopener">SiteKey</a>
+        <a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener">Free Courses</a>
+      </div>
+      <p>&copy; 2026 Biosecurity Training NZ.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
