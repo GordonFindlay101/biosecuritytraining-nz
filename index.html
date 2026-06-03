@@ -338,8 +338,110 @@
     .footer-links a { color: rgba(255,255,255,0.6); font-size: 0.88rem; text-decoration: none; transition: color 0.2s; }
     .footer-links a:hover { color: var(--primary); }
 
+    /* QCONZ FEATURE BAND */
+    .qconz-band {
+      background: var(--secondary);
+      padding: 72px 24px;
+    }
+    .qconz-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      gap: 64px;
+      align-items: center;
+    }
+    .qconz-heading {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(1.7rem, 3vw, 2.3rem);
+      color: #fff;
+      line-height: 1.2;
+      margin: 12px 0 16px;
+    }
+    .qconz-heading em { color: var(--primary); font-style: normal; }
+    .qconz-lead {
+      color: rgba(255,255,255,0.78);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+    .qconz-checklist {
+      list-style: none;
+      margin: 0 0 32px;
+      padding: 0;
+    }
+    .qconz-checklist li {
+      color: rgba(255,255,255,0.85);
+      padding: 7px 0 7px 28px;
+      position: relative;
+      font-size: 0.98rem;
+    }
+    .qconz-checklist li::before {
+      content: '✓';
+      color: var(--primary);
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+    }
+    .qconz-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .qconz-testimonial {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(0,181,173,0.25);
+      border-radius: var(--radius);
+      padding: 36px 32px 28px;
+      position: relative;
+    }
+    .qconz-quote-mark {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 5rem;
+      color: var(--primary);
+      opacity: 0.5;
+      line-height: 0.8;
+      margin-bottom: 8px;
+    }
+    .qconz-quote {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.9);
+      line-height: 1.7;
+      font-style: italic;
+      margin-bottom: 24px;
+      border: none;
+      padding: 0;
+    }
+    .qconz-author {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+    }
+    .qconz-author strong {
+      color: #fff;
+      font-size: 1rem;
+    }
+    .qconz-author span {
+      color: rgba(255,255,255,0.55);
+      font-size: 0.88rem;
+      margin-top: 2px;
+    }
+    .qconz-badge {
+      display: inline-block;
+    }
+    .qconz-badge span {
+      display: inline-block;
+      background: rgba(0,181,173,0.15);
+      border: 1px solid rgba(0,181,173,0.35);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 100px;
+    }
+
     @media (max-width: 768px) {
       .ap-band-inner { grid-template-columns: 1fr; gap: 40px; }
+      .qconz-inner { grid-template-columns: 1fr; gap: 40px; }
       .nav-links { display: none; }
     }
   </style>
@@ -390,6 +492,40 @@
   <!-- TRUST BAR -->
   <div class="trust-bar">
     <p>Training resources for <strong>New Zealand businesses, importers, exporters, and logistics professionals</strong> — aligned with MPI and Biosecurity New Zealand requirements.</p>
+  </div>
+
+  <!-- QCONZ FEATURE -->
+  <div class="qconz-band">
+    <div class="qconz-inner">
+      <div class="qconz-content">
+        <p class="section-label" style="color: var(--primary);">MPI-Approved Training</p>
+        <h2 class="qconz-heading">Train anywhere, anytime.<br><em>Get MPI Accredited.</em></h2>
+        <p class="qconz-lead">QCONZ delivers the recognised Accredited Person training for New Zealand — 100% online, so your team can complete it on-site or at home, one module at a time, without the cost and disruption of in-person courses.</p>
+        <ul class="qconz-checklist">
+          <li>MPI-approved for Accredited Person accreditation</li>
+          <li>Complete modules at your own pace — return when it suits</li>
+          <li>No travel, no venue costs — $125 +GST per person</li>
+          <li>Full course, refresher, and free awareness module available</li>
+        </ul>
+        <div class="qconz-actions">
+          <a href="https://biosecuritytraining.qconz.co.nz/" target="_blank" rel="noopener" class="btn btn-primary">Enrol with QCONZ</a>
+          <a href="/articles/qconz-ap-biosecurity-training-course.html" class="btn btn-outline">About the course</a>
+        </div>
+      </div>
+      <div class="qconz-testimonial">
+        <div class="qconz-quote-mark">"</div>
+        <blockquote class="qconz-quote">
+          I found the course easy to follow and very informative and interesting. I also liked being able to complete one or two modules at a time and then come back to the course as time allowed. I would definitely recommend this online training course.
+        </blockquote>
+        <div class="qconz-author">
+          <strong>Steve Pizzey</strong>
+          <span>Team Global Express</span>
+        </div>
+        <div class="qconz-badge">
+          <span>QCONZ AP Sea Container Course Graduate</span>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- FREE COURSES -->
