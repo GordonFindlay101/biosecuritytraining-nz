@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is a Transitional Facility in New Zealand? | Biosecurity Training NZ</title>
+  <meta name="description" content="A plain-English guide to Transitional Facilities in New Zealand — what they are, the TFGen standard, the Operating Manual requirement, and how to meet your obligations under MPI and the Biosecurity Act 1993.">
+  <link rel="canonical" href="https://biosecuritytraining.nz/articles/what-is-a-transitional-facility-in-new-zealand.html">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="What is a Transitional Facility in New Zealand?">
+  <meta property="og:description" content="Plain-English guide to NZ Transitional Facilities — TFGen, the Operating Manual requirement, who operates them, and what MPI requires.">
+  <meta property="og:url" content="https://biosecuritytraining.nz/articles/what-is-a-transitional-facility-in-new-zealand.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Biosecurity Training NZ">
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a Transitional Facility in New Zealand?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Transitional Facility (TF) is a premises approved by MPI where imported goods that may carry biosecurity risk are held, inspected, treated, or cleared before entering New Zealand. TFs are governed by the Biosecurity Act 1993 and must operate in accordance with relevant facility standards, primarily TFGEN (Transitional Facilities for General Uncleared Risk Goods)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is TFGen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TFGen (Transitional Facilities for General Uncleared Risk Goods) is the primary MPI facility standard that governs how most Transitional Facilities must operate. It is made under section 39 of the Biosecurity Act 1993. The current version came into force on 2 October 2025. All TF operators handling general uncleared risk goods must comply with TFGen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do TF operators need an Operating Manual?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. TFGen requires every TF operator to prepare a TF Manual (Operating Manual) that describes how the facility will be operated to meet the standard's requirements. It must include hygiene procedures, a contingency plan for managing biosecurity risks, and the types of goods handled. It must be kept up to date and be readily accessible to staff and MPI inspectors at all times. MPI provides a template."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the TF operator need to complete training?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. To be approved as a TF facility operator, you must have completed and passed an MPI-approved operator training course. This is a prerequisite for MPI approval — not just a recommendation. Staff working at the facility must also complete MPI's biosecurity awareness training, which the operator signs off."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is an Accredited Person in the context of a Transitional Facility?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An Accredited Person (AP) is an individual authorised by MPI to carry out specific biosecurity activities such as inspecting goods or issuing clearances. APs are separately authorised from TF operators and must meet their own training and competency requirements. Many TF operations involve both an approved facility operator and an Accredited Person."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What law governs Transitional Facilities in New Zealand?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Transitional Facilities are governed by the Biosecurity Act 1993. The primary facility standard — TFGen — is issued by MPI under section 39 of that Act. Import Health Standards for specific goods types also apply alongside TFGen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does MPI inspect Transitional Facilities?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. MPI makes verification visits to check whether TF operators are meeting their obligations under TFGen and other relevant regulations. Visits may be notified in advance or unannounced. There is a charge for verification visits under the Biosecurity (Costs) Regulations 2010."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #1a2b3c;
+      --navy-dark: #0f1d2b;
+      --teal: #2ab5a5;
+      --teal-dark: #219e90;
+      --text: #2c3e50;
+      --text-light: #5a6a7a;
+      --bg-light: #f7f9fb;
+      --white: #ffffff;
+      --border: #dde3e9;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text);
+      line-height: 1.7;
+      background: var(--white);
+    }
+
+    /* NAV */
+    nav {
+      background: var(--navy-dark);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      font-family: Georgia, serif;
+      font-size: 1.1rem;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .nav-logo span { color: var(--teal); }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--teal); }
+
+    /* BREADCRUMB */
+    .breadcrumb {
+      background: rgba(255,255,255,0.08);
+      position: absolute;
+      top: 64px;
+      left: 0; right: 0;
+      padding: 0.7rem 2rem;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.6);
+      z-index: 2;
+    }
+    .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--teal); }
+    .breadcrumb span { margin: 0 0.4rem; }
+
+    /* HERO */
+    .article-hero {
+      background: var(--navy);
+      background-image: url('https://biosecuritytraining.nz/images/hero-tf-worker.jpg');
+      background-size: cover;
+      background-position: center;
+      color: var(--white);
+      padding: 6rem 2rem 4rem;
+      position: relative;
+    }
+    .article-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: rgba(15, 29, 43, 0.78);
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+    }
+    .article-hero .tag {
+      display: inline-block;
+      background: rgba(42,181,165,0.2);
+      color: var(--teal);
+      border: 1px solid rgba(42,181,165,0.4);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.9rem;
+      border-radius: 100px;
+      margin-bottom: 1.2rem;
+    }
+    .article-hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+    .article-hero p {
+      color: rgba(255,255,255,0.75);
+      max-width: 580px;
+      font-size: 1.05rem;
+    }
+
+    /* LAYOUT */
+    .article-wrap {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 3.5rem;
+      align-items: start;
+    }
+
+    /* ARTICLE BODY */
+    .article-body h2 {
+      font-family: Georgia, serif;
+      font-size: 1.45rem;
+      color: var(--navy);
+      margin: 2.8rem 0 0.8rem;
+      padding-top: 2.5rem;
+      border-top: 2px solid var(--border);
+    }
+    .article-body h2:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
+    .article-body h3 {
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin: 1.5rem 0 0.5rem;
+      font-weight: 600;
+    }
+    .article-body p { margin-bottom: 1.1rem; font-size: 1rem; }
+    .article-body ul, .article-body ol {
+      margin: 0.8rem 0 1.1rem 1.3rem;
+    }
+    .article-body li { margin-bottom: 0.45rem; }
+    .article-body strong { color: var(--navy); }
+    .article-body a { color: var(--teal-dark); }
+
+    /* CALLOUT BOXES */
+    .callout {
+      border-left: 4px solid var(--teal);
+      background: rgba(42,181,165,0.06);
+      padding: 1rem 1.2rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5rem 0;
+    }
+    .callout-warn {
+      border-left-color: #e67e22;
+      background: rgba(230,126,34,0.06);
+    }
+    .callout-alert {
+      border-left-color: #c0392b;
+      background: rgba(192,57,43,0.05);
+    }
+    .callout p { margin: 0; font-size: 0.95rem; }
+    .callout-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.4rem;
+    }
+    .callout-warn .callout-label { color: #e67e22; }
+    .callout-alert .callout-label { color: #c0392b; }
+
+    /* CTA INLINE */
+    .cta-inline {
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 2.5rem 0;
+      text-align: center;
+    }
+    .cta-inline h3 {
+      font-family: Georgia, serif;
+      font-size: 1.25rem;
+      margin-bottom: 0.6rem;
+      color: var(--white);
+    }
+    .cta-inline p {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.95rem;
+      margin-bottom: 1.2rem;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--teal);
+      color: var(--white);
+      text-decoration: none;
+      padding: 0.7rem 1.6rem;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: var(--teal-dark); }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.4);
+      margin-left: 0.5rem;
+    }
+    .btn-outline:hover { border-color: var(--teal); background: rgba(42,181,165,0.1); }
+
+    /* SIDEBAR */
+    .sidebar { position: sticky; top: 2rem; }
+    .sidebar-card {
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .sidebar-card h4 {
+      font-family: Georgia, serif;
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+    }
+    .sidebar-card p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+    .sidebar-card .btn { width: 100%; text-align: center; font-size: 0.85rem; }
+    .sidebar-toc {
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.2rem 1.5rem;
+    }
+    .sidebar-toc h4 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 0.8rem;
+    }
+    .sidebar-toc ul { list-style: none; margin: 0; padding: 0; }
+    .sidebar-toc li { margin-bottom: 0.5rem; }
+    .sidebar-toc a {
+      font-size: 0.88rem;
+      color: var(--teal-dark);
+      text-decoration: none;
+      line-height: 1.4;
+    }
+    .sidebar-toc a:hover { text-decoration: underline; }
+    .mpi-link-box {
+      background: var(--bg-light);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin-top: 1.5rem;
+    }
+    .mpi-link-box h4 {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 0.6rem;
+    }
+    .mpi-link-box ul { list-style: none; margin: 0; padding: 0; }
+    .mpi-link-box li { margin-bottom: 0.4rem; }
+    .mpi-link-box a { font-size: 0.82rem; color: var(--teal-dark); }
+
+    /* FAQ SECTION */
+    .faq-section {
+      background: var(--bg-light);
+      border-top: 1px solid var(--border);
+      padding: 3rem 2rem;
+    }
+    .faq-inner { max-width: 760px; margin: 0 auto; }
+    .faq-inner h2 {
+      font-family: Georgia, serif;
+      font-size: 1.6rem;
+      color: var(--navy);
+      margin-bottom: 2rem;
+    }
+    details {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--white);
+      margin-bottom: 0.8rem;
+      overflow: hidden;
+    }
+    summary {
+      padding: 1rem 1.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--navy);
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: '+'; font-size: 1.3rem; color: var(--teal); flex-shrink: 0; margin-left: 1rem; }
+    details[open] summary::after { content: '−'; }
+    .faq-answer { padding: 0 1.2rem 1rem; color: var(--text); font-size: 0.95rem; line-height: 1.7; }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy-dark);
+      color: rgba(255,255,255,0.6);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--teal); text-decoration: none; }
+
+    /* RESPONSIVE */
+    @media (max-width: 720px) {
+      .article-wrap { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      .breadcrumb { position: static; }
+      .article-hero { padding: 3.5rem 1.2rem 2.5rem; }
+    }
+    @media (max-width: 500px) {
+      nav { padding: 0 1rem; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="https://biosecuritytraining.nz" class="nav-logo">Biosecurity Training <span>NZ</span></a>
+  <ul class="nav-links">
+    <li><a href="https://biosecuritytraining.nz/articles/nz-biosecurity-what-every-business-needs-to-know">For Businesses</a></li>
+    <li><a href="https://biosecuritytraining.nz/articles/what-is-an-accredited-person-ap-new-zealand">Accredited Person</a></li>
+    <li><a href="https://biosecuritytraining.nz/training">Training</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="article-hero">
+  <div class="breadcrumb">
+    <a href="https://biosecuritytraining.nz">Home</a>
+    <span>›</span>
+    <span>What is a Transitional Facility in New Zealand?</span>
+  </div>
+  <div class="hero-inner">
+    <div class="tag">Transitional Facilities</div>
+    <h1>What is a Transitional Facility in New Zealand?</h1>
+    <p>A plain-English guide to TF operations, the TFGen standard, the Operating Manual requirement, and what you need to meet your MPI obligations.</p>
+  </div>
+</header>
+
+<!-- ARTICLE + SIDEBAR -->
+<div class="article-wrap">
+  <article class="article-body">
+
+    <h2>The Short Answer</h2>
+    <p>A <strong>Transitional Facility (TF)</strong> is a premises approved by the Ministry for Primary Industries (MPI) where imported goods that may carry biosecurity risk are held, inspected, treated, or cleared before they can enter New Zealand freely.</p>
+    <p>Think of a TF as the last checkpoint between an imported shipment and the New Zealand environment. Goods that could harbour pests, diseases, or contaminants — anything from timber to machinery to fresh produce — must pass through an approved TF before they are released.</p>
+
+    <div class="callout">
+      <div class="callout-label">Key Point</div>
+      <p>Transitional Facilities operate under the <strong>Biosecurity Act 1993</strong>. The primary governing standard for most TFs is <strong>TFGen</strong> — the Facility Standard for Transitional Facilities for General Uncleared Risk Goods — issued by MPI under section 39 of that Act. The current version came into force on <strong>2 October 2025</strong>.</p>
+    </div>
+
+    <h2 id="what-happens">What Actually Happens at a Transitional Facility?</h2>
+    <p>Depending on the type of goods being imported, a TF may be used for:</p>
+    <ul>
+      <li><strong>Holding goods</strong> securely while awaiting inspection or clearance</li>
+      <li><strong>Inspecting goods</strong> for pests, contaminants, or non-compliance with import requirements</li>
+      <li><strong>Treating goods</strong> — for example, fumigation, heat treatment, or irradiation</li>
+      <li><strong>Decontamination</strong> of equipment or containers</li>
+      <li><strong>Releasing goods</strong> into New Zealand once they have met all biosecurity requirements</li>
+    </ul>
+    <p>Not every TF does all of these things. Many are approved for a specific function — a cool store might be approved to hold fresh produce pending inspection; a fumigation provider might be approved specifically to treat timber.</p>
+
+    <h2 id="tfgen">The TFGen Standard — What It Governs</h2>
+    <p>Most TF operators are governed by <strong>TFGen</strong> (Transitional Facilities for General Uncleared Risk Goods). This is MPI's facility standard for TFs that receive general uncleared risk goods, including:</p>
+    <ul>
+      <li>Air and sea containers</li>
+      <li>Inorganic risk goods</li>
+      <li>Wood and forestry products</li>
+      <li>Plants and plant material</li>
+      <li>Live animals</li>
+      <li>Biological products (for holding only)</li>
+    </ul>
+    <p>TFGen sets out the operational requirements your facility must meet — from physical security and hygiene, to record-keeping, contingency planning, and staff training. MPI also publishes a guidance document (TFGEN-GD) and a separate health, safety and wellbeing guidance document (TFGEN-GD-HSW) to help operators understand and meet those requirements.</p>
+
+    <div class="callout callout-warn">
+      <div class="callout-label">Note</div>
+      <p>TFGen applies to general uncleared risk goods. If your facility handles specific goods types — such as cats and dogs, biological products, or animals — there may be <strong>additional facility standards</strong> that apply on top of TFGen. Check MPI's full list of facility standards for your goods type. Import Health Standards for specific goods also apply alongside TFGen.</p>
+    </div>
+
+    <h2 id="operating-manual">The TF Operating Manual — A Mandatory Requirement</h2>
+    <p>One of the most significant requirements under TFGen that many operators underestimate is the <strong>TF Manual</strong> (Operating Manual). This is not optional.</p>
+    <p>TFGen requires every approved TF to have a written TF Manual that:</p>
+    <ul>
+      <li>Describes the types of risk goods held at the facility and the purpose of importation</li>
+      <li>Documents all activities that will be conducted, including any processing or treatment</li>
+      <li>Specifies hygiene procedures — including prevention of debris, dunnage, packaging, or soil accumulation that could pose a biosecurity risk</li>
+      <li>Includes a written contingency plan to manage all identified biosecurity risks at the facility</li>
+      <li>Is kept up to date at all times</li>
+      <li>Is <strong>readily accessible to staff and MPI inspectors at all times</strong></li>
+    </ul>
+    <p>MPI provides a template to help operators prepare their TF Manual. You can find the TFGEN Operating Manual template on the MPI website.</p>
+
+    <div class="callout callout-alert">
+      <div class="callout-label">Do Not Overlook This</div>
+      <p>During MPI verification visits, operators are expected to provide evidence of compliance with their TF Manual. If your manual is out of date, incomplete, or not accessible on site, this is a compliance failure — regardless of how well the facility is otherwise run.</p>
+    </div>
+
+    <h2 id="who-operates">Who Operates Transitional Facilities?</h2>
+    <p>A wide range of businesses operate as TF operators, including:</p>
+    <ul>
+      <li>Freight forwarders and customs brokers</li>
+      <li>Port and airport operators</li>
+      <li>Importers with their own warehousing</li>
+      <li>Cool stores and temperature-controlled facilities</li>
+      <li>Fumigation and pest control companies</li>
+      <li>Container depots and logistics providers</li>
+    </ul>
+    <p>If your business regularly handles imported goods that require biosecurity clearance, you may need to apply to become a TF operator — or ensure you are using an approved one.</p>
+
+    <div class="callout callout-warn">
+      <div class="callout-label">Important</div>
+      <p>If you store or handle imported goods on your premises before they have been biosecurity-cleared, you may need TF approval — even if freight and logistics is not your core business. Check with MPI if you are unsure. Operating without approval when required is an offence under the Biosecurity Act 1993.</p>
+    </div>
+
+    <h2 id="how-to-become">How Do You Become a TF Operator?</h2>
+    <p>To become an approved TF operator, you must follow a specific process set out by MPI. The steps are:</p>
+    <ol>
+      <li><strong>Complete an MPI-approved operator training course</strong> — this is a hard prerequisite. You cannot be approved as a facility operator without it.</li>
+      <li><strong>Register with MPI</strong> as a facility operator (individuals) or have your nominated delegate registered (companies).</li>
+      <li><strong>Submit a facility application</strong> — including your proposed TF Manual and evidence that your premises and systems meet the relevant facility standard requirements.</li>
+    </ol>
+    <p>Where a company is the facility operator, the company must identify a <strong>nominated delegate</strong> — a senior person who holds MPI-approved operator training and will be MPI's point of contact for approval, compliance, and verification matters.</p>
+    <p>Note: MPI charges for processing your application, whether or not it is approved, under the <strong>Biosecurity (Costs) Regulations 2010</strong>. Ensure your application is complete before submitting.</p>
+
+    <h2 id="training">Training Requirements for TF Operations</h2>
+    <p>There are two distinct training obligations under TFGen:</p>
+
+    <h3>1. Facility Operator Training</h3>
+    <p>The person who will be the approved facility operator must have completed and passed an <strong>MPI-approved operator training course</strong>. This is a condition of MPI approval — not just a recommended step. Contact MPI's approved training providers for course dates and locations.</p>
+
+    <h3>2. Staff Biosecurity Awareness Training</h3>
+    <p>All staff working at a Transitional Facility must understand what biosecurity is and how it is managed. MPI has created a specific <strong>biosecurity awareness training module</strong> for TF staff. Key points:</p>
+    <ul>
+      <li>The module is available online from MPI</li>
+      <li>The facility operator must sign off that each staff member has completed it</li>
+      <li>A certificate is available at the end of the module — operators should file this as proof of completion</li>
+      <li>This training should cover: biosecurity obligations under the Act, health and safety requirements specific to TF environments, how to identify and report potential biosecurity breaches, and correct procedures for handling, storing, and releasing goods</li>
+    </ul>
+
+    <div class="callout">
+      <div class="callout-label">Key Point</div>
+      <p>Training records must be maintained and be available to MPI during verification visits. "They know what to do" is not sufficient — documented completion is required.</p>
+    </div>
+
+    <div class="cta-inline">
+      <h3>TF Health &amp; Safety Training — Online</h3>
+      <p>Our Transitional Facility H&amp;S course covers the health and safety obligations specific to NZ TF environments. Self-paced, NZ-specific, aligned with MPI's expectations for TF staff training.</p>
+      <a href="https://train.capabilitysolutions.co.nz/courses/Transitional-Facility-HandS-Working-Safely-with-MPI" class="btn">Start TF Training</a>
+      <a href="https://biosecuritytraining.nz/for-businesses" class="btn btn-outline">For Businesses</a>
+    </div>
+
+    <h2 id="mpi-verification">MPI Verification Visits</h2>
+    <p>Once approved, TF operators are subject to <strong>ongoing MPI verification visits</strong>. These visits check whether you are meeting the requirements of TFGen and any other relevant regulations. Key points:</p>
+    <ul>
+      <li>Visits may be notified in advance or <strong>unannounced</strong></li>
+      <li>Frequency is based on your compliance history, the biosecurity risk of your operation, and the complexity of your facility</li>
+      <li>Operators are expected to be present during visits and to provide evidence of compliance</li>
+      <li>There is a <strong>charge for verification visits</strong> under the Biosecurity (Costs) Regulations 2010</li>
+    </ul>
+    <p>This is why having your TF Manual current, your training records filed, and your operating procedures actually followed — not just documented — matters.</p>
+
+    <h2 id="accredited-persons">What About Accredited Persons?</h2>
+    <p>An <strong>Accredited Person (AP)</strong> is someone separately authorised by MPI to carry out specific biosecurity functions — such as inspecting goods or issuing clearances — within a TF or elsewhere in the supply chain. APs are distinct from TF operators, though in practice they often work closely together.</p>
+    <p>An AP must meet their own training and competency requirements, separate from the TF operator obligations. Being an approved TF operator does not make you an Accredited Person, and vice versa.</p>
+    <p>If you are interested in becoming an Accredited Person, <a href="https://biosecuritytraining.nz/articles/what-is-an-accredited-person-ap-new-zealand">our Accredited Person page</a> explains the role and requirements in detail.</p>
+
+    <h2 id="site-access">Managing Site Access at Your TF</h2>
+    <p>One of the most overlooked operational challenges for TF operators is <strong>controlling who comes in and out</strong> of the facility — and demonstrating that control to MPI.</p>
+    <p>A biosecurity-secure facility needs more than a sign-in sheet. When contractors, delivery drivers, or casual workers access your TF, you need to be confident they have been inducted, understand the biosecurity rules, and that there is a clear, auditable record of their access.</p>
+    <p>Many TF operators are now using digital site access systems to manage this — ensuring site access is only granted after staff have completed induction training, and maintaining automated records of who was on site and when. This creates exactly the kind of documented evidence MPI expects to see during a verification visit.</p>
+    <p>If you are looking for a purpose-built solution for this, <a href="https://sitekey.nz" target="_blank" rel="noopener">SiteKey</a> is designed specifically for businesses that need to control site access and link it to training completion.</p>
+
+    <h2 id="summary">Summary</h2>
+    <p>A Transitional Facility is a legally approved premises where imported goods are held or processed before biosecurity clearance into New Zealand. TF operators carry significant obligations under the Biosecurity Act 1993 and the TFGen facility standard.</p>
+    <p>The key things to have in order:</p>
+    <ol>
+      <li><strong>Operator training</strong> — the facility operator must hold an MPI-approved operator training qualification before approval is granted.</li>
+      <li><strong>TF Operating Manual</strong> — a written, current, accessible manual that covers your operation, hygiene procedures, and contingency plan. MPI provides a template.</li>
+      <li><strong>Staff awareness training</strong> — all TF staff must complete MPI's biosecurity awareness module, with completion signed off by the operator and records kept on file.</li>
+      <li><strong>Verification readiness</strong> — MPI can visit at any time. Your systems, records, and people need to reflect your TF Manual — not just exist on paper.</li>
+    </ol>
+    <p>Both training and site access management are things we can help with at <a href="https://biosecuritytraining.nz">biosecuritytraining.nz</a>.</p>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <h4>TF Health &amp; Safety Training</h4>
+      <p>Online training for staff working in or around New Zealand Transitional Facilities. Self-paced, NZ-specific, free to start.</p>
+      <a href="https://train.capabilitysolutions.co.nz/courses/Transitional-Facility-HandS-Working-Safely-with-MPI" class="btn">Start Training</a>
+    </div>
+
+    <div class="sidebar-toc">
+      <h4>On this page</h4>
+      <ul>
+        <li><a href="#tfgen">The TFGen Standard</a></li>
+        <li><a href="#operating-manual">The Operating Manual</a></li>
+        <li><a href="#who-operates">Who operates TFs?</a></li>
+        <li><a href="#how-to-become">Becoming a TF operator</a></li>
+        <li><a href="#training">Training requirements</a></li>
+        <li><a href="#mpi-verification">MPI verification visits</a></li>
+        <li><a href="#accredited-persons">Accredited Persons</a></li>
+        <li><a href="#site-access">Site access management</a></li>
+        <li><a href="#summary">Summary</a></li>
+      </ul>
+    </div>
+
+    <div class="mpi-link-box">
+      <h4>MPI Resources</h4>
+      <ul>
+        <li><a href="https://www.mpi.govt.nz/dmsdocument/1615-Transitional-Facilities-for-General-Uncleared-Risk-Goods-Facility-Standard" target="_blank" rel="noopener">TFGen Facility Standard (PDF)</a></li>
+        <li><a href="https://www.mpi.govt.nz/dmsdocument/4537-tfgen-operating-manual-template" target="_blank" rel="noopener">TF Manual Template (DOCX)</a></li>
+        <li><a href="https://www.mpi.govt.nz/import/border-clearance/transitional-and-containment-facilities-for-border-clearance/responsibilities-of-an-approved-facility-operator" target="_blank" rel="noopener">Operator Responsibilities</a></li>
+        <li><a href="https://www.mpi.govt.nz/import/border-clearance/transitional-and-containment-facilities-for-border-clearance/apply-to-get-facility-operator-approval" target="_blank" rel="noopener">Apply for Approval</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="faq-inner">
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+      <summary>What is TFGen and does it apply to my facility?</summary>
+      <div class="faq-answer">
+        <p>TFGen is MPI's Facility Standard for Transitional Facilities for General Uncleared Risk Goods — the primary document that governs how most TFs must operate. It is issued under section 39 of the Biosecurity Act 1993. If your TF receives general uncleared risk goods (including sea/air containers, wood products, plants, live animals, or inorganic risk goods), TFGen applies to you. Some facilities may also be subject to additional specific facility standards, depending on the goods handled.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Is a TF Operating Manual actually required by law?</summary>
+      <div class="faq-answer">
+        <p>Yes. TFGen — which is legally binding secondary legislation made under the Biosecurity Act 1993 — requires every TF to maintain a written TF Manual. It must describe how the facility is operated to meet TFGen's requirements, include hygiene procedures, and contain a contingency plan for managing biosecurity risks. It must be accessible to staff and MPI inspectors at all times. MPI provides an operating manual template on their website to help operators prepare this document.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What's the difference between a TF operator and an Accredited Person?</summary>
+      <div class="faq-answer">
+        <p>A TF operator is the person or company responsible for the facility itself — its physical security, operating systems, and compliance with TFGen. An Accredited Person (AP) is an individual separately authorised by MPI to carry out specific biosecurity activities such as inspections or treatments. Both roles have their own training and approval requirements. The same business can hold both, but they are separate authorisations.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Does the facility operator need training before applying for approval?</summary>
+      <div class="faq-answer">
+        <p>Yes — this is a hard prerequisite. To be approved as a TF facility operator (individual or company nominated delegate), you must have completed and passed an MPI-approved operator training course. You cannot register with MPI or submit a facility application without this. Contact MPI's approved training providers for course information.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Does my business need TF approval if we store imported goods?</summary>
+      <div class="faq-answer">
+        <p>Potentially yes. If you are holding imported goods that have not yet received biosecurity clearance, you may need to be an approved TF — even if freight and logistics is not your primary business. This is a question worth checking with MPI directly. Operating without approval when required is an offence under the Biosecurity Act 1993.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How often does MPI visit for compliance checks?</summary>
+      <div class="faq-answer">
+        <p>MPI makes verification visits to all approved TFs to check compliance with TFGen and other applicable requirements. The frequency depends on your compliance history, the biosecurity risk of your operation, and the complexity of your facility. Visits can be notified or unannounced. There is a charge for these visits under the Biosecurity (Costs) Regulations 2010.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Can TF staff complete their biosecurity awareness training online?</summary>
+      <div class="faq-answer">
+        <p>Yes. MPI has an online biosecurity awareness training module specifically for TF staff. Completion must be signed off by the facility operator, and a certificate is available at the end of the module for filing as proof. Online training is well-suited to TF environments where staff rosters change frequently and you need people trained before they start on site. Our courses at biosecuritytraining.nz are also designed for this — self-paced, accessible from any device, with completion records you can keep on file.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p><a href="https://biosecuritytraining.nz">biosecuritytraining.nz</a> &nbsp;·&nbsp; New Zealand's Biosecurity Training Resource &nbsp;·&nbsp; Aligned with MPI requirements</p>
+</footer>
+
+</body>
+</html>
