@@ -1,0 +1,26 @@
+# Biosecurity Training NZ
+
+> New Zealand's dedicated biosecurity training resource for businesses, importers, exporters, logistics professionals, and Transitional Facility operators. Aligned with MPI (Ministry for Primary Industries) and Biosecurity New Zealand requirements.
+
+Biosecurity Training NZ provides free online biosecurity awareness training for staff at MPI Approved Transitional Facilities, professional Accredited Person (AP) accreditation pathways via QCONZ, and plain-English guides to New Zealand biosecurity law and compliance.
+
+## Key Pages
+
+- [Home](https://biosecuritytraining.nz/): Overview of all training resources and accreditation pathways
+- [Training Courses](https://biosecuritytraining.nz/training.html): Free TF staff training and MPI-approved AP training via QCONZ
+- [What is a Transitional Facility in New Zealand?](https://biosecuritytraining.nz/articles/what-is-a-transitional-facility-in-new-zealand.html): TFGen standard, Operating Manual requirement, operator training obligations
+- [What is an Accredited Person (AP) in New Zealand?](https://biosecuritytraining.nz/articles/what-is-an-accredited-person-ap-new-zealand.html): AP role, which businesses need one, how to become one
+- [NZ Biosecurity: What Every Business Needs to Know](https://biosecuritytraining.nz/articles/nz-biosecurity-what-every-business-needs-to-know.html): Business obligations under the Biosecurity Act 1993
+- [Site Access Management for MPI Approved Transitional Facilities](https://biosecuritytraining.nz/articles/site-access-management-for-transitional-facilities-sitekey.html): Managing contractor and visitor access at TF sites
+- [The QCONZ AP Biosecurity Training Course](https://biosecuritytraining.nz/articles/qconz-ap-biosecurity-training-course.html): MPI-approved AP training for sea container handling
+- [What is the Biosecurity Business Pledge?](https://biosecuritytraining.nz/articles/what-is-the-biosecurity-business-pledge.html): The NZ Biosecurity Business Pledge commitment
+
+## Key Facts
+
+- Training provider: Capability Solutions (train.capabilitysolutions.co.nz)
+- Regulatory authority: Ministry for Primary Industries (MPI), New Zealand
+- Primary legislation: Biosecurity Act 1993
+- Primary facility standard: TFGen (Transitional Facilities for General Uncleared Risk Goods), current version 2 October 2025
+- AP training delivered by: QCONZ (biosecuritytraining.qconz.co.nz)
+- Free awareness training: Available for all TF staff at no cost
+- Paid accreditation: QCONZ AP course (MPI-approved)
