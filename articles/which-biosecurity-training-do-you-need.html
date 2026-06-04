@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://biosecuritytraining.nz/articles/which-biosecurity-training-do-you-need.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Which Biosecurity Training Do You Need? Awareness, Accredited Person, or TFO | Biosecurity Training NZ</title>
+  <meta name="description" content="Biosecurity Awareness, Accredited Person, and Transitional Facility Operator training compared. Find out which MPI training you or your staff actually need.">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #00B5AD;
+      --primary-soft: rgba(0, 181, 173, 0.10);
+      --secondary: #003B49;
+      --heading-text: #003B49;
+      --body-text: #4a4a4a;
+      --bg-light: #ffffff;
+      --bg-offset: #f2f7f7;
+      --radius: 12px;
+    }
+    body { font-family: 'Source Sans Pro', sans-serif; color: var(--body-text); background: var(--bg-light); line-height: 1.7; }
+
+    nav { background: var(--secondary); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { color: #fff; font-family: 'Libre Baskerville', serif; font-size: 1.1rem; font-weight: 700; text-decoration: none; }
+    .nav-logo span { color: var(--primary); }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.92rem; font-weight: 600; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--primary); }
+
+    .article-hero { background:
+    linear-gradient(rgba(0,59,73,0.78), rgba(0,59,73,0.78)),
+    url('/images/hero-qconz-ap-training-course.webp') center/cover no-repeat; padding: 72px 24px 60px; }
+    .article-hero-inner { max-width: 760px; margin: 0 auto; }
+    .breadcrumb { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; font-size: 0.85rem; }
+    .breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
+    .breadcrumb a:hover { color: var(--primary); }
+    .breadcrumb span { color: rgba(255,255,255,0.35); }
+    .article-kicker { display: inline-block; background: var(--primary-soft); border: 1px solid var(--primary); color: var(--primary); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; margin-bottom: 18px; }
+    .article-hero h1 { font-family: 'Libre Baskerville', serif; font-size: clamp(1.8rem, 4vw, 2.6rem); color: #fff; line-height: 1.2; margin-bottom: 16px; }
+    .article-hero .lead { font-size: 1.12rem; color: rgba(255,255,255,0.78); line-height: 1.7; }
+
+    .article-body { max-width: 760px; margin: 0 auto; padding: 56px 24px 40px; }
+    .article-body h2 { font-family: 'Libre Baskerville', serif; font-size: 1.55rem; color: var(--heading-text); margin: 48px 0 16px; line-height: 1.3; }
+    .article-body h2:first-child { margin-top: 0; }
+    .article-body h3 { font-family: 'Libre Baskerville', serif; font-size: 1.2rem; color: var(--heading-text); margin: 32px 0 12px; }
+    .article-body p { margin-bottom: 18px; font-size: 1.05rem; }
+    .article-body ul, .article-body ol { margin: 0 0 18px 24px; font-size: 1.05rem; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body a.inline { color: #008078; font-weight: 600; text-decoration: underline; text-decoration-color: rgba(0,181,173,0.4); text-underline-offset: 2px; }
+    .article-body a.inline:hover { text-decoration-color: var(--primary); }
+
+    .compare-wrap { max-width: 1000px; margin: 0 auto 8px; padding: 0 24px; }
+    .compare-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    table.compare { width: 100%; border-collapse: separate; border-spacing: 0; min-width: 640px; background: #fff; border-radius: var(--radius); overflow: hidden; box-shadow: 0 4px 20px rgba(0,59,73,0.08); }
+    table.compare th, table.compare td { padding: 16px 18px; text-align: left; vertical-align: top; font-size: 0.97rem; border-bottom: 1px solid rgba(0,59,73,0.08); }
+    table.compare thead th { background: var(--secondary); color: #fff; font-family: 'Libre Baskerville', serif; font-weight: 700; font-size: 1rem; }
+    table.compare thead th:first-child { background: #002b36; }
+    table.compare tbody th { background: var(--bg-offset); color: var(--heading-text); font-weight: 700; width: 170px; }
+    table.compare tbody tr:last-child th, table.compare tbody tr:last-child td { border-bottom: none; }
+    table.compare td strong { color: var(--heading-text); }
+
+    .callout { background: var(--bg-offset); border-left: 4px solid var(--primary); border-radius: 0 var(--radius) var(--radius) 0; padding: 20px 24px; margin: 32px 0; }
+    .callout-warn { border-left-color: #e08b2d; background: rgba(224,139,45,0.08); }
+    .callout-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--primary); margin-bottom: 8px; }
+    .callout-warn .callout-label { color: #c9760f; }
+    .callout p { margin: 0; font-size: 1rem; }
+
+    .key-takeaway { background: var(--secondary); border-radius: var(--radius); padding: 28px 32px; margin: 40px 0; }
+    .key-takeaway .callout-label { color: var(--primary); }
+    .key-takeaway p { color: rgba(255,255,255,0.85); margin: 0; font-size: 1.05rem; }
+
+    .step-list { list-style: none; margin: 0 0 24px; counter-reset: steps; }
+    .step-list li {
+      counter-increment: steps;
+      padding: 16px 16px 16px 60px;
+      position: relative;
+      background: var(--bg-offset);
+      border-radius: var(--radius);
+      margin-bottom: 12px;
+      font-size: 1.02rem;
+    }
+    .step-list li::before {
+      content: counter(steps);
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.88rem;
+    }
+    .step-list li strong { color: var(--heading-text); }
+
+    .cta-block { background: linear-gradient(135deg, var(--secondary), #005a6b); border-radius: var(--radius); padding: 36px 32px; margin: 48px 0; text-align: center; }
+    .cta-block h3 { font-family: 'Libre Baskerville', serif; color: #fff; font-size: 1.4rem; margin-bottom: 10px; }
+    .cta-block p { color: rgba(255,255,255,0.75); margin-bottom: 24px; font-size: 1rem; }
+    .btn { display: inline-block; padding: 13px 26px; border-radius: 100px; font-family: 'Source Sans Pro', sans-serif; font-size: 0.98rem; font-weight: 700; text-decoration: none; transition: all 0.2s; margin: 6px; }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: #009a93; transform: translateY(-1px); }
+    .btn-outline-light { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.45); }
+    .btn-outline-light:hover { border-color: #fff; transform: translateY(-1px); }
+
+    .faq-section { max-width: 760px; margin: 0 auto; padding: 0 24px 72px; }
+    .faq-section h2 { font-family: 'Libre Baskerville', serif; font-size: 1.55rem; color: var(--heading-text); margin-bottom: 20px; }
+    .faq-section details { background: var(--bg-offset); border-radius: var(--radius); padding: 0; margin-bottom: 12px; overflow: hidden; }
+    .faq-section summary { cursor: pointer; padding: 18px 22px; font-weight: 700; color: var(--heading-text); font-size: 1.05rem; list-style: none; position: relative; }
+    .faq-section summary::-webkit-details-marker { display: none; }
+    .faq-section summary::after { content: '+'; position: absolute; right: 22px; top: 50%; transform: translateY(-50%); color: var(--primary); font-size: 1.4rem; font-weight: 700; }
+    .faq-section details[open] summary::after { content: '\2212'; }
+    .faq-answer { padding: 0 22px 20px; }
+    .faq-answer p { margin: 0; font-size: 1rem; }
+
+    .article-nav { display: flex; gap: 16px; max-width: 760px; margin: 0 auto; padding: 0 24px 64px; flex-wrap: wrap; }
+    .article-nav a { flex: 1; min-width: 200px; background: var(--bg-offset); border-radius: var(--radius); padding: 18px 20px; text-decoration: none; transition: box-shadow 0.2s; }
+    .article-nav a:hover { box-shadow: 0 4px 16px rgba(0,59,73,0.1); }
+    .article-nav .nav-dir { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--primary); font-weight: 700; margin-bottom: 4px; }
+    .article-nav .nav-title { font-family: 'Libre Baskerville', serif; font-size: 1rem; color: var(--heading-text); }
+
+    footer { background: var(--secondary); padding: 40px 24px 28px; text-align: center; }
+    .footer-inner { max-width: 700px; margin: 0 auto; }
+    .footer-logo { font-family: 'Libre Baskerville', serif; font-size: 1.1rem; color: #fff; font-weight: 700; margin-bottom: 10px; }
+    .footer-logo span { color: var(--primary); }
+    footer p { color: rgba(255,255,255,0.5); font-size: 0.85rem; margin-bottom: 6px; }
+    .footer-links { display: flex; gap: 18px; justify-content: center; margin: 16px 0; flex-wrap: wrap; }
+    .footer-links a { color: rgba(255,255,255,0.55); font-size: 0.85rem; text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--primary); }
+
+    @media (max-width: 640px) { .nav-links { display: none; } }
+  </style>
+  <link rel="preload" as="image" href="/images/hero-qconz-ap-training-course.webp" type="image/webp">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Which Biosecurity Training Do You Need? Awareness, Accredited Person, or TFO">
+  <meta property="og:description" content="Biosecurity Awareness, Accredited Person, and Transitional Facility Operator training compared. Find out which MPI training you or your staff actually need.">
+  <meta property="og:url" content="https://biosecuritytraining.nz/articles/which-biosecurity-training-do-you-need.html">
+  <meta property="og:image" content="https://biosecuritytraining.nz/images/hero-qconz-ap-training-course.jpg">
+  <meta property="og:image:width" content="1440">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="Biosecurity training session for transitional facility staff in New Zealand">
+  <meta property="og:site_name" content="Biosecurity Training NZ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Which Biosecurity Training Do You Need?">
+  <meta name="twitter:description" content="Biosecurity Awareness, Accredited Person, and Transitional Facility Operator training compared for New Zealand businesses.">
+  <meta name="twitter:image" content="https://biosecuritytraining.nz/images/hero-qconz-ap-training-course.jpg">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Biosecurity Training <span>NZ</span></a>
+      <ul class="nav-links">
+        <li><a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a></li>
+        <li><a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a></li>
+        <li><a href="/articles/what-is-the-biosecurity-business-pledge.html">Business Pledge</a></li>
+        <li><a href="/articles/qconz-ap-biosecurity-training-course.html">QCONZ Course</a></li>
+        <li><a href="/training.html">Training</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="article-hero">
+    <div class="article-hero-inner">
+      <nav class="breadcrumb">
+        <a href="/">Home</a>
+        <span>›</span>
+        <span style="color: rgba(255,255,255,0.7);">Which Training Do You Need?</span>
+      </nav>
+      <span class="article-kicker">Training</span>
+      <h1>Which Biosecurity Training Do You Need? Awareness, Accredited Person, or TFO</h1>
+      <p class="lead">"Biosecurity training" isn't one thing. For New Zealand businesses working with imported goods, there are three distinct courses — biosecurity awareness, Accredited Person, and Transitional Facility Operator — each for a different role and obligation. Here's how to tell which one applies to you.</p>
+    </div>
+  </div>
+
+  <div class="article-body">
+
+    <h2>Three types of training, three different jobs</h2>
+    <p>People often use "biosecurity training" as a catch-all, but the Ministry for Primary Industries (MPI) recognises three separate things, and they are not interchangeable. Choosing the wrong one wastes money — or worse, leaves a compliance gap. The three are:</p>
+    <ul>
+      <li><strong>Biosecurity awareness</strong> — the baseline understanding every person working at a transitional facility needs.</li>
+      <li><strong>Transitional Facility Operator (TFO)</strong> — for the person responsible for running an approved facility.</li>
+      <li><strong>Accredited Person (AP)</strong> — for the person who checks imported containers for biosecurity risk.</li>
+    </ul>
+    <p>The quickest way to see the difference is side by side.</p>
+  </div>
+
+  <div class="compare-wrap">
+    <div class="compare-scroll">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Biosecurity Awareness</th>
+            <th scope="col">Transitional Facility Operator (TFO)</th>
+            <th scope="col">Accredited Person (AP)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Who it's for</th>
+            <td>All staff working at a transitional facility</td>
+            <td>The person responsible for operating the facility</td>
+            <td>The person who checks imported containers for biosecurity risk</td>
+          </tr>
+          <tr>
+            <th scope="row">What it covers</th>
+            <td>What biosecurity is and how it is managed at the facility</td>
+            <td>Operating an approved facility in line with MPI requirements</td>
+            <td>How to check a container for biosecurity risks and MPI reporting requirements</td>
+          </tr>
+          <tr>
+            <th scope="row">How you complete it</th>
+            <td>MPI's biosecurity awareness training module</td>
+            <td>Complete and pass an approved operator training course</td>
+            <td>Complete and pass an MPI-approved Accredited Person course</td>
+          </tr>
+          <tr>
+            <th scope="row">MPI approval needed?</th>
+            <td>No formal MPI approval — the operator signs off completion</td>
+            <td><strong>Yes</strong> — you must also be approved by MPI</td>
+            <td><strong>Yes</strong> — you must be approved by MPI</td>
+          </tr>
+          <tr>
+            <th scope="row">Proof / record</th>
+            <td>Printable certificate from the module, filed by the operator</td>
+            <td>MPI operator approval</td>
+            <td>MPI accreditation</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="article-body" style="padding-top: 8px;">
+
+    <h2>1. Biosecurity awareness — the baseline for everyone on site</h2>
+    <p>All staff working at a transitional facility need to understand what biosecurity is and how it is managed. To support this, MPI has created a <a class="inline" href="https://www.mpi.govt.nz/import/border-clearance/transitional-and-containment-facilities-for-border-clearance/training-providers-for-facilities" target="_blank" rel="noopener">biosecurity awareness training module</a>.</p>
+    <p>This is the lightest-touch training of the three. There's no separate MPI approval step — instead, the transitional facility operator signs off that each staff member has completed it. The module produces a certificate at the end that staff can print, and the operator files it as proof of completion. If you work in, drive into, or move around a transitional facility, awareness training is your starting point.</p>
+
+    <h2>2. Transitional Facility Operator (TFO) training</h2>
+    <p>The Transitional Facility Operator is the person responsible for running an approved facility. To become one, MPI requires that you <strong>complete and pass an approved operator training course and be approved by MPI</strong>. The operator carries the day-to-day responsibility for the facility meeting its biosecurity obligations — so this training goes well beyond awareness into how an approved facility actually has to be run.</p>
+    <p>If you're standing up or taking over responsibility for a facility, this is the training tied to your role. For the wider picture of what that responsibility involves, see our guide to <a class="inline" href="/articles/what-is-a-transitional-facility-in-new-zealand.html">what a transitional facility is and what operators must do</a>.</p>
+
+    <h2>3. Accredited Person (AP) training</h2>
+    <p>An <a class="inline" href="/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a> is authorised by MPI to carry out specific biosecurity activities — most commonly, checking imported sea and air containers. To become one, you must complete and pass an <strong>MPI-approved Accredited Person course</strong>. These courses outline what to do when checking a container for biosecurity risks, and the MPI reporting requirements that go with it.</p>
+    <p>Any transitional facility that receives sea or air containers must have an approved Accredited Person available. If checking containers is part of your job, AP training and MPI approval is what you need.</p>
+
+    <div class="cta-block">
+      <h3>Start with Transitional Facility Health &amp; Safety Training</h3>
+      <p>Our online course helps staff understand biosecurity and how to work safely with MPI requirements at a transitional facility — a solid foundation before, or alongside, formal AP or TFO accreditation.</p>
+      <a href="https://train.capabilitysolutions.co.nz/courses/Transitional-Facility-HandS-Working-Safely-with-MPI" target="_blank" rel="noopener" class="btn btn-primary">Start Training</a>
+      <a href="/training.html" class="btn btn-outline-light">View All Courses</a>
+    </div>
+
+    <h2>So — which one do you need?</h2>
+    <p>Match the training to what you actually do:</p>
+    <ol class="step-list">
+      <li><strong>You work in or around a transitional facility</strong> (any role) → start with <strong>biosecurity awareness</strong>. It's the minimum everyone on site needs.</li>
+      <li><strong>You're responsible for operating the facility</strong> → you need <strong>TFO training and MPI operator approval</strong>.</li>
+      <li><strong>You check or inspect imported containers</strong> for biosecurity risk → you need <strong>Accredited Person training and MPI accreditation</strong>.</li>
+    </ol>
+
+    <div class="callout">
+      <div class="callout-label">Key Point</div>
+      <p>Many people need more than one. A small operation might have a single person who runs the facility <em>and</em> checks containers — that person needs both TFO and AP training. One individual can hold both the operator and the Accredited Person roles.</p>
+    </div>
+
+    <h2>Where to get MPI-approved training</h2>
+    <p>Biosecurity awareness uses MPI's own module. TFO and Accredited Person training, however, must be delivered by an <strong>MPI-approved training provider</strong>. MPI publishes the list of approved providers — including QCONZ Training, SPS Biosecurity, IVS, the New Zealand Biosecurity Academy, and Biosecurity &amp; Training South — as a register maintained under the Biosecurity Act 1993.</p>
+    <p>You can see the current list on MPI's <a class="inline" href="https://www.mpi.govt.nz/import/border-clearance/transitional-and-containment-facilities-for-border-clearance/training-providers-for-facilities" target="_blank" rel="noopener">training providers for facilities</a> page. For the QCONZ Accredited Person pathway specifically, see our overview of the <a class="inline" href="/articles/qconz-ap-biosecurity-training-course.html">QCONZ AP biosecurity training course</a>.</p>
+
+    <div class="callout callout-warn">
+      <div class="callout-label">Important</div>
+      <p>Awareness training does not make someone an Accredited Person, and AP training does not make someone an approved operator. Each role has its own training and, for TFO and AP, its own MPI approval. Don't assume one covers another.</p>
+    </div>
+
+    <div class="key-takeaway">
+      <div class="callout-label">Key Takeaway</div>
+      <p>Awareness is for everyone on site, TFO is for whoever runs the facility, and AP is for whoever checks the containers. Map each person's role to the right course, remember that some people need two, and use an MPI-approved provider for the TFO and AP training.</p>
+    </div>
+
+  </div>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>What's the difference between biosecurity awareness and Accredited Person training?</summary>
+      <div class="faq-answer"><p>Biosecurity awareness is the baseline understanding every staff member at a transitional facility needs, delivered through MPI's awareness module. Accredited Person training is a separate, MPI-approved course for people who check imported containers for biosecurity risk, and it requires MPI approval. Awareness training does not make someone an Accredited Person.</p></div>
+    </details>
+    <details>
+      <summary>Does every transitional facility worker need training?</summary>
+      <div class="faq-answer"><p>Yes. All staff working at a transitional facility need to understand what biosecurity is and how it is managed. MPI provides a biosecurity awareness training module for this, and the facility operator signs off that each staff member has completed it.</p></div>
+    </details>
+    <details>
+      <summary>What training does a transitional facility operator need?</summary>
+      <div class="faq-answer"><p>To be a transitional facility operator you must complete and pass an approved operator training course and be approved by MPI. This is more in-depth than awareness training because the operator is responsible for the facility meeting its biosecurity obligations.</p></div>
+    </details>
+    <details>
+      <summary>Can one person be both the operator and the Accredited Person?</summary>
+      <div class="faq-answer"><p>Yes. One individual can hold both roles, but they need the training and MPI approval for each — TFO training and operator approval, plus Accredited Person training and accreditation.</p></div>
+    </details>
+    <details>
+      <summary>Who provides MPI-approved AP and TFO training?</summary>
+      <div class="faq-answer"><p>MPI publishes a register of approved providers, which includes QCONZ Training, SPS Biosecurity, Independent Verification Services (IVS), the New Zealand Biosecurity Academy, and Biosecurity &amp; Training South. Contact a provider directly for course locations and dates.</p></div>
+    </details>
+  </section>
+
+  <div class="article-nav">
+    <a href="/articles/what-is-a-transitional-facility-in-new-zealand.html">
+      <div class="nav-dir">← Related</div>
+      <div class="nav-title">What is a Transitional Facility in New Zealand?</div>
+    </a>
+    <a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">
+      <div class="nav-dir">Next Article →</div>
+      <div class="nav-title">What is an Accredited Person (AP) in New Zealand?</div>
+    </a>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Biosecurity Training <span>NZ</span></div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a>
+        <a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a>
+        <a href="/training.html">Training</a>
+        <a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener">Free Courses</a>
+      </div>
+      <p>&copy; 2026 Biosecurity Training NZ.</p>
+    </div>
+  </footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between biosecurity awareness and Accredited Person training?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Biosecurity awareness is the baseline understanding every staff member at a transitional facility needs, delivered through MPI's awareness module. Accredited Person training is a separate, MPI-approved course for people who check imported containers for biosecurity risk, and it requires MPI approval. Awareness training does not make someone an Accredited Person." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does every transitional facility worker need training?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. All staff working at a transitional facility need to understand what biosecurity is and how it is managed. MPI provides a biosecurity awareness training module for this, and the facility operator signs off that each staff member has completed it." }
+    },
+    {
+      "@type": "Question",
+      "name": "What training does a transitional facility operator need?",
+      "acceptedAnswer": { "@type": "Answer", "text": "To be a transitional facility operator you must complete and pass an approved operator training course and be approved by MPI. This is more in-depth than awareness training because the operator is responsible for the facility meeting its biosecurity obligations." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can one person be both the operator and the Accredited Person?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. One individual can hold both roles, but they need the training and MPI approval for each: TFO training and operator approval, plus Accredited Person training and accreditation." }
+    },
+    {
+      "@type": "Question",
+      "name": "Who provides MPI-approved AP and TFO training?",
+      "acceptedAnswer": { "@type": "Answer", "text": "MPI publishes a register of approved providers, which includes QCONZ Training, SPS Biosecurity, Independent Verification Services (IVS), the New Zealand Biosecurity Academy, and Biosecurity & Training South. Contact a provider directly for course locations and dates." }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Which Biosecurity Training Do You Need? Awareness, Accredited Person, or TFO",
+  "description": "Biosecurity Awareness, Accredited Person, and Transitional Facility Operator training compared, so New Zealand businesses can choose the right MPI training.",
+  "url": "https://biosecuritytraining.nz/articles/which-biosecurity-training-do-you-need.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Biosecurity Training NZ",
+    "url": "https://biosecuritytraining.nz"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://biosecuritytraining.nz/images/hero-qconz-ap-training-course.jpg",
+    "width": 1440,
+    "height": 500,
+    "description": "Biosecurity training session for transitional facility staff in New Zealand"
+  },
+  "inLanguage": "en-NZ"
+}
+</script>
+</body>
+</html>
