@@ -21,6 +21,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://biosecuritytraining.nz/articles/what-is-a-transitional-facility-in-new-zealand.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://biosecuritytraining.nz/articles/what-is-the-biosecurity-business-pledge.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -34,10 +39,5 @@
     <loc>https://biosecuritytraining.nz/articles/site-access-management-for-transitional-facilities-sitekey.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/articles/what-is-a-transitional-facility-in-new-zealand.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>

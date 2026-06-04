@@ -297,147 +297,6 @@
     }
     .ap-stat-label { color: rgba(255,255,255,0.65); font-size: 0.88rem; }
 
-    /* QCONZ FEATURE SECTION */
-    .qconz-feature {
-      background: var(--bg-light);
-      padding: 80px 24px;
-      border-top: 1px solid rgba(0,181,173,0.15);
-      border-bottom: 1px solid rgba(0,181,173,0.15);
-    }
-    .qconz-feature-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 64px;
-      align-items: center;
-    }
-    .qconz-feature-content .section-title {
-      margin-bottom: 18px;
-    }
-    .qconz-feature-content p {
-      font-size: 1.05rem;
-      color: #555;
-      line-height: 1.75;
-      margin-bottom: 16px;
-    }
-    .qconz-cta-group {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 28px;
-    }
-    .qconz-cta-group .btn-text-link {
-      color: var(--primary);
-      font-weight: 700;
-      font-size: 0.97rem;
-      text-decoration: none;
-      transition: gap 0.2s;
-    }
-    .qconz-cta-group .btn-text-link:hover { text-decoration: underline; }
-
-    .qconz-quote-block {
-      background: var(--bg-offset);
-      border-radius: 16px;
-      padding: 40px 36px;
-      position: relative;
-    }
-    .qconz-quote-block::before {
-      content: '\201C';
-      font-family: 'Libre Baskerville', serif;
-      font-size: 5rem;
-      color: var(--primary);
-      opacity: 0.25;
-      position: absolute;
-      top: 12px;
-      left: 28px;
-      line-height: 1;
-    }
-
-    /* ROTATING TESTIMONIAL */
-    .testimonial-rotator {
-      position: relative;
-      min-height: 260px;
-    }
-    .testimonial-slide {
-      position: absolute;
-      inset: 0;
-      opacity: 0;
-      transition: opacity 0.8s ease;
-      pointer-events: none;
-    }
-    .testimonial-slide.active {
-      opacity: 1;
-      position: relative;
-      pointer-events: auto;
-    }
-    .testimonial-slide blockquote p {
-      font-family: 'Libre Baskerville', serif;
-      font-size: 1.05rem;
-      color: var(--heading-text);
-      line-height: 1.75;
-      font-style: italic;
-      margin-bottom: 24px;
-      padding-top: 20px;
-    }
-    .quote-author {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .quote-author-bar {
-      width: 32px;
-      height: 3px;
-      background: var(--primary);
-      border-radius: 2px;
-      flex-shrink: 0;
-    }
-    .quote-author-name {
-      font-family: 'Source Sans Pro', sans-serif;
-      font-weight: 700;
-      font-size: 0.95rem;
-      color: var(--heading-text);
-    }
-    .quote-author-role {
-      font-size: 0.85rem;
-      color: #888;
-      margin-top: 2px;
-    }
-    .rotator-dots {
-      display: flex;
-      gap: 8px;
-      justify-content: center;
-      margin-top: 24px;
-    }
-    .rotator-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: rgba(0, 181, 173, 0.25);
-      cursor: pointer;
-      transition: background 0.3s;
-      border: none;
-      padding: 0;
-    }
-    .rotator-dot.active {
-      background: var(--primary);
-    }
-    .qconz-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: #dbeafe;
-      color: #1e40af;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 4px 12px;
-      border-radius: 100px;
-      margin-bottom: 12px;
-    }
-
     /* ARTICLES */
     .articles-section { background: var(--bg-offset); }
     .article-card {
@@ -481,7 +340,6 @@
 
     @media (max-width: 768px) {
       .ap-band-inner { grid-template-columns: 1fr; gap: 40px; }
-      .qconz-feature-inner { grid-template-columns: 1fr; gap: 40px; }
       .nav-links { display: none; }
     }
   </style>
@@ -533,108 +391,6 @@
   <div class="trust-bar">
     <p>Training resources for <strong>New Zealand businesses, importers, exporters, and logistics professionals</strong> — aligned with MPI and Biosecurity New Zealand requirements.</p>
   </div>
-
-  <!-- QCONZ FEATURE -->
-  <section class="qconz-feature">
-    <div class="qconz-feature-inner">
-      <div class="qconz-feature-content">
-        <span class="qconz-badge">MPI-Approved Online Training</span>
-        <p class="section-label">QCONZ Biosecurity Training</p>
-        <h2 class="section-title">Train Anywhere,<br>Anytime — with QCONZ</h2>
-        <p>QCONZ is New Zealand's recognised provider of MPI-approved Accredited Person biosecurity training. Their online courses are built for the people doing the work — APs at Transitional Facilities who need practical, flexible training that fits around the job.</p>
-        <p>No travel. No venue costs. Complete modules when it suits your schedule — on-site or at home, on any device. For businesses with staff across multiple sites, it's the training that actually gets done.</p>
-        <div class="qconz-cta-group">
-          <a href="https://biosecuritytraining.qconz.co.nz/" target="_blank" rel="noopener" class="btn btn-primary">Start Training with QCONZ</a>
-          <a href="/articles/qconz-ap-biosecurity-training-course.html" class="btn-text-link">About the courses →</a>
-        </div>
-      </div>
-      <div class="qconz-quote-block">
-        <div class="testimonial-rotator" id="testimonialRotator">
-
-          <div class="testimonial-slide active">
-            <blockquote>
-              <p>"I found the course easy to follow and very informative and interesting. I also liked being able to complete one or two modules at a time and then come back to the course as time allowed. I would definitely recommend this online training course."</p>
-              <div class="quote-author">
-                <div class="quote-author-bar"></div>
-                <div>
-                  <div class="quote-author-name">Steve Pizzey</div>
-                  <div class="quote-author-role">Team Global Express</div>
-                </div>
-              </div>
-            </blockquote>
-          </div>
-
-          <div class="testimonial-slide">
-            <blockquote>
-              <p>"This is a great course. I especially liked the videos that showed what to look for and how to find things in the AP resource book. There was a lot of information, but it was explained really well and made easy to understand."</p>
-              <div class="quote-author">
-                <div class="quote-author-bar"></div>
-                <div>
-                  <div class="quote-author-name">Jessica Gregg</div>
-                  <div class="quote-author-role">Health &amp; Safety Coordinator</div>
-                </div>
-              </div>
-            </blockquote>
-          </div>
-
-          <div class="testimonial-slide">
-            <blockquote>
-              <p>"The course was well structured, engaging, and easy to follow. The content was concise without being overwhelming, which helped maintain focus throughout."</p>
-              <div class="quote-author">
-                <div class="quote-author-bar"></div>
-                <div>
-                  <div class="quote-author-name">Leonid Sverdlov</div>
-                  <div class="quote-author-role">3PL Warehouse Coordinator</div>
-                </div>
-              </div>
-            </blockquote>
-          </div>
-
-        </div>
-        <div class="rotator-dots" id="rotatorDots">
-          <button class="rotator-dot active" data-index="0" aria-label="Testimonial 1"></button>
-          <button class="rotator-dot" data-index="1" aria-label="Testimonial 2"></button>
-          <button class="rotator-dot" data-index="2" aria-label="Testimonial 3"></button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <script>
-    (function() {
-      var slides = document.querySelectorAll('#testimonialRotator .testimonial-slide');
-      var dots = document.querySelectorAll('#rotatorDots .rotator-dot');
-      var current = 0;
-      var total = slides.length;
-
-      function goTo(index) {
-        slides[current].classList.remove('active');
-        dots[current].classList.remove('active');
-        current = index;
-        slides[current].classList.add('active');
-        dots[current].classList.add('active');
-      }
-
-      dots.forEach(function(dot) {
-        dot.addEventListener('click', function() {
-          goTo(parseInt(this.getAttribute('data-index'), 10));
-          resetTimer();
-        });
-      });
-
-      var timer;
-      function startTimer() {
-        timer = setInterval(function() {
-          goTo((current + 1) % total);
-        }, 6000);
-      }
-      function resetTimer() {
-        clearInterval(timer);
-        startTimer();
-      }
-      startTimer();
-    })();
-  </script>
 
   <!-- FREE COURSES -->
   <section>
@@ -704,6 +460,12 @@
           <h3>What is an Accredited Person (AP) in New Zealand?</h3>
           <p>The role, the requirements, and how to become one. If your business handles imports, exports, or regulated goods — this applies to you.</p>
           <a href="/articles/what-is-an-accredited-person-ap-new-zealand.html" class="card-link">Read article</a>
+        </div>
+        <div class="article-card">
+          <p class="section-label">Border Clearance</p>
+          <h3>What is a Transitional Facility in New Zealand?</h3>
+          <p>An MPI-approved site where imported risk goods are held, inspected, or treated before clearance. What they are, who must be involved, and what operators must do.</p>
+          <a href="/articles/what-is-a-transitional-facility-in-new-zealand.html" class="card-link">Read article</a>
         </div>
         <div class="article-card">
           <p class="section-label">Commitment</p>
