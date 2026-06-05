@@ -73,11 +73,13 @@
     .cta-block { background: linear-gradient(135deg, var(--secondary), #005a6b); border-radius: var(--radius); padding: 36px 32px; margin: 48px 0; text-align: center; }
     .cta-block h3 { font-family: 'Libre Baskerville', serif; color: #fff; font-size: 1.4rem; margin-bottom: 10px; }
     .cta-block p { color: rgba(255,255,255,0.75); margin-bottom: 24px; font-size: 1rem; }
-    .btn { display: inline-block; padding: 13px 26px; border-radius: 100px; font-family: 'Source Sans Pro', sans-serif; font-size: 0.98rem; font-weight: 700; text-decoration: none !important; transition: all 0.2s; margin: 6px; }
-    .btn-primary { background: var(--primary); color: #fff !important; }
+    .btn { display: inline-block; padding: 13px 26px; border-radius: 100px; font-family: 'Source Sans Pro', sans-serif; font-size: 0.98rem; font-weight: 700; text-decoration: none; transition: all 0.2s; margin: 6px; }
+    .btn-primary { background: var(--primary); color: #fff; }
     .btn-primary:hover { background: #009a93; transform: translateY(-1px); }
-    .btn-outline-light { background: transparent; color: #fff !important; border: 2px solid rgba(255,255,255,0.45); }
+    .btn-outline-light { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.45); }
     .btn-outline-light:hover { border-color: #fff; transform: translateY(-1px); }
+    /* .article-body generic link colour would otherwise hide button labels */
+    .article-body a.btn-primary, .article-body a.btn-outline-light { color: #fff; }
 
     .article-nav { display: flex; gap: 16px; margin-top: 56px; padding-top: 32px; border-top: 1px solid rgba(0,59,73,0.1); flex-wrap: wrap; }
     .article-nav a { flex: 1; min-width: 200px; background: var(--bg-offset); border-radius: var(--radius); padding: 18px 20px; text-decoration: none; transition: box-shadow 0.2s; }
@@ -110,45 +112,6 @@
   <meta name="twitter:title" content="Site Access Management for MPI Approved Transitional Facilities">
   <meta name="twitter:description" content="MPI Approved Transitional Facilities face biosecurity, health and safety, and aviation security obligations. SiteKey and AirCertifyNZ help manage them all.">
   <meta name="twitter:image" content="https://biosecuritytraining.nz/images/hero-transitional-facility-site-access.jpg">
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How should Transitional Facilities manage site access?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "MPI-approved Transitional Facilities must control who enters the facility and ensure all workers have completed appropriate biosecurity induction training. Sign-in sheets and verbal briefings are not sufficient — TF operators need documented, auditable records of who was on site and that they had completed induction before arrival. Digital site access systems such as SiteKey are designed for this purpose."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is SiteKey?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "SiteKey is a New Zealand site access management system purpose-built for businesses that need to control contractor and visitor access and link it to training completion. It is used by Transitional Facilities and other regulated sites to automate induction records and maintain the documented evidence MPI requires during verification visits."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <!-- BreadcrumbList Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://biosecuritytraining.nz/"},
-      {"@type": "ListItem", "position": 2, "name": "Site Access Management for MPI Approved Transitional Facilities", "item": "https://biosecuritytraining.nz/articles/site-access-management-for-transitional-facilities-sitekey.html"}
-    ]
-  }
-  </script>
-
 </head>
 <body>
 
@@ -308,14 +271,7 @@
     "height": 500,
     "description": "Contractor scanning QR code at NZ transitional facility entrance using SiteKey site access system"
   },
-  "inLanguage": "en-NZ",
-  "datePublished": "2026-06-03",
-  "dateModified": "2026-06-03",
-  "author": {
-    "@type": "Organization",
-    "name": "Biosecurity Training NZ",
-    "url": "https://biosecuritytraining.nz"
-  }
+  "inLanguage": "en-NZ"
 }
 </script>
 </body>

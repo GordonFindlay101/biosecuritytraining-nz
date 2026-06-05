@@ -79,6 +79,9 @@
     .tag-free { background: #d1fae5; color: #065f46; }
     .enrol-btn { display: inline-block; margin-top: 14px; padding: 9px 20px; background: var(--primary); color: #fff; font-size: 0.9rem; font-weight: 700; border-radius: 100px; text-decoration: none; transition: background 0.2s; }
     .enrol-btn:hover { background: #009a93; }
+    /* Buttons sit inside .article-body, whose generic link colour would otherwise hide the label */
+    .article-body a.enrol-btn, .article-body a.btn-primary { color: #fff; }
+    .article-body a.btn-outline-light { color: #fff; }
 
     /* TESTIMONIALS */
     .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 28px 0; }
