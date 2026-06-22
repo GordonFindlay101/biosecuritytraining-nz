@@ -1,12 +1,14 @@
 [build]
   publish = "."
 
-# Clean URLs — optional: lets /articles/what-is-an-accredited-person-ap-new-zealand work without .html
+# Clean URLs -> canonical .html
+# 301 (not 200 rewrite) so search engines consolidate every article to a single
+# canonical URL and we never expose a duplicate "extensionless" version.
+# No Language condition: the redirect must fire for every visitor and crawler.
 [[redirects]]
   from = "/articles/:slug"
   to = "/articles/:slug.html"
-  status = 200
-  conditions = {Language = ["en"]}
+  status = 301
 
 # 404 fallback
 [[redirects]]
