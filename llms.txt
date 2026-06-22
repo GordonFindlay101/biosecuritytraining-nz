@@ -12,6 +12,7 @@ Biosecurity Training NZ provides free online biosecurity awareness training for 
 - [What is an Accredited Person (AP) in New Zealand?](https://biosecuritytraining.nz/articles/what-is-an-accredited-person-ap-new-zealand.html): AP role, which businesses need one, how to become one
 - [NZ Biosecurity: What Every Business Needs to Know](https://biosecuritytraining.nz/articles/nz-biosecurity-what-every-business-needs-to-know.html): Business obligations under the Biosecurity Act 1993
 - [Site Access Management for MPI Approved Transitional Facilities](https://biosecuritytraining.nz/articles/site-access-management-for-transitional-facilities-sitekey.html): Managing contractor and visitor access at TF sites
+- [Forklift Safety in NZ Warehouses](https://biosecuritytraining.nz/articles/forklift-safety-awareness-warehouse-teams-nz.html): Forklift awareness training for warehouse, distribution, and Transitional Facility teams who work on foot near forklifts
 - [The QCONZ AP Biosecurity Training Course](https://biosecuritytraining.nz/articles/qconz-ap-biosecurity-training-course.html): MPI-approved AP training for sea container handling
 - [What is the Biosecurity Business Pledge?](https://biosecuritytraining.nz/articles/what-is-the-biosecurity-business-pledge.html): The NZ Biosecurity Business Pledge commitment
 
