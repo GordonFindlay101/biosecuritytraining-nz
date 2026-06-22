@@ -2,13 +2,56 @@
   publish = "."
 
 # Clean URLs -> canonical .html
-# 301 (not 200 rewrite) so search engines consolidate every article to a single
-# canonical URL and we never expose a duplicate "extensionless" version.
-# No Language condition: the redirect must fire for every visitor and crawler.
+# Explicit 301 redirects (force=true) so each article resolves to ONE canonical URL.
+# Per-article rules are loop-safe: they match only the extensionless path, never the .html file.
+
 [[redirects]]
-  from = "/articles/:slug"
-  to = "/articles/:slug.html"
+  from = "/articles/forklift-safety-awareness-warehouse-teams-nz"
+  to = "/articles/forklift-safety-awareness-warehouse-teams-nz.html"
   status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/nz-biosecurity-what-every-business-needs-to-know"
+  to = "/articles/nz-biosecurity-what-every-business-needs-to-know.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/qconz-ap-biosecurity-training-course"
+  to = "/articles/qconz-ap-biosecurity-training-course.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/site-access-management-for-transitional-facilities-sitekey"
+  to = "/articles/site-access-management-for-transitional-facilities-sitekey.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/what-is-a-transitional-facility-in-new-zealand"
+  to = "/articles/what-is-a-transitional-facility-in-new-zealand.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/what-is-an-accredited-person-ap-new-zealand"
+  to = "/articles/what-is-an-accredited-person-ap-new-zealand.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/what-is-the-biosecurity-business-pledge"
+  to = "/articles/what-is-the-biosecurity-business-pledge.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/articles/which-biosecurity-training-do-you-need"
+  to = "/articles/which-biosecurity-training-do-you-need.html"
+  status = 301
+  force = true
 
 # 404 fallback
 [[redirects]]
