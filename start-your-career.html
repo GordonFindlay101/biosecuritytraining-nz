@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://biosecuritytraining.nz/start-your-career.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Your Career in NZ's Import Pathway | Biosecurity Training NZ</title>
+  <meta name="description" content="School leaver? Discover the real careers in New Zealand's import pathway — freight, customs, biosecurity, logistics and more. Launch the interactive Career Explorer and see the training you can do today.">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #00B5AD;
+      --primary-soft: rgba(0, 181, 173, 0.10);
+      --secondary: #003B49;
+      --heading-text: #003B49;
+      --body-text: #4a4a4a;
+      --bg-light: #ffffff;
+      --bg-offset: #f2f7f7;
+      --radius: 12px;
+    }
+    body { font-family: 'Source Sans Pro', sans-serif; color: var(--body-text); background: var(--bg-light); line-height: 1.7; }
+
+    /* NAV */
+    nav { background: var(--secondary); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { color: #fff; font-family: 'Libre Baskerville', serif; font-size: 1.1rem; font-weight: 700; text-decoration: none; letter-spacing: -0.01em; }
+    .nav-logo span { color: var(--primary); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.95rem; font-weight: 600; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-links a.active { color: var(--primary); }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(rgba(0,59,73,0.72), rgba(0,59,73,0.72)), url('/images/start-your-career-hero.webp') center/cover no-repeat;
+      padding: 96px 24px 80px; text-align: center; position: relative; overflow: hidden;
+    }
+    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 70% 50%, rgba(0,181,173,0.18) 0%, transparent 65%); }
+    .hero-inner { max-width: 780px; margin: 0 auto; position: relative; }
+    .hero-kicker { display: inline-block; background: var(--primary-soft); border: 1px solid var(--primary); color: var(--primary); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 5px 14px; border-radius: 100px; margin-bottom: 24px; }
+    .hero h1 { font-family: 'Libre Baskerville', serif; font-size: clamp(2rem, 5vw, 3rem); color: #fff; line-height: 1.2; margin-bottom: 20px; }
+    .hero h1 em { color: var(--primary); font-style: normal; }
+    .hero p { font-size: 1.15rem; color: rgba(255,255,255,0.85); max-width: 600px; margin: 0 auto 36px; }
+    .hero-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+    .btn { display: inline-block; padding: 14px 28px; border-radius: 100px; font-family: 'Source Sans Pro', sans-serif; font-size: 1rem; font-weight: 700; text-decoration: none; transition: all 0.2s; cursor: pointer; }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: #009a93; transform: translateY(-1px); }
+    .btn-outline { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.5); }
+    .btn-outline:hover { border-color: #fff; transform: translateY(-1px); }
+
+    /* TRUST BAR */
+    .trust-bar { background: var(--bg-offset); border-bottom: 1px solid rgba(0,59,73,0.08); padding: 18px 24px; text-align: center; }
+    .trust-bar p { font-size: 0.9rem; color: #666; font-weight: 600; }
+    .trust-bar strong { color: var(--secondary); }
+
+    /* SECTIONS */
+    section { padding: 72px 24px; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .center { text-align: center; }
+    .center .section-sub { margin-left: auto; margin-right: auto; }
+    .section-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--primary); margin-bottom: 10px; }
+    .section-title { font-family: 'Libre Baskerville', serif; font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--heading-text); line-height: 1.25; margin-bottom: 14px; }
+    .section-sub { font-size: 1.05rem; color: #666; max-width: 600px; margin-bottom: 48px; }
+
+    /* WHY GRID */
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+    .why-card { background: var(--bg-light); border: 1px solid rgba(0,59,73,0.1); border-radius: var(--radius); padding: 28px; box-shadow: 0 2px 12px rgba(0,59,73,0.06); }
+    .why-icon { margin-bottom: 14px; height: 34px; }
+    .why-icon svg { width: 32px; height: 32px; stroke: var(--primary); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .why-card h3 { font-family: 'Libre Baskerville', serif; font-size: 1.15rem; color: var(--heading-text); margin-bottom: 8px; }
+    .why-card p { font-size: 0.95rem; color: #666; }
+
+    /* ROLE CARDS */
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .role-card { background: var(--bg-light); border: 1px solid rgba(0,59,73,0.1); border-radius: var(--radius); padding: 26px; box-shadow: 0 2px 12px rgba(0,59,73,0.06); transition: box-shadow 0.2s, transform 0.2s; }
+    .role-card:hover { box-shadow: 0 6px 24px rgba(0,59,73,0.12); transform: translateY(-2px); }
+    .role-card h3 { font-family: 'Libre Baskerville', serif; font-size: 1.15rem; color: var(--heading-text); margin-bottom: 6px; }
+    .role-card .role-pay { display: inline-block; font-size: 0.78rem; font-weight: 700; color: #065f46; background: #d1fae5; padding: 3px 10px; border-radius: 100px; margin-bottom: 12px; }
+    .role-card p { font-size: 0.95rem; color: #666; }
+
+    /* LAUNCH BAND */
+    .launch-band { background: var(--secondary); padding: 80px 24px; text-align: center; position: relative; overflow: hidden; }
+    .launch-band::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 0%, rgba(0,181,173,0.2) 0%, transparent 60%); }
+    .launch-inner { max-width: 720px; margin: 0 auto; position: relative; }
+    .launch-band h2 { font-family: 'Libre Baskerville', serif; font-size: clamp(1.7rem, 3.2vw, 2.4rem); color: #fff; line-height: 1.25; margin-bottom: 16px; }
+    .launch-band h2 em { color: var(--primary); font-style: normal; }
+    .launch-band p { color: rgba(255,255,255,0.82); font-size: 1.1rem; margin-bottom: 32px; }
+
+    /* TRAINING CTA */
+    .training-cta { background: var(--bg-offset); }
+    .training-cta .section-inner { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: center; }
+    .training-cta h2 { font-family: 'Libre Baskerville', serif; font-size: clamp(1.5rem, 2.8vw, 2rem); color: var(--heading-text); margin-bottom: 14px; line-height: 1.25; }
+    .training-cta p { color: #666; margin-bottom: 14px; }
+    .training-box { background: var(--secondary); border-radius: var(--radius); padding: 32px; }
+    .training-box h3 { font-family: 'Libre Baskerville', serif; color: #fff; font-size: 1.2rem; margin-bottom: 16px; }
+    .training-box ul { list-style: none; }
+    .training-box li { color: rgba(255,255,255,0.85); padding: 7px 0 7px 28px; position: relative; font-size: 0.97rem; }
+    .training-box li::before { content: '✓'; color: var(--primary); position: absolute; left: 0; font-weight: 700; }
+
+    /* FOOTER */
+    footer { background: var(--secondary); padding: 48px 24px 32px; text-align: center; }
+    .footer-inner { max-width: 700px; margin: 0 auto; }
+    .footer-logo { font-family: 'Libre Baskerville', serif; font-size: 1.2rem; color: #fff; font-weight: 700; margin-bottom: 12px; }
+    .footer-logo span { color: var(--primary); }
+    footer p { color: rgba(255,255,255,0.55); font-size: 0.88rem; line-height: 1.7; margin-bottom: 8px; }
+    .footer-links { display: flex; gap: 20px; justify-content: center; margin: 20px 0; flex-wrap: wrap; }
+    .footer-links a { color: rgba(255,255,255,0.6); font-size: 0.88rem; text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--primary); }
+
+    /* JOURNEY PATHWAY */
+    .journey { background: var(--secondary); padding: 64px 0 56px; position: relative; overflow: hidden; }
+    .journey::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% -10%, rgba(0,181,173,0.16) 0%, transparent 60%); }
+    .journey .section-inner { position: relative; }
+    .journey-head { text-align: center; padding: 0 24px; margin-bottom: 36px; }
+    .journey-head .section-label { color: var(--primary); }
+    .journey-head h2 { font-family: 'Libre Baskerville', serif; font-size: clamp(1.5rem, 3vw, 2.1rem); color: #fff; margin-bottom: 12px; }
+    .journey-head p { color: rgba(255,255,255,0.78); max-width: 620px; margin: 0 auto; }
+    .journey-scroll { display: flex; gap: 4px; overflow-x: auto; padding: 8px 24px 22px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+    .journey-scroll::-webkit-scrollbar { height: 8px; }
+    .journey-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.25); border-radius: 100px; }
+    .stage { flex: 0 0 168px; scroll-snap-align: start; text-align: center; }
+    .stage .chevron {
+      position: relative; color: #fff; font-weight: 700; font-size: 0.82rem; line-height: 1.25;
+      height: 92px; display: flex; align-items: center; justify-content: center; padding: 10px 26px 10px 18px;
+      clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 0 100%, 16px 50%);
+    }
+    .stage:first-child .chevron { clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 0 100%); }
+    .stage .step-no { display: inline-block; width: 22px; height: 22px; line-height: 22px; border-radius: 50%; background: rgba(255,255,255,0.25); font-size: 0.72rem; margin-bottom: 8px; }
+    .stage .person { color: #fff; font-weight: 700; font-size: 0.84rem; margin-top: 12px; }
+    .stage .company { color: rgba(255,255,255,0.6); font-size: 0.76rem; }
+    .journey-hint { text-align: center; color: rgba(255,255,255,0.55); font-size: 0.82rem; margin-top: 6px; }
+    .journey-cta { text-align: center; margin-top: 30px; }
+
+    @media (max-width: 768px) {
+      .training-cta .section-inner { grid-template-columns: 1fr; gap: 32px; }
+      .nav-links { display: none; }
+    }
+  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Start Your Career in NZ's Import Pathway | Biosecurity Training NZ">
+  <meta property="og:description" content="Discover the real careers in New Zealand's import pathway and launch the interactive Career Explorer.">
+  <meta property="og:url" content="https://biosecuritytraining.nz/start-your-career.html">
+  <meta property="og:site_name" content="Biosecurity Training NZ">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Biosecurity Training <span>NZ</span></a>
+      <ul class="nav-links">
+        <li><a href="/start-your-career.html" class="active">Start Your Career</a></li>
+        <li><a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a></li>
+        <li><a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a></li>
+        <li><a href="/training.html">Training</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-kicker">For School Leavers &middot; Import Pathway</span>
+      <h1>Start Your Career in New Zealand's <em>Import Pathway</em></h1>
+      <p>Every product that arrives in New Zealand passes through the hands of dozens of people — freight forwarders, customs brokers, biosecurity officers, warehouse teams and more. These are real careers, with real pay, and most don't need a degree. Find the one that fits you.</p>
+      <div class="hero-actions">
+        <a href="import-pathway-explorer.html" class="btn btn-primary">Launch the Career Explorer</a>
+        <a href="#why" class="btn btn-outline">Why the import pathway?</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <p>Follow one shipment — <strong>mandarins from the USA</strong> — and meet the 10 people who get it safely from an overseas orchard to a Kiwi kitchen table.</p>
+  </div>
+
+  <!-- WHY -->
+  <section id="why">
+    <div class="section-inner center">
+      <p class="section-label">Why It's Worth a Look</p>
+      <h2 class="section-title">A Bigger World Than You Think</h2>
+      <p class="section-sub">The import pathway is one of New Zealand's largest and most stable employers — and it's crying out for young people.</p>
+    </div>
+    <div class="section-inner">
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M5 16c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div>
+          <h3>Start without a degree</h3>
+          <p>Most roles start with a certificate or on-the-job training. You can be earning while you learn.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <h3>Real earning potential</h3>
+          <p>Entry roles start around $50k, with senior and owner roles reaching $95k–$120k+.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h3>Connected to the world</h3>
+          <p>You're part of global trade — moving goods between New Zealand and the rest of the planet.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Work that matters</h3>
+          <p>Protecting our borders and biosecurity keeps New Zealand's $50B+ primary sector safe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROLES PREVIEW -->
+  <section class="articles-section" style="background: var(--bg-offset);">
+    <div class="section-inner center">
+      <p class="section-label">The Roles</p>
+      <h2 class="section-title">Ten Careers, One Shipment</h2>
+      <p class="section-sub">Here's a taste. Launch the explorer to meet each person, hear their story, and see the training you can do today.</p>
+    </div>
+    <div class="section-inner">
+      <div class="card-grid">
+        <div class="role-card">
+          <h3>Freight Forwarder</h3>
+          <span class="role-pay">$55k – $72k</span>
+          <p>The puzzle-solver who coordinates shipments from overseas all the way to your door.</p>
+        </div>
+        <div class="role-card">
+          <h3>NZ Customs Broker</h3>
+          <span class="role-pay">$58k – $95k</span>
+          <p>The precision expert who clears complex entries so trade keeps moving.</p>
+        </div>
+        <div class="role-card">
+          <h3>NZ Customs Officer</h3>
+          <span class="role-pay">$62k – $80k</span>
+          <p>Protecting the border while keeping legitimate trade flowing.</p>
+        </div>
+        <div class="role-card">
+          <h3>Biosecurity Officer (MPI)</h3>
+          <span class="role-pay">$58k – $78k</span>
+          <p>The frontline for protecting Aotearoa's unique environment from pests.</p>
+        </div>
+        <div class="role-card">
+          <h3>3PL / Warehouse Operator</h3>
+          <span class="role-pay">$50k – $65k</span>
+          <p>Running the tech, robots and smart systems behind modern fulfilment.</p>
+        </div>
+        <div class="role-card">
+          <h3>Importer of Record</h3>
+          <span class="role-pay">$65k – $120k+</span>
+          <p>The entrepreneur sourcing products globally and bringing them to Kiwis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY PATHWAY -->
+  <div class="journey">
+    <div class="section-inner">
+      <div class="journey-head">
+        <p class="section-label">Follow the Shipment</p>
+        <h2>One Box of Mandarins. Eleven People.</h2>
+        <p>From a Californian orchard to a Kiwi kitchen, every shipment passes through a chain of careers. Here's the journey — then step inside it in the explorer.</p>
+      </div>
+      <div class="journey-scroll" id="journey-scroll"></div>
+      <p class="journey-hint">Scroll sideways to follow the full pathway &rarr;</p>
+      <div class="journey-cta">
+        <a href="import-pathway-explorer.html" class="btn btn-primary">Launch the Career Explorer</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- LAUNCH BAND -->
+  <div class="launch-band">
+    <div class="launch-inner">
+      <p class="section-label" style="color: var(--primary);">Interactive Experience</p>
+      <h2>Explore Every Role in the <em>Career Explorer</em></h2>
+      <p>Step through the journey of a real shipment. Click any role to meet the person behind it, see what they earn, how they got started, where they're heading next — and the Capability Solutions training that gets you there.</p>
+      <a href="import-pathway-explorer.html" class="btn btn-primary">Launch the Career Explorer</a>
+    </div>
+  </div>
+
+  <!-- TRAINING CTA -->
+  <section class="training-cta">
+    <div class="section-inner">
+      <div>
+        <p class="section-label">Training You Can Do Today</p>
+        <h2>Turn Up to Your First Day Already Trained</h2>
+        <p>Stand out from other school leavers. There's a growing range of short, practical training to help you get career-ready for the import pathway — much of it online and able to be started right now.</p>
+        <p>We're adding training options from more providers over time. Open the Career Explorer to see which training fits each role, with direct links to enrol.</p>
+        <a href="import-pathway-explorer.html" class="btn btn-primary" style="margin-top: 8px;">Launch the Career Explorer</a>
+      </div>
+      <div class="training-box">
+        <h3>The kinds of training available</h3>
+        <ul>
+          <li>Workplace induction &amp; safety — first aid, health &amp; safety, manual handling, forklift awareness</li>
+          <li>Workplace culture &amp; communication — teamwork, behaviours, well-being</li>
+          <li>Biosecurity &amp; border — awareness training and transitional facility safety</li>
+          <li>Specialist qualifications — including the MPI Accredited Person (AP) pathway</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Biosecurity Training <span>NZ</span></div>
+      <p>New Zealand's dedicated biosecurity training resource. Free courses, professional accreditation pathways, and resources for businesses.</p>
+      <div class="footer-links">
+        <a href="/start-your-career.html">Start Your Career</a>
+        <a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a>
+        <a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a>
+        <a href="/articles/qconz-ap-biosecurity-training-course.html">QCONZ Course</a>
+        <a href="/training.html">Training</a>
+      </div>
+      <p>&copy; 2026 Biosecurity Training NZ.</p>
+    </div>
+  </footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Start Your Career in New Zealand's Import Pathway",
+  "url": "https://biosecuritytraining.nz/start-your-career.html",
+  "description": "Discover the real careers in New Zealand's import pathway — freight, customs, biosecurity and logistics — and launch the interactive Career Explorer.",
+  "isPartOf": { "@type": "WebSite", "name": "Biosecurity Training NZ", "url": "https://biosecuritytraining.nz/" },
+  "publisher": { "@type": "Organization", "name": "Capability Solutions", "url": "https://train.capabilitysolutions.co.nz" }
+}
+</script>
+<script>
+  const STAGES = [
+    {role:"USA Citrus Grower &amp; Exporter", person:"Sophia Hernandez", company:"Yuba City Mandarins", c:"#003B49"},
+    {role:"Freight Forwarder (USA)",          person:"Frank Green",      company:"Produce Transporters LLC", c:"#016b85"},
+    {role:"Shipping Company",                 person:"Phillip Pollock",  company:"Express Seafreighters", c:"#008f99"},
+    {role:"NZ Customs Broker",                person:"Carmen Huirama",   company:"Efficient Brokers Ltd", c:"#00B5AD"},
+    {role:"NZ Customs Service",               person:"Mere Rua",         company:"NZ Customs", c:"#3aa886"},
+    {role:"MPI Biosecurity Officer",          person:"Helen Andrews",    company:"MPI", c:"#5aa83f"},
+    {role:"Importer of Record (NZ)",          person:"Paul Chi",         company:"Fruit is Us", c:"#b9a96f"},
+    {role:"3PL Operator",                     person:"Anthony Small",    company:"3PL Solutions", c:"#2f93c7"},
+    {role:"Distributor / Wholesaler",         person:"Anya Small",       company:"Fast n Fresh", c:"#d8497c"},
+    {role:"Retailer",                         person:"Ramesh Patel",     company:"Superstore Ltd", c:"#118a99"},
+    {role:"Consumer",                         person:"Jane McPhail",     company:"At home", c:"#f29446"}
+  ];
+  document.getElementById("journey-scroll").innerHTML = STAGES.map((s,i) => `
+    <div class="stage">
+      <div class="chevron" style="background:${s.c};">
+        <div><span class="step-no">${i+1}</span><br>${s.role}</div>
+      </div>
+      <div class="person">${s.person}</div>
+      <div class="company">${s.company}</div>
+    </div>`).join("");
+</script>
+</body>
+</html>
