@@ -589,6 +589,10 @@
             transform: scale(1.02);
             box-shadow: 0 10px 20px rgba(243, 146, 0, 0.3);
         }
+        .btn-cta { box-sizing: border-box; }
+        .cta-group { display: flex; flex-direction: column; gap: 10px; }
+        .btn-cta-alt { background: transparent; color: var(--cbaff-orange); border: 2px solid var(--cbaff-orange); }
+        .btn-cta-alt:hover { background: rgba(0,181,173,0.12); box-shadow: none; }
     
         .train-badge {
             margin-top: 8px;
@@ -923,6 +927,13 @@
         Personae.forEach(p => {
             p.training = TRAINING_ROLES[p.id] ? (TRAINING_PAGE_URL + "#" + p.id) : null;
         });
+        // In-work qualifications -> provider course pages. Add more over time.
+        const INWORK = {
+            forwarder: { url: "https://www.manukau.ac.nz/study/areas-of-study/logistics/new-zealand-certificate-in-international-freight-and-logistics-level-4-with-strands-in-freight-forwarding", label: "NZ Certificate in International Freight & Logistics (L4) - MIT" },
+            shipping:  { url: "https://www.manukau.ac.nz/programme/new-zealand-diploma-in-international-logistics-freight-forwarding-level-5/", label: "NZ Diploma in International Logistics (L5) - MIT" },
+            broker:    { url: "https://www.cbaff.org.nz/Training/courses", label: "CBAFF Customs Broking courses" }
+        };
+        Personae.forEach(p => { p.inwork = INWORK[p.id] || null; });
 
         const Game = {
             audioStarted: false,
@@ -1115,9 +1126,11 @@
                             <h4>What's Next?</h4>
                             <p>${p.next}</p>
                         </div>
-                        ${p.training
-                            ? `<a href="${p.training}" target="_blank" class="btn-cta"><i data-lucide="graduation-cap" style="width:20px;height:20px;margin-right:8px;vertical-align:-4px;"></i>Training Available for this Role</a>`
-                            : `<div class="no-training-note">No Capability Solutions training is currently mapped to this role.</div>`}
+                        <div class="cta-group">
+                            ${p.training ? `<a href="${p.training}" target="_blank" class="btn-cta"><i data-lucide="graduation-cap" style="width:20px;height:20px;margin-right:8px;vertical-align:-4px;"></i>Foundational Training</a>` : ``}
+                            ${p.inwork ? `<a href="${p.inwork.url}" target="_blank" class="btn-cta btn-cta-alt" title="${p.inwork.label}"><i data-lucide="award" style="width:20px;height:20px;margin-right:8px;vertical-align:-4px;"></i>In-Work Qualification</a>` : ``}
+                            ${(!p.training && !p.inwork) ? `<div class="no-training-note">Training links coming soon for this role.</div>` : ``}
+                        </div>
                     </div>
                 `;
                 document.body.classList.add('modal-active');
