@@ -929,9 +929,9 @@
         });
         // In-work qualifications -> provider course pages. Add more over time.
         const INWORK = {
-            forwarder: { url: "https://www.manukau.ac.nz/study/areas-of-study/logistics/new-zealand-certificate-in-international-freight-and-logistics-level-4-with-strands-in-freight-forwarding", label: "NZ Certificate in International Freight & Logistics (L4) - MIT" },
-            shipping:  { url: "https://www.manukau.ac.nz/programme/new-zealand-diploma-in-international-logistics-freight-forwarding-level-5/", label: "NZ Diploma in International Logistics (L5) - MIT" },
-            broker:    { url: "https://www.cbaff.org.nz/Training/courses", label: "CBAFF Customs Broking courses" }
+            // In-work qualification links — add ONLY verified, working URLs here.
+            // (MIT, CBAFF and careers.govt.nz deep links were found to redirect/404, so they were removed.)
+            // Example shape: forwarder: { url: "https://...", label: "NZ Certificate in International Freight & Logistics (L4)" }
         };
         Personae.forEach(p => { p.inwork = INWORK[p.id] || null; });
 
