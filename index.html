@@ -5,10 +5,6 @@
   <link rel="canonical" href="https://biosecuritytraining.nz/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biosecurity Training NZ — New Zealand's Biosecurity Training Resource</title>
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta name="description" content="New Zealand's dedicated biosecurity training resource. Free courses, Accredited Person training, and the Biosecurity Business Pledge. Start learning today.">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -202,6 +198,8 @@
       padding: 28px;
       box-shadow: 0 2px 12px rgba(0,59,73,0.06);
       transition: box-shadow 0.2s, transform 0.2s;
+      display: flex;
+      flex-direction: column;
     }
     .course-card:hover { box-shadow: 0 6px 24px rgba(0,59,73,0.12); transform: translateY(-2px); }
     .card-tag {
@@ -213,6 +211,7 @@
       padding: 3px 10px;
       border-radius: 100px;
       margin-bottom: 14px;
+      align-self: flex-start;
     }
     .tag-free { background: #d1fae5; color: #065f46; }
     .tag-paid { background: #fef3c7; color: #92400e; }
@@ -239,6 +238,7 @@
       font-size: 0.95rem;
       text-decoration: none;
       transition: gap 0.2s;
+      margin-top: auto;
     }
     .card-link:hover { gap: 10px; }
     .card-link::after { content: '→'; }
@@ -369,7 +369,6 @@
     <div class="nav-inner">
       <a href="/" class="nav-logo">Biosecurity Training <span>NZ</span></a>
       <ul class="nav-links">
-        <li><a href="/start-your-career.html">Start Your Career</a></li>
         <li><a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a></li>
         <li><a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a></li>
         <li><a href="/articles/what-is-the-biosecurity-business-pledge.html">Business Pledge</a></li>
@@ -402,13 +401,31 @@
     <div class="section-inner">
       <p class="section-label">Free Training</p>
       <h2 class="section-title">Start Learning — At No Cost</h2>
-      <p class="section-sub">Free online training for staff working at MPI Approved Transitional Facilities.</p>
+      <p class="section-sub">Free online courses from Capability Solutions. Work through them at your own pace, on any device, at no cost.</p>
       <div class="card-grid">
+        <div class="course-card">
+          <span class="card-tag tag-free">Free Course</span>
+          <h3>Biosecurity Awareness</h3>
+          <p>An introduction to New Zealand's biosecurity system: what it is, why it matters, and your role as someone handling imported goods. Suitable for staff across logistics, warehousing, freight, and business generally.</p>
+          <a href="https://train.capabilitysolutions.co.nz/courses/BiosecurityAwareness" target="_blank" rel="noopener" class="card-link">Enrol free</a>
+        </div>
         <div class="course-card">
           <span class="card-tag tag-free">Free Course</span>
           <h3>Working Safely with MPI — Transitional Facilities</h3>
           <p>For staff at MPI Approved Transitional Facilities. Understand H&amp;S obligations, safe working procedures, and your responsibilities when handling imported goods under MPI oversight.</p>
           <a href="https://train.capabilitysolutions.co.nz/courses/Transitional-Facility-HandS-Working-Safely-with-MPI" target="_blank" rel="noopener" class="card-link">Enrol free</a>
+        </div>
+        <div class="course-card">
+          <span class="card-tag tag-free">Free Course</span>
+          <h3>Forklift Awareness for Warehouse Teams</h3>
+          <p>For warehouse, packhouse and yard teams who work around forklifts but do not drive them. In about 30 minutes, learn how forklifts move, the danger zones, your duties, and the habits that keep people on foot safe.</p>
+          <a href="https://train.capabilitysolutions.co.nz/courses/Forklift%20Awareness%20for%20Warehouse%20Teams" target="_blank" rel="noopener" class="card-link">Enrol free</a>
+        </div>
+        <div class="course-card">
+          <span class="card-tag tag-free">Free Course</span>
+          <h3>Understanding Behaviours in the Workplace</h3>
+          <p>Build confidence and self-awareness at work. Learn to read behavioural styles, improve team dynamics, and communicate calmly and professionally with anyone. Ideal for all staff levels.</p>
+          <a href="https://train.capabilitysolutions.co.nz/courses/Understanding-Behaviours-in-the-Workplace" target="_blank" rel="noopener" class="card-link">Enrol free</a>
         </div>
       </div>
     </div>
@@ -454,18 +471,6 @@
       <h2 class="section-title">Understand the NZ Biosecurity Landscape</h2>
       <p class="section-sub">Practical guides for New Zealand businesses, leaders, and professionals.</p>
       <div class="card-grid">
-        <div class="article-card" style="border-left-color: var(--primary); background: var(--primary-soft);">
-          <p class="section-label">Careers · School Leavers</p>
-          <h3>Start Your Career in the Import Pathway</h3>
-          <p>Curious about jobs in freight, customs, biosecurity and logistics? Explore the careers behind every shipment and the training that gets you started.</p>
-          <a href="/start-your-career.html" class="card-link">Explore careers</a>
-        </div>
-        <div class="article-card">
-          <p class="section-label">Careers Guide</p>
-          <h3>Import Pathway Careers in NZ: A School Leaver's Guide</h3>
-          <p>The jobs behind every shipment, what they pay, and how to start without a degree. A plain guide for school leavers and parents.</p>
-          <a href="/articles/import-pathway-careers-new-zealand.html" class="card-link">Read article</a>
-        </div>
         <div class="article-card">
           <p class="section-label">For Business</p>
           <h3>NZ Biosecurity: What Every Business Needs to Know</h3>
@@ -479,22 +484,10 @@
           <a href="/articles/what-is-an-accredited-person-ap-new-zealand.html" class="card-link">Read article</a>
         </div>
         <div class="article-card">
-          <p class="section-label">Border Clearance</p>
-          <h3>What is a Transitional Facility in New Zealand?</h3>
-          <p>An MPI-approved site where imported risk goods are held, inspected, or treated before clearance. What they are, who must be involved, and what operators must do.</p>
-          <a href="/articles/what-is-a-transitional-facility-in-new-zealand.html" class="card-link">Read article</a>
-        </div>
-        <div class="article-card">
           <p class="section-label">Commitment</p>
           <h3>What is the Biosecurity Business Pledge?</h3>
           <p>New Zealand businesses are signing a collective commitment to lead biosecurity risk. Find out what it means and whether your organisation should join.</p>
           <a href="/articles/what-is-the-biosecurity-business-pledge.html" class="card-link">Read article</a>
-        </div>
-        <div class="article-card">
-          <p class="section-label">Training</p>
-          <h3>Which Biosecurity Training Do You Need?</h3>
-          <p>Awareness, Accredited Person, or Transitional Facility Operator? The three MPI training types compared — so you can match the right course to each role.</p>
-          <a href="/articles/which-biosecurity-training-do-you-need.html" class="card-link">Read article</a>
         </div>
         <div class="article-card">
           <p class="section-label">MPI-Approved Training</p>
@@ -507,12 +500,6 @@
           <h3>Site Access Management for MPI Approved Transitional Facilities</h3>
           <p>TFs face MPI biosecurity, health and safety, and aviation security obligations all at once. How SiteKey — and AirCertifyNZ — help manage them.</p>
           <a href="/articles/site-access-management-for-transitional-facilities-sitekey.html" class="card-link">Read article</a>
-        </div>
-        <div class="article-card">
-          <p class="section-label">Warehouse Safety</p>
-          <h3>Forklift Safety in NZ Warehouses: Protecting Your Whole Team</h3>
-          <p>Most people hurt by forklifts never drive one. Why awareness training matters for every warehouse worker on foot, and how to train your team.</p>
-          <a href="/articles/forklift-safety-awareness-warehouse-teams-nz.html" class="card-link">Read article</a>
         </div>
         <div class="article-card" style="border-left-color: var(--secondary);">
           <p class="section-label">All Courses</p>
@@ -561,37 +548,6 @@
     "width": 1440,
     "height": 500,
     "description": "New Zealand warehouse team managing biosecurity-compliant freight operations"
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://biosecuritytraining.nz/#organization",
-  "name": "Biosecurity Training NZ",
-  "url": "https://biosecuritytraining.nz/",
-  "logo": {
-    "@type": "ImageObject",
-    "url": "https://biosecuritytraining.nz/apple-touch-icon.png"
-  },
-  "description": "New Zealand's dedicated biosecurity training resource: free courses, MPI Accredited Person training, and the Biosecurity Business Pledge.",
-  "parentOrganization": {
-    "@type": "EducationalOrganization",
-    "name": "Capability Solutions",
-    "url": "https://train.capabilitysolutions.co.nz",
-    "sameAs": [
-      "https://www.linkedin.com/company/capability-solutions",
-      "https://www.instagram.com/capabilitysolutions/",
-      "https://www.facebook.com/profile.php?id=61584982107779"
-    ]
-  },
-  "founder": {
-    "@type": "Person",
-    "name": "Gordon Findlay",
-    "sameAs": [
-      "https://www.linkedin.com/in/gordonfindlaynz/"
-    ]
   }
 }
 </script>
