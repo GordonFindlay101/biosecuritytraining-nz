@@ -48,7 +48,7 @@
     .article-body p { margin-bottom: 18px; font-size: 1.05rem; }
     .article-body ul, .article-body ol { margin: 0 0 18px 24px; font-size: 1.05rem; }
     .article-body li { margin-bottom: 8px; }
-    .article-body a { color: var(--primary); font-weight: 600; }
+    .article-body p a, .article-body li a { color: var(--primary); font-weight: 600; }
 
     .callout { background: var(--bg-offset); border-left: 4px solid var(--primary); border-radius: 0 var(--radius) var(--radius) 0; padding: 20px 24px; margin: 32px 0; }
     .callout-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--primary); margin-bottom: 8px; }
@@ -91,10 +91,10 @@
     .cta-block h3 { font-family: 'Libre Baskerville', serif; color: #fff; font-size: 1.4rem; margin-bottom: 10px; }
     .cta-block p { color: rgba(255,255,255,0.75); margin-bottom: 24px; font-size: 1rem; }
     .btn { display: inline-block; padding: 13px 26px; border-radius: 100px; font-family: 'Source Sans Pro', sans-serif; font-size: 0.98rem; font-weight: 700; text-decoration: none; transition: all 0.2s; margin: 6px; }
-    .btn-primary { background: var(--primary); color: #fff; }
-    .btn-primary:hover { background: #009a93; transform: translateY(-1px); }
-    .btn-outline-light { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.45); }
-    .btn-outline-light:hover { border-color: #fff; transform: translateY(-1px); }
+    .cta-block .btn-primary { background: var(--primary); color: #fff; }
+    .cta-block .btn-primary:hover { background: #009a93; transform: translateY(-1px); }
+    .cta-block .btn-outline-light { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.45); }
+    .cta-block .btn-outline-light:hover { border-color: #fff; transform: translateY(-1px); }
 
     .article-nav { display: flex; gap: 16px; margin-top: 56px; padding-top: 32px; border-top: 1px solid rgba(0,59,73,0.1); flex-wrap: wrap; }
     .article-nav a { flex: 1; min-width: 200px; background: var(--bg-offset); border-radius: var(--radius); padding: 18px 20px; text-decoration: none; transition: box-shadow 0.2s; }
