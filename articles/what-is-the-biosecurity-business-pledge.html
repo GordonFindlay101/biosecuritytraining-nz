@@ -72,6 +72,8 @@
     .btn-primary:hover { background: #009a93; transform: translateY(-1px); }
     .btn-outline-light { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.45); }
     .btn-outline-light:hover { border-color: #fff; transform: translateY(-1px); }
+    /* .article-body generic link colour would otherwise hide button labels */
+    .article-body a.btn-primary, .article-body a.btn-outline-light { color: #fff; }
 
     .article-nav { display: flex; gap: 16px; margin-top: 56px; padding-top: 32px; border-top: 1px solid rgba(0,59,73,0.1); flex-wrap: wrap; }
     .article-nav a { flex: 1; min-width: 200px; background: var(--bg-offset); border-radius: var(--radius); padding: 18px 20px; text-decoration: none; transition: box-shadow 0.2s; }
