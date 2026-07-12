@@ -625,7 +625,7 @@
         <ul>
           <li>Freight Forwarder</li><li>Shipping Line Operations</li><li>NZ Customs Broker</li><li>NZ Customs Officer</li><li>MPI Biosecurity Officer</li><li>Importer of Record</li><li>3PL / Warehouse Operator</li><li>Distributor Manager</li><li>Retail Department Manager</li>
         </ul>
-        <p><a href="/start-your-career.html">Read about starting your career in the import pathway</a> or <a href="/training.html">view biosecurity training courses</a>.</p>
+        <p><a href='/start-your-career'>Read about starting your career in the import pathway</a> or <a href='/training'>view biosecurity training courses</a>.</p>
       </div>
     </noscript>
 
@@ -1159,6 +1159,58 @@
 
         window.onload = () => Game.init();
     </script>
+
+<!-- CCOS pathway horizontal-scroll enhancement -->
+<style id="pw-enh-style">.pathway-container{ cursor:grab; touch-action:pan-x; -webkit-overflow-scrolling:touch; scroll-snap-type:x proximity; }
+.pathway-container.is-dragging{ cursor:grabbing; }
+.pathway-container .node-container{ scroll-snap-align:center; }
+.pw-scroll-btn{ position:absolute; top:0; z-index:40; width:52px; height:52px; border-radius:50%; border:none; background:#00B5AD; color:#fff; display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:0 6px 20px rgba(0,0,0,.35); transition:opacity .25s ease, transform .15s ease, background .2s ease; -webkit-tap-highlight-color:transparent; }
+.pw-scroll-btn:hover{ background:#019a93; transform:scale(1.06); }
+.pw-scroll-btn:active{ transform:scale(.94); }
+.pw-scroll-btn svg{ width:24px; height:24px; }
+.pw-scroll-btn[disabled]{ opacity:0; pointer-events:none; }
+.pw-scroll-btn.pw-left{ left:16px; } .pw-scroll-btn.pw-right{ right:16px; }
+.pw-progress{ position:absolute; left:50%; transform:translateX(-50%); z-index:40; height:6px; border-radius:999px; background:rgba(255,255,255,.20); max-width:520px; width:64%; overflow:hidden; }
+.pw-progress-bar{ position:absolute; top:0; left:0; height:100%; border-radius:999px; background:#00B5AD; width:20%; transition:left .18s ease, width .18s ease; }
+.pw-hint{ position:absolute; left:50%; transform:translateX(-50%); z-index:40; text-align:center; color:rgba(255,255,255,.78); font-size:.85rem; letter-spacing:.02em; margin:0; white-space:nowrap; }
+@media (max-width:640px){ .pw-scroll-btn{ width:44px; height:44px; } .pw-scroll-btn svg{ width:20px; height:20px; } .pw-scroll-btn.pw-left{ left:8px; } .pw-scroll-btn.pw-right{ right:8px; } .pw-progress{ width:78%; } .pw-hint{ font-size:.78rem; white-space:normal; width:88%; } }
+@media (prefers-reduced-motion:reduce){ .pw-scroll-btn,.pw-progress-bar{ transition:none; } }</style>
+<script>
+(function(){
+function initPathwayScroll(){
+  var box=document.querySelector('.pathway-container'); var wrap=document.querySelector('.pathway-wrapper');
+  if(!box||!wrap||box.__pwEnhanced) return; box.__pwEnhanced=true;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var CL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>';
+  var CR='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>';
+  var left=document.createElement('button'); left.className='pw-scroll-btn pw-left'; left.type='button'; left.setAttribute('aria-label','Scroll pathway left'); left.innerHTML=CL;
+  var right=document.createElement('button'); right.className='pw-scroll-btn pw-right'; right.type='button'; right.setAttribute('aria-label','Scroll pathway right'); right.innerHTML=CR;
+  var prog=document.createElement('div'); prog.className='pw-progress'; var bar=document.createElement('div'); bar.className='pw-progress-bar'; prog.appendChild(bar);
+  var hint=document.createElement('p'); hint.className='pw-hint'; hint.textContent='Drag, swipe, or use the arrows to follow the full pathway';
+  wrap.appendChild(left); wrap.appendChild(right); wrap.appendChild(prog); wrap.appendChild(hint);
+  function step(){ var n=box.querySelector('.node-container'); return n?Math.max(n.getBoundingClientRect().width*1.1,260):box.clientWidth*0.8; }
+  var anim=null;
+  function go(target){ var m=box.scrollWidth-box.clientWidth; target=Math.max(0,Math.min(m,target)); if(reduce){ box.scrollLeft=target; update(); return; } if(anim) cancelAnimationFrame(anim); var s=box.scrollLeft, d=target-s, dur=360, t0=null, done=false; var fb=setTimeout(function(){ if(!done){ if(anim)cancelAnimationFrame(anim); box.scrollLeft=target; update(); } },420); function fr(ts){ if(t0===null)t0=ts; var p=Math.min((ts-t0)/dur,1); var e=p<0.5?2*p*p:1-Math.pow(-2*p+2,2)/2; box.scrollLeft=s+d*e; if(p<1){ anim=requestAnimationFrame(fr); } else { done=true; clearTimeout(fb); update(); } } anim=requestAnimationFrame(fr); }
+  function place(){ var mid=box.offsetTop+(box.clientHeight/2)-26; left.style.top=mid+'px'; right.style.top=mid+'px'; var b=box.offsetTop+box.clientHeight+14; prog.style.top=b+'px'; hint.style.top=(b+16)+'px'; update(); }
+  function update(){ var m=box.scrollWidth-box.clientWidth; left.disabled=box.scrollLeft<=2; right.disabled=box.scrollLeft>=m-2; var r=m>0?box.scrollLeft/m:0; var vf=Math.max(box.clientWidth/box.scrollWidth,0.08); bar.style.width=(vf*100)+'%'; bar.style.left=(r*(100-vf*100))+'%'; var show=m>4; prog.style.display=show?'block':'none'; hint.style.display=show?'block':'none'; if(!show){left.disabled=true;right.disabled=true;} }
+  left.addEventListener('click',function(){ go(box.scrollLeft-step()); });
+  right.addEventListener('click',function(){ go(box.scrollLeft+step()); });
+  box.addEventListener('wheel',function(e){ var dv=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX; if(dv===0)return; if(anim)cancelAnimationFrame(anim); box.scrollLeft+=dv; e.preventDefault(); },{passive:false});
+  var dn=false,sx=0,sl=0,mv=0;
+  box.addEventListener('mousedown',function(e){ if(e.button!==0)return; dn=true;mv=0;sx=e.pageX;sl=box.scrollLeft; if(anim)cancelAnimationFrame(anim); box.classList.add('is-dragging'); });
+  window.addEventListener('mousemove',function(e){ if(!dn)return; var dx=e.pageX-sx; mv+=Math.abs(dx); box.scrollLeft=sl-dx; e.preventDefault(); });
+  window.addEventListener('mouseup',function(){ dn=false; box.classList.remove('is-dragging'); });
+  box.addEventListener('click',function(e){ if(mv>6){ e.preventDefault(); e.stopPropagation(); } },true);
+  box.addEventListener('scroll',update,{passive:true});
+  window.addEventListener('resize',place);
+  place(); setTimeout(place,300); setTimeout(place,1200);
+}
+function boot(){ try{ initPathwayScroll(); }catch(e){} }
+if(document.readyState!=="loading"){ boot(); } else { document.addEventListener("DOMContentLoaded", boot); }
+setTimeout(boot,800); setTimeout(boot,2000);
+try{ var mo=new MutationObserver(function(){ if(document.querySelector(".pathway-container")) boot(); }); mo.observe(document.documentElement,{childList:true,subtree:true}); }catch(e){}
+})();
+</script>
 </body>
 
 </html>
