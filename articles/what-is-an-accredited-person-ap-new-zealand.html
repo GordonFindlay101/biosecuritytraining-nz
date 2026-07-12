@@ -134,12 +134,12 @@
     <div class="nav-inner">
       <a href="/" class="nav-logo">Biosecurity Training <span>NZ</span></a>
       <ul class="nav-links">
-        <li><a href="/start-your-career.html">Start Your Career</a></li>
-        <li><a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a></li>
-        <li><a href="/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a></li>
-        <li><a href="/articles/what-is-the-biosecurity-business-pledge.html">Business Pledge</a></li>
-        <li><a href="/articles/qconz-ap-biosecurity-training-course.html">QCONZ Course</a></li>
-        <li><a href="/training.html">Training</a></li>
+        <li><a href='/start-your-career'>Start Your Career</a></li>
+        <li><a href='/articles/nz-biosecurity-what-every-business-needs-to-know'>For Businesses</a></li>
+        <li><a href='/articles/what-is-an-accredited-person-ap-new-zealand'>Accredited Person</a></li>
+        <li><a href='/articles/what-is-the-biosecurity-business-pledge'>Business Pledge</a></li>
+        <li><a href='/articles/qconz-ap-biosecurity-training-course'>QCONZ Course</a></li>
+        <li><a href='/training'>Training</a></li>
       </ul>
     </div>
   </nav>
@@ -219,7 +219,7 @@
       <h3>Ready to Become an Accredited Person?</h3>
       <p>QCONZ delivers the AP training programme recognised by MPI. Enrol through the link below — and if you want to build foundational biosecurity knowledge first, start with our free <a href="https://train.capabilitysolutions.co.nz/courses/BiosecurityAwareness" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">Biosecurity Awareness course</a>. You can also browse the full <a href="https://train.capabilitysolutions.co.nz/collections" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">Capability Solutions workplace training course library</a>.</p>
       <a href="https://biosecuritytraining.qconz.co.nz/" target="_blank" rel="noopener" class="btn btn-primary">AP Training via QCONZ</a>
-      <a href="/training.html" class="btn btn-outline-light">View Free Biosecurity Training</a>
+      <a class='btn btn-outline-light' href='/training'>View Free Biosecurity Training</a>
     </div>
 
     <h2>Responsibilities of an Accredited Person</h2>
@@ -248,11 +248,11 @@
     <p>The cost of getting AP accreditation in place is modest compared to the cost of a biosecurity compliance failure.</p>
 
     <div class="article-nav">
-      <a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">
+      <a href='/articles/nz-biosecurity-what-every-business-needs-to-know'>
         <div class="nav-dir">← Previous</div>
         <div class="nav-title">NZ Biosecurity: What Every Business Needs to Know</div>
       </a>
-      <a href="/articles/what-is-the-biosecurity-business-pledge.html">
+      <a href='/articles/what-is-the-biosecurity-business-pledge'>
         <div class="nav-dir">Next Article →</div>
         <div class="nav-title">What is the Biosecurity Business Pledge?</div>
       </a>
@@ -265,10 +265,10 @@
       <div class="footer-logo">Biosecurity Training <span>NZ</span></div>
 
       <div class="footer-links">
-        <a href="/start-your-career.html">Start Your Career</a>
+        <a href='/start-your-career'>Start Your Career</a>
         <a href="/">Home</a>
-        <a href="/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a>
-        <a href="/articles/what-is-the-biosecurity-business-pledge.html">Business Pledge</a>
+        <a href='/articles/nz-biosecurity-what-every-business-needs-to-know'>For Businesses</a>
+        <a href='/articles/what-is-the-biosecurity-business-pledge'>Business Pledge</a>
         <a href="https://train.capabilitysolutions.co.nz" target="_blank" rel="noopener">Free Courses</a>
       </div>
       <p>&copy; 2026 Biosecurity Training NZ.</p>
@@ -317,6 +317,37 @@
     }
   ]
 }
+</script>
+
+<!-- CCOS mobile hamburger nav -->
+<style id="pw-nav-style">.pw-hamburger{ display:none; background:none; border:none; cursor:pointer; padding:8px; width:44px; height:44px; -webkit-tap-highlight-color:transparent; }
+.pw-hamburger span{ display:block; width:24px; height:2px; background:#fff; margin:5px auto; border-radius:2px; transition:transform .25s ease, opacity .2s ease; }
+.pw-hamburger.pw-active span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+.pw-hamburger.pw-active span:nth-child(2){ opacity:0; }
+.pw-hamburger.pw-active span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+@media (max-width:768px){
+  nav{ position:relative; }
+  nav .nav-inner{ position:static; }
+  .pw-hamburger{ display:block; }
+  .nav-links{ position:absolute; top:64px; left:0; right:0; flex-direction:column; background:#003B49; padding:6px 0; gap:0; box-shadow:0 10px 24px rgba(0,0,0,.35); z-index:200; }
+  .nav-links.pw-open{ display:flex; }
+  .nav-links a{ padding:13px 22px; display:block; font-size:1rem; }
+}</style>
+<script>
+(function initBioNav(){
+  function boot(){
+    var nav=document.querySelector('nav'); if(!nav) return;
+    var inner=nav.querySelector('.nav-inner'); var links=nav.querySelector('.nav-links');
+    if(!inner||!links||inner.querySelector('.pw-hamburger')) return;
+    var btn=document.createElement('button'); btn.className='pw-hamburger'; btn.type='button';
+    btn.setAttribute('aria-label','Menu'); btn.setAttribute('aria-expanded','false');
+    btn.innerHTML='<span></span><span></span><span></span>';
+    inner.appendChild(btn);
+    btn.addEventListener('click',function(){ var o=links.classList.toggle('pw-open'); btn.classList.toggle('pw-active',o); btn.setAttribute('aria-expanded',o?'true':'false'); });
+    links.addEventListener('click',function(e){ if(e.target.tagName==='A'){ links.classList.remove('pw-open'); btn.classList.remove('pw-active'); btn.setAttribute('aria-expanded','false'); } });
+  }
+  if(document.readyState!=='loading') boot(); else document.addEventListener('DOMContentLoaded', boot);
+})();
 </script>
 </body>
 </html>
