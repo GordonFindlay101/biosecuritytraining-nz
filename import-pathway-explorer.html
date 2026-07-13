@@ -1217,11 +1217,12 @@ try{ var mo=new MutationObserver(function(){ if(document.querySelector(".pathway
 (function initMpiTraining(){
   var COURSES=[
     {label:'Biosecurity Awareness Course (free)', url:'https://train.capabilitysolutions.co.nz/courses/BiosecurityAwareness'},
-    {label:'Workplace Assertiveness Course (free)', url:'https://train.capabilitysolutions.co.nz/courses/Workplace-Assertiveness-Conflict-Communication'}
+    {label:'Workplace Assertiveness Course (free)', url:'https://train.capabilitysolutions.co.nz/courses/Workplace-Assertiveness-Conflict-Communication'},
+    {label:'Quick CV and Cover Letter Builder (free)', url:'https://train.capabilitysolutions.co.nz/courses/The%20Quick%20CV%20and%20Cover%20Letter%20Builder'}
   ];
   function build(){
     var w=document.createElement('div'); w.className='pw-mpi-train';
-    var head='<div style="font-weight:700;font-size:.72rem;letter-spacing:.1em;color:#00B5AD;text-transform:uppercase;margin-bottom:12px;">Free training to get you started</div>';
+    var head='<div style="font-weight:700;font-size:.72rem;letter-spacing:.1em;color:#00B5AD;text-transform:uppercase;margin-bottom:6px;">Free training to get you started</div><div style="color:#cfe9e7;font-size:.95rem;line-height:1.5;margin-bottom:14px;">Found a role at MPI you would like to apply for? These free courses will help you get started.</div>';
     var body=COURSES.map(function(c){ return '<a href="'+c.url+'" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(0,181,173,.10);border:1px solid rgba(0,181,173,.5);color:#e8fbfa;text-decoration:none;padding:14px 16px;border-radius:10px;margin-bottom:10px;font-weight:600;font-size:.95rem;">'+c.label+'<span style="color:#00B5AD;font-size:1.15rem;">&#8594;</span></a>'; }).join('');
     w.innerHTML=head+body; return w;
   }
