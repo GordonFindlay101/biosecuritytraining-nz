@@ -1238,6 +1238,33 @@ try{ var mo=new MutationObserver(function(){ if(document.querySelector(".pathway
   if(document.readyState!=='loading') patch(); else document.addEventListener('DOMContentLoaded', patch);
 })();
 </script>
+
+<!-- CCOS MPI Biosecurity Officer training-available badge -->
+<script>
+(function initMpiBadge(){
+  function ensureBadge(){
+    var nodes=document.querySelectorAll('.node-container'), done=false;
+    for(var i=0;i<nodes.length;i++){
+      if(/Helen Andrews|Biosecurity Officer/i.test(nodes[i].textContent||'')){
+        var node=nodes[i].querySelector('.node');
+        if(node && !node.querySelector('.train-badge')){
+          var b=document.createElement('div'); b.className='train-badge'; b.textContent='Training available'; node.appendChild(b);
+        }
+        done=true;
+      }
+    }
+    return done;
+  }
+  function patch(){
+    if(typeof Game!=='undefined' && typeof Game.renderPathway==='function' && !Game.__pwBadge){
+      Game.__pwBadge=true;
+      var o=Game.renderPathway;
+      Game.renderPathway=function(){ var res=o.apply(this,arguments); try{ ensureBadge(); setTimeout(ensureBadge,60); }catch(e){} return res; };
+    }
+  }
+  var n=0, iv=setInterval(function(){ patch(); ensureBadge(); if(n++>240) clearInterval(iv); }, 150);
+})();
+</script>
 </body>
 
 </html>
