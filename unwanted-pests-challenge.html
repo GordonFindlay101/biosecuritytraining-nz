@@ -618,22 +618,25 @@ function pop(text,kind,x,y){const el=document.createElement('div');el.className=
 function combo(text){let c=document.getElementById('comboEl');if(!c){c=document.createElement('div');c.className='combo';c.id='comboEl';c.innerHTML=svg(IC.star)+'<span></span>';document.body.appendChild(c);}
   c.querySelector('span').textContent=text;c.classList.remove('on');void c.offsetWidth;c.classList.add('on');}
 
-/* countdown tension audio: accelerating tick that sharpens in the red zone, buzzer on timeout */
+/* countdown tension audio: red-zone-only tension tick, buzzer on timeout.
+   Reuses the game's Snd context and respects its mute toggle. */
 const TENSE=(function(){
-  let ac=null,on=false,t0=0,dur=0,tmr=null;
-  function ctx(){if(!ac){try{ac=new (window.AudioContext||window.webkitAudioContext)();}catch(e){return null;}}if(ac&&ac.state==='suspended'){ac.resume().catch(function(){});}return ac;}
-  function blip(freq,len,vol,type){const a=ctx();if(!a)return;const o=a.createOscillator(),g=a.createGain();o.type=type||'square';o.frequency.value=freq;o.connect(g);g.connect(a.destination);const t=a.currentTime;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(vol,t+0.005);g.gain.exponentialRampToValueAtTime(0.0006,t+len);o.start(t);o.stop(t+len+0.02);}
+  let on=false,t0=0,dur=0,tmr=null;
+  function blip(freq,len,vol,type){if(!Snd.on)return;Snd.init();Snd.resume();const a=Snd.ctx;if(!a)return;const o=a.createOscillator(),g=a.createGain();o.type=type||'square';o.frequency.value=freq;o.connect(g);g.connect(a.destination);const t=a.currentTime;g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(vol,t+0.006);g.gain.exponentialRampToValueAtTime(0.0006,t+len);o.start(t);o.stop(t+len+0.02);}
   function tick(){
     if(!on)return;
     const frac=Math.max(0,1-(performance.now()-t0)/dur);
-    if(frac>0.25){blip(640,0.05,0.16,'triangle');}
-    else{blip(900,0.06,0.24,'square');blip(170,0.10,0.13,'sine');}
-    tmr=setTimeout(tick,110+frac*410);
+    if(frac<=0.25){
+      blip(900,0.06,0.22,'square');blip(170,0.10,0.12,'sine');
+      tmr=setTimeout(tick,90+(frac/0.25)*230);
+    }else{
+      tmr=setTimeout(tick,120);
+    }
   }
   return {
-    start:function(ms){if(NOTIMER)return;on=true;t0=performance.now();dur=ms;ctx();clearTimeout(tmr);tick();},
+    start:function(ms){if(NOTIMER)return;on=true;t0=performance.now();dur=ms;clearTimeout(tmr);tick();},
     stop:function(){on=false;clearTimeout(tmr);},
-    expire:function(){if(NOTIMER)return;blip(120,0.5,0.28,'sawtooth');}
+    expire:function(){if(NOTIMER)return;blip(120,0.5,0.26,'sawtooth');}
   };
 })();
 function clearTimers(){if(G.raf)cancelAnimationFrame(G.raf);G.raf=null;if(G.timer)clearTimeout(G.timer);G.timer=null;TENSE.stop();}
