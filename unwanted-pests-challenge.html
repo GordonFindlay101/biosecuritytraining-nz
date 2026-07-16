@@ -618,12 +618,30 @@ function pop(text,kind,x,y){const el=document.createElement('div');el.className=
 function combo(text){let c=document.getElementById('comboEl');if(!c){c=document.createElement('div');c.className='combo';c.id='comboEl';c.innerHTML=svg(IC.star)+'<span></span>';document.body.appendChild(c);}
   c.querySelector('span').textContent=text;c.classList.remove('on');void c.offsetWidth;c.classList.add('on');}
 
-function clearTimers(){if(G.raf)cancelAnimationFrame(G.raf);G.raf=null;if(G.timer)clearTimeout(G.timer);G.timer=null;}
+/* countdown tension audio: accelerating tick that sharpens in the red zone, buzzer on timeout */
+const TENSE=(function(){
+  let ac=null,on=false,t0=0,dur=0,tmr=null;
+  function ctx(){if(!ac){try{ac=new (window.AudioContext||window.webkitAudioContext)();}catch(e){return null;}}if(ac&&ac.state==='suspended'){ac.resume().catch(function(){});}return ac;}
+  function blip(freq,len,vol,type){const a=ctx();if(!a)return;const o=a.createOscillator(),g=a.createGain();o.type=type||'square';o.frequency.value=freq;o.connect(g);g.connect(a.destination);const t=a.currentTime;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(vol,t+0.005);g.gain.exponentialRampToValueAtTime(0.0006,t+len);o.start(t);o.stop(t+len+0.02);}
+  function tick(){
+    if(!on)return;
+    const frac=Math.max(0,1-(performance.now()-t0)/dur);
+    if(frac>0.25){blip(640,0.05,0.16,'triangle');}
+    else{blip(900,0.06,0.24,'square');blip(170,0.10,0.13,'sine');}
+    tmr=setTimeout(tick,110+frac*410);
+  }
+  return {
+    start:function(ms){if(NOTIMER)return;on=true;t0=performance.now();dur=ms;ctx();clearTimeout(tmr);tick();},
+    stop:function(){on=false;clearTimeout(tmr);},
+    expire:function(){if(NOTIMER)return;blip(120,0.5,0.28,'sawtooth');}
+  };
+})();
+function clearTimers(){if(G.raf)cancelAnimationFrame(G.raf);G.raf=null;if(G.timer)clearTimeout(G.timer);G.timer=null;TENSE.stop();}
 function startTimer(ms,onExpire){
-  const bar=$('#tbar');if(!bar||NOTIMER)return;const t0=performance.now();
+  const bar=$('#tbar');if(!bar||NOTIMER)return;const t0=performance.now();TENSE.start(ms);
   function step(t){const left=Math.max(0,1-(t-t0)/ms);bar.style.width=(left*100)+'%';
     bar.style.background=left>.5?'var(--teal)':left>.25?'var(--amber)':'var(--alert)';
-    if(left<=0){onExpire();return;}G.raf=requestAnimationFrame(step);}
+    if(left<=0){TENSE.stop();TENSE.expire();onExpire();return;}G.raf=requestAnimationFrame(step);}
   G.raf=requestAnimationFrame(step);
 }
 function waveInfo(){const w=Math.floor(G.shown/6);return {label:'Shift · Wave '+(w+1),ms:[7000,5600,4400,3800][Math.min(w,3)]};}
