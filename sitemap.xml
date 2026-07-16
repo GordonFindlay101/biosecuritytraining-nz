@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://biosecuritytraining.nz/</loc>
     <changefreq>monthly</changefreq>
@@ -45,5 +45,18 @@
     <loc>https://biosecuritytraining.nz/articles/what-does-a-freight-forwarder-do-nz.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://biosecuritytraining.nz/unwanted-pests-challenge.html</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <video:video>
+      <video:thumbnail_loc>https://biosecuritytraining.nz/media/border-watch-poster.jpg</video:thumbnail_loc>
+      <video:title>Border Watch: New Zealand's 12 Most Unwanted Pests and Diseases</video:title>
+      <video:description>A 60-second briefing on the twelve highest-risk pests and diseases New Zealand works to keep out, and the one action that matters most: if you see something unusual, do not touch it, photograph it, and call Biosecurity New Zealand on 0800 80 99 66.</video:description>
+      <video:content_loc>https://biosecuritytraining.nz/media/border-watch-montage.mp4</video:content_loc>
+      <video:duration>64</video:duration>
+    </video:video>
   </url>
 </urlset>
