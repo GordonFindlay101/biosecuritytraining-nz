@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://biosecuritytraining.nz/articles/how-to-start-a-career-in-freight-forwarding-new-zealand.html</loc>
-    <lastmod>2026-06-27</lastmod>
+    <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -48,7 +48,7 @@
   </url>
   <url>
     <loc>https://biosecuritytraining.nz/unwanted-pests-challenge.html</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <video:video>
@@ -58,5 +58,41 @@
       <video:content_loc>https://biosecuritytraining.nz/media/border-watch-montage.mp4</video:content_loc>
       <video:duration>64</video:duration>
     </video:video>
+  </url>
+  <url>
+    <loc>https://biosecuritytraining.nz/start-your-career.html</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://biosecuritytraining.nz/import-pathway-explorer.html</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://biosecuritytraining.nz/articles/import-pathway-careers-new-zealand.html</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://biosecuritytraining.nz/articles/what-is-a-transitional-facility-in-new-zealand.html</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://biosecuritytraining.nz/articles/which-biosecurity-training-do-you-need.html</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://biosecuritytraining.nz/articles/forklift-safety-awareness-warehouse-teams-nz.html</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
