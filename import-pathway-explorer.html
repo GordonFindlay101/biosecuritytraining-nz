@@ -47,11 +47,12 @@
             margin: 0;
             padding: 0;
             width: 100%;
-            height: 100dvh;
+            min-height: 100dvh;
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-dark);
             color: #f0f0f0;
-            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: auto;
         }
 
         h1,
@@ -66,7 +67,7 @@
 
         #app {
             width: 100%;
-            height: 100%;
+            height: 100dvh;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -1265,6 +1266,59 @@ try{ var mo=new MutationObserver(function(){ if(document.querySelector(".pathway
   var n=0, iv=setInterval(function(){ patch(); ensureBadge(); if(n++>240) clearInterval(iv); }, 150);
 })();
 </script>
+
+<!-- CCOS static reference section: crawler-readable, human-visible content for the Import Pathway Explorer -->
+<section id="pathway-roles-reference" style="background:#05080c;color:#cfe9e7;font-family:'Inter',Arial,sans-serif;padding:64px 20px 80px;border-top:1px solid rgba(0,181,173,.35);">
+  <div style="max-width:900px;margin:0 auto;">
+    <p style="font-weight:700;font-size:.72rem;letter-spacing:.14em;color:#00B5AD;text-transform:uppercase;margin:0 0 10px;">Reference guide</p>
+    <h2 style="font-size:2rem;line-height:1.2;margin:0 0 18px;color:#ffffff;">Careers in New Zealand's import pathway</h2>
+    <p style="font-size:1.05rem;line-height:1.7;margin:0 0 18px;">A crate of mandarins picked in the United States passes through a dozen pairs of hands before a shopper in Auckland puts it in a trolley. Each pair of hands is a job, and most of those jobs are open to school leavers. The explorer above walks that journey shipment by shipment. This section sets out the same roles in plain text, with the qualifications people actually hold and the pay they can expect early in their careers.</p>
+    <p style="font-size:1.05rem;line-height:1.7;margin:0 0 32px;">Pay figures are indicative starting to mid ranges for New Zealand, and they move with experience, region and employer. Qualifications listed are the ones commonly held in each role, not fixed entry requirements. Plenty of people in this pathway started on the floor and studied while working.</p>
+
+    <h3 style="font-size:1.3rem;color:#00B5AD;margin:34px 0 8px;">Freight forwarder</h3>
+    <p style="font-size:1.02rem;line-height:1.7;margin:0;">The freight forwarder books the space, arranges the transport legs and keeps the paperwork moving so a consignment travels from an overseas supplier to a New Zealand door. It suits people who like solving a different puzzle every day and holding several moving parts in their head at once. A common qualification is the New Zealand Certificate in International Freight and Logistics (Level 4), often studied part time while already working in a dispatch or operations team. Typical pay sits around $55,000 to $72,000 a year, with senior multi modal and high value freight roles paying more.</p>
+
+    <h3 style="font-size:1.3rem;color:#00B5AD;margin:34px 0 8px;">Shipping line operations</h3>
+    <p style="font-size:1.02rem;line-height:1.7;margin:0;">Shipping line operations staff sit between the vessel and the port, managing schedules, container allocation and vessel turnaround. It is the role that connects global trade to New Zealand's wharves. The New Zealand Diploma in International Logistics (Freight Forwarding) (Level 5) is a common route in. Pay typically runs $60,000 to $85,000 a year, and the natural next step is port terminal management.</p>
+
+    <h3 style="font-size:1.3rem;color:#00B5AD;margin:34px 0 8px;">New Zealand customs broker</h3>
+    <p style="font-size:1.02rem;line-height:1.7;margin:0;">A customs broker prepares and lodges import entries, classifies goods under the tariff, and makes sure duty and GST are calculated correctly so cargo clears without delay. Accuracy is the whole job: one wrong classification can hold a container on the wharf and cost the client storage. The CBAFF Customs Broking Certificate is the recognised qualification, and experienced brokers can become licensed. Pay ranges from about $58,000 up to $95,000 a year at senior level.</p>
+
+    <h3 style="font-size:1.3rem;color:#00B5AD;margin:34px 0 8px;">New Zealand Customs Service officer</h3>
+    <p style="font-size:1.02rem;line-height:1.7;margin:0;">Customs officers work the border itself, screening passengers, cargo and mail, targeting high risk consignments and enforcing the law while keeping legitimate trade flowing. Entry is through the New Zealand Customs Service officer training programme rather than a prior tertiary qualification. Pay usually falls between $62,000 and $80,000 a year, with specialist paths into intelligence, investigations and digital forensics.</p>
+
+    <h3 style="font-size:1.3rem;color:#00B5AD;margin:34px 0 8px;">MPI biosecurity officer</h3>
+    <p style="font-size:1.02rem;line-height:1.7;margin:0;">Biosecurity officers at the Ministry for Primary Industries inspect goods, containers, passengers and mail for pests and diseases that would damage New Zealand's environment and primary industries. A single insect in a shipment of fruit can cost the country millions, which is why this role carries real weight. Entry varies: many frontline border roles are open to school leavers with MPI training provided, while graduate and specialist roles look for science or environmental study. Pay commonly runs $58,000 to $78,000 a year. Longer term paths lead into risk assessment and the policy teams that write the import health standards applied at the border.</p>
+
+    <h3 style="font-size:1.3rem;color:#00B5AD;margin:34px 0 8px;">Importer of record</h3>
+    <p style="font-size:1.02rem;line-height:1.7;margin:0;">The importer of record is the business or person legally responsible for the goods entering New Zealand. They source products overseas, carry the commercial risk, and answer for compliance with Customs and MPI requirements. Many come through a business qualification such as the New Zealand Diploma in Business (Level 5), then build from a first small consignment. Earnings vary widely, from around $65,000 in a salaried importing role to $120,000 and above for owners of an established import business.</p>
+
+    <h3 style="font-size:1.3rem;color:#00B5AD;margin:34px 0 8px;">Truck driver</h3>
+    <p style="font-size:1.02rem;line-height:1.7;margin:0;">Container drivers move freight from the port to distribution centres and on to stores. It is one of the fastest routes into the pathway: a Class 2 licence can be gained soon after leaving school, with Class 4 and Class 5 following as experience builds. The New Zealand Certificate in Commercial Road Transport (Level 3) sits alongside the licence. Pay generally sits between $55,000 and $80,000 a year, higher on linehaul work, and the role opens into fleet and transport operations later on.</p>
+
+    <h3 style="font-size:1.3rem;color:#00B5AD;margin:34px 0 8px;">Third party logistics and warehouse operator</h3>
+    <p style="font-size:1.02rem;line-height:1.7;margin:0;">Third party logistics operators receive, store, pick and dispatch stock on behalf of other businesses. Modern sites run on scanning, warehouse management systems and increasingly on automation, so the work rewards people who are comfortable with technology as well as with a forklift. The New Zealand Certificate in Supply Chain Management (Level 3) is a common starting qualification. Pay typically runs $50,000 to $65,000 a year, with automation and systems specialists earning more.</p>
+
+    <h3 style="font-size:1.3rem;color:#00B5AD;margin:34px 0 8px;">Distributor manager</h3>
+    <p style="font-size:1.02rem;line-height:1.7;margin:0;">Distribution managers plan how goods move from the warehouse to retailers on time and in condition, which matters most with chilled and fresh product. The New Zealand Diploma in Logistics and Supply Chain Management (Level 5) is a common qualification, and pay usually falls between $55,000 and $75,000 a year. The career path leads towards nationwide operations management.</p>
+
+    <h3 style="font-size:1.3rem;color:#00B5AD;margin:34px 0 8px;">Retail department manager</h3>
+    <p style="font-size:1.02rem;line-height:1.7;margin:0;">The retail department manager is the last link in the chain, responsible for ordering, stock rotation, pricing and the team on the floor. Many start as floor assistants and study alongside the job, often through the New Zealand Certificate in Retail (Level 4). Pay commonly sits between $55,000 and $70,000 a year, with regional operations roles above that.</p>
+
+    <h3 style="font-size:1.3rem;color:#00B5AD;margin:34px 0 8px;">The shopper at the end of the chain</h3>
+    <p style="font-size:1.02rem;line-height:1.7;margin:0;">The explorer finishes with the household that buys the fruit. It is there to make a point that is easy to miss from inside the industry: every role in the pathway exists so that food and goods arrive safe, affordable and free of pests. Biosecurity is not a separate department at the border. It is a shared responsibility that runs the length of the chain.</p>
+
+    <h3 style="font-size:1.3rem;color:#00B5AD;margin:40px 0 8px;">Where to start</h3>
+    <p style="font-size:1.02rem;line-height:1.7;margin:0 0 16px;">Most of these roles hire on attitude and train the rest. If a career at the border or in freight appeals, a short free course is a reasonable first move, and it gives you something concrete to put on an application.</p>
+    <ul style="font-size:1.02rem;line-height:1.9;margin:0 0 20px;padding-left:20px;">
+      <li><a href="https://train.capabilitysolutions.co.nz/courses/BiosecurityAwareness" style="color:#00B5AD;">Biosecurity Awareness Course (free)</a></li>
+      <li><a href="https://train.capabilitysolutions.co.nz/courses/Workplace-Assertiveness-Conflict-Communication" style="color:#00B5AD;">Workplace Assertiveness Course (free)</a></li>
+      <li><a href="https://train.capabilitysolutions.co.nz/courses/The%20Quick%20CV%20and%20Cover%20Letter%20Builder" style="color:#00B5AD;">Quick CV and Cover Letter Builder (free)</a></li>
+    </ul>
+    <p style="font-size:1.02rem;line-height:1.7;margin:0;"><a href="https://biosecuritytraining.nz/start-your-career.html" style="color:#00B5AD;">Read the full guide to starting your career in the import pathway</a>, browse <a href="https://biosecuritytraining.nz/articles/import-pathway-careers-new-zealand.html" style="color:#00B5AD;">import pathway careers in New Zealand</a>, or <a href="https://biosecuritytraining.nz/training.html" style="color:#00B5AD;">view the biosecurity training courses</a>.</p>
+  </div>
+</section>
+
 </body>
 
 </html>
