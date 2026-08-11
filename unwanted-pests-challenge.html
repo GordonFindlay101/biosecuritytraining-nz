@@ -285,7 +285,7 @@ img{max-width:100%;display:block}
   @page{size:A4 portrait;margin:14mm}
 }
 </style>
-</head>
+<!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-19Y5YFYEX0"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-19Y5YFYEX0');</script></head>
 <body>
 
 <div class="topbar">
@@ -598,6 +598,7 @@ function buildBrief(){
 
 /* ---------- GAME ENGINE ---------- */
 const G={queue:[],idx:0,score:0,shown:0,streak:0,best:0,lives:3,breaches:0,correct:0,answered:0,phase:'shift',certIdx:0,cert:0,timer:null,raf:null};
+function ccosTrack(name,params){try{if(typeof gtag==='function')gtag('event',name,params||{});}catch(e){}}
 function mult(){return Math.min(1+Math.floor(G.streak/2)*0.5,3);}
 function buildQueue(){
   const decoys=shuffle(DECOYS).slice(0,6).map(d=>({kind:'decoy',...d}));
@@ -606,6 +607,7 @@ function buildQueue(){
 }
 function startGame(){
   Snd.init();Snd.resume();
+  ccosTrack('shift_started',{game_name:'border_watch'});
   Object.assign(G,{idx:0,score:0,shown:0,streak:0,best:0,lives:3,breaches:0,correct:0,answered:0,phase:'shift',certIdx:0,cert:0});
   buildQueue();renderLives();renderStreak();$('#gScore').textContent='0';
   show('scrGame');nextArrival();
@@ -707,7 +709,9 @@ function resolveArrival(choice,item,btns){
 
 /* ---------- CERTIFICATION ---------- */
 function toCertIntro(){
-  clearTimers();G.phase='cert';G.certIdx=0;
+  clearTimers();
+  ccosTrack('shift_completed',{game_name:'border_watch',score:G.score,arrivals_seen:G.shown,breaches:G.breaches,cleared_shift:G.lives>0?'yes':'no'});
+  G.phase='cert';G.certIdx=0;
   const held=G.breaches===0;
   $('#gWave').textContent='Certification';
   $('#gStage').innerHTML='<div class="inter"><div class="seal">'+svg(IC.star)+'</div>'
@@ -715,7 +719,7 @@ function toCertIntro(){
    +'<p>'+(G.lives<=0?'Three breaches ended your shift. You can still certify your knowledge.':(held?'A clean shift, no breaches. Now certify what you know.':'Now certify what you know.'))+'</p>'
    +'<div class="statline"><div><small>Score</small><b>'+G.score+'</b></div><div><small>Caught</small><b>'+G.correct+'/'+G.answered+'</b></div><div><small>Best streak</small><b>'+G.best+'</b></div></div>'
    +'<button class="btn btn-primary" id="startCert"><svg class="icn" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>Begin certification</button></div>';
-  $('#startCert').onclick=renderCert;
+  $('#startCert').onclick=function(){ccosTrack('certification_started',{game_name:'border_watch',score:G.score});renderCert();};
 }
 function renderCert(){
   clearTimers();
@@ -758,6 +762,9 @@ function finish(){
   else if(s>=6){rank='Watch Officer';title='Good work';sub='You held the line and know the basics. Revisit the field guide for the threats that slipped past.';}
   else{rank='Trainee';title='Keep training';sub='Every shift builds your eye. Run the field guide, then work another shift, the threats get familiar fast.';}
   $('#resRank').textContent=rank;$('#resTitle').textContent=title;$('#resSub').textContent=sub;
+  var certPass=G.cert>=7;
+  ccosTrack('certification_completed',{game_name:'border_watch',correct:G.cert,out_of:QUIZ.length,passed:certPass?'yes':'no',score:G.score,rank:rank});
+  if(certPass)ccosTrack('certification_passed',{game_name:'border_watch',correct:G.cert,out_of:QUIZ.length,score:G.score,rank:rank});
   Snd.finish();show('scrResult');
 }
 
