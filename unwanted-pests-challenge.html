@@ -575,7 +575,9 @@ const NOTIMER=location.search.indexOf('notimer')>-1;
 function show(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('on'));$('#'+id).classList.add('on');window.scrollTo({top:0,behavior:'smooth'});}
 function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 const IMG={"bmsb": "/images/border-watch/bmsb.webp", "queensland-fruit-fly": "/images/border-watch/queensland-fruit-fly.webp", "spotted-lanternfly": "/images/border-watch/spotted-lanternfly.webp", "spongy-moth": "/images/border-watch/spongy-moth.webp", "red-imported-fire-ant": "/images/border-watch/red-imported-fire-ant.webp", "giant-african-snail": "/images/border-watch/giant-african-snail.webp", "citrus-longhorn-beetle": "/images/border-watch/citrus-longhorn-beetle.webp", "foot-and-mouth-disease": "/images/border-watch/foot-and-mouth-disease.webp", "lumpy-skin-disease": "/images/border-watch/lumpy-skin-disease.webp", "african-swine-fever": "/images/border-watch/african-swine-fever.webp", "avian-influenza-hpai": "/images/border-watch/avian-influenza-hpai.webp", "pine-pitch-canker": "/images/border-watch/pine-pitch-canker.webp", "monarch-butterfly": "/images/border-watch/monarch-butterfly.webp", "fantail": "/images/border-watch/fantail.webp", "weta": "/images/border-watch/weta.webp", "bumblebee": "/images/border-watch/bumblebee.webp", "ladybird": "/images/border-watch/ladybird.webp", "treated-pallet": "/images/border-watch/treated-pallet.webp", "silvereye": "/images/border-watch/silvereye.webp"};
-function imgTag(slug){var s=(typeof IMG!=='undefined'&&IMG[slug])?IMG[slug]:('/images/pests/'+slug+'.webp');return '<img src="'+s+'" alt="" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">';}
+function imgTag(slug,name){var s=(typeof IMG!=='undefined'&&IMG[slug])?IMG[slug]:('/images/pests/'+slug+'.webp');var a=name?String(name).replace(/"/g,'&quot;'):'';return '<img src="'+s+'" alt="'+a+'" decoding="async" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'grid\'">';}
+function preloadPestImages(){try{if(typeof IMG==='undefined')return;for(var k in IMG){if(!IMG.hasOwnProperty(k))continue;var i=new Image();i.decoding='async';i.src=IMG[k];}}catch(e){}}
+if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',preloadPestImages);}else{preloadPestImages();}
 function ph(icon){return '<span class="ph" style="display:grid">'+svg(IC[icon])+'</span>';}
 
 /* ---------- BRIEFING ---------- */
@@ -583,7 +585,7 @@ function buildBrief(){
   $('#bgrid').innerHTML=PESTS.map((p,i)=>{
     const facts=[['eye','Spot it',p.identify],['alert','Why it matters',p.risk],['route','How it travels',p.spread],['phone','What to do',p.action]];
     return '<div class="bcard" data-i="'+i+'">'
-     +'<button class="bt" aria-expanded="false"><span class="thumb">'+imgTag(p.slug)+ph(p.icon)+'</span>'
+     +'<button class="bt" aria-expanded="false"><span class="thumb">'+imgTag(p.slug,p.name)+ph(p.icon)+'</span>'
      +'<span class="nm"><span class="cat">'+p.cat+'</span><h3>'+p.name+'</h3><span class="sci">'+p.sci+'</span></span>'
      +svg('<path d="M9 18l6-6-6-6"/>','chev')+'</button>'
      +'<div class="det"><div class="in">'
@@ -663,7 +665,7 @@ function nextArrival(){
   $('#gStage').innerHTML='<div class="arena">'
    +'<div class="timerbar"><i id="tbar"></i></div>'
    +'<div class="arrival" id="arrCard" data-pest="'+isPest+'">'
-   +'<div class="pic">'+imgTag(item.slug)+ph(item.icon)
+   +'<div class="pic">'+imgTag(item.slug,item.name)+ph(item.icon)
    +'<span class="tag">Arrival '+G.shown+' of '+G.queue.length+'</span></div>'
    +'<div class="ab"><div class="nm">'+item.name+'</div><p class="clue">'+item.clue+'</p>'
    +'<div class="choices">'
