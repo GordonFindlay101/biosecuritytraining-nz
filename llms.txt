@@ -15,6 +15,7 @@ Biosecurity Training NZ provides free online biosecurity awareness training for 
 - [Forklift Safety in NZ Warehouses](https://biosecuritytraining.nz/articles/forklift-safety-awareness-warehouse-teams-nz.html): Forklift awareness training for warehouse, distribution, and Transitional Facility teams who work on foot near forklifts
 - [The QCONZ AP Biosecurity Training Course](https://biosecuritytraining.nz/articles/qconz-ap-biosecurity-training-course.html): MPI-approved AP training for sea container handling
 - [What is the Biosecurity Business Pledge?](https://biosecuritytraining.nz/articles/what-is-the-biosecurity-business-pledge.html): The NZ Biosecurity Business Pledge commitment
+- [Which Biosecurity Training Do You Need?](https://biosecuritytraining.nz/articles/which-biosecurity-training-do-you-need.html): Awareness, Accredited Person and Transitional Facility Operator training compared, so you can pick the right MPI training for a role
 
 ## Freight, Logistics and Careers
 
@@ -24,6 +25,11 @@ Biosecurity Training NZ provides free online biosecurity awareness training for 
 - [How to Start a Career in Freight Forwarding in New Zealand](https://biosecuritytraining.nz/articles/how-to-start-a-career-in-freight-forwarding-new-zealand.html): Entry-level roles, what employers look for, and how to get in without a degree
 - [Import Pathway Careers in New Zealand](https://biosecuritytraining.nz/articles/import-pathway-careers-new-zealand.html): The jobs along the import chain, from shipping and forwarding to customs, warehousing and distribution
 
+## Interactive Tools
+
+- [Border Watch: The Unwanted 12](https://biosecuritytraining.nz/unwanted-pests-challenge.html): A free browser game and 60-second video briefing covering the twelve highest-risk pests and diseases New Zealand works to keep out, with the reporting number 0800 80 99 66
+- [Import Pathway Career Explorer](https://biosecuritytraining.nz/import-pathway-explorer.html): An interactive walk through a real New Zealand import, meeting every role from shipping line and freight forwarder to customs broker, MPI biosecurity, warehouse and retailer
+
 ## Key Facts
 
 - Training provider: Capability Solutions (train.capabilitysolutions.co.nz)
@@ -32,4 +38,8 @@ Biosecurity Training NZ provides free online biosecurity awareness training for 
 - Primary facility standard: TFGen (Transitional Facilities for General Uncleared Risk Goods), current version 2 October 2025
 - AP training delivered by: QCONZ (biosecuritytraining.qconz.co.nz)
 - Free awareness training: Available for all TF staff at no cost
+- Reporting suspected biosecurity risk in New Zealand: 0800 80 99 66 (Biosecurity New Zealand exotic pest and disease hotline)
+- Site coverage: biosecurity compliance, Transitional Facility operation, and careers across the New Zealand import pathway
 - Paid accreditation: QCONZ AP course (MPI-approved)
+- Content authored by: Gordon Findlay, Findlay and Co (Capability Solutions)
+- Last updated: 2026-08-16
