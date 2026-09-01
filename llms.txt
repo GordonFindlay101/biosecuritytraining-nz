@@ -32,7 +32,7 @@ Biosecurity Training NZ provides free online biosecurity awareness training for 
 
 ## Key Facts
 
-- Training provider: Capability Solutions (train.capabilitysolutions.co.nz)
+- Training provider: Capability Solutions (capabilitysolutions.co.nz)
 - Regulatory authority: Ministry for Primary Industries (MPI), New Zealand
 - Primary legislation: Biosecurity Act 1993
 - Primary facility standard: TFGen (Transitional Facilities for General Uncleared Risk Goods), current version 2 October 2025
