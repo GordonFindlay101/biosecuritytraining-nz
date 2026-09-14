@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<link rel="canonical" href="https://biosecuritytraining.nz/articles/how-goods-move-import-journey-nz.html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Goods Move: The Journey of an Import to New Zealand | Biosecurity Training NZ</title>
+<meta name="description" content="Every stage of a New Zealand import, in order: booking, the sea or air leg, arrival, the transitional facility, biosecurity clearance, the customs entry, release and delivery.">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+--primary: #00B5AD;
+--primary-soft: rgba(0, 181, 173, 0.10);
+--secondary: #003B49;
+--heading-text: #003B49;
+--body-text: #4a4a4a;
+--bg-light: #ffffff;
+--bg-offset: #f2f7f7;
+--radius: 12px;
+}
+body { font-family: 'Source Sans Pro', sans-serif; color: var(--body-text); background: var(--bg-light); line-height: 1.7; }
+
+nav { background: var(--secondary); padding: 0 24px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+.nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.nav-logo { color: #fff; font-family: 'Libre Baskerville', serif; font-size: 1.1rem; font-weight: 700; text-decoration: none; }
+.nav-logo span { color: var(--primary); }
+.nav-links { display: flex; gap: 24px; list-style: none; }
+.nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.92rem; font-weight: 600; transition: color 0.2s; }
+.nav-links a:hover { color: var(--primary); }
+
+.article-hero { background-color: var(--secondary); background-image:
+linear-gradient(rgba(0,59,73,0.72), rgba(0,59,73,0.72)); background-size: cover; background-position: center; background-repeat: no-repeat; padding: 84px 24px 64px; }
+.article-hero-inner { max-width: 760px; margin: 0 auto; }
+.breadcrumb { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; font-size: 0.85rem; }
+.breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
+.breadcrumb a:hover { color: var(--primary); }
+.breadcrumb span { color: rgba(255,255,255,0.35); }
+.article-kicker { display: inline-block; background: var(--primary-soft); border: 1px solid var(--primary); color: var(--primary); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; margin-bottom: 18px; }
+.article-hero h1 { font-family: 'Libre Baskerville', serif; font-size: clamp(1.8rem, 4vw, 2.6rem); color: #fff; line-height: 1.2; margin-bottom: 16px; }
+.article-hero .lead { font-size: 1.12rem; color: rgba(255,255,255,0.82); line-height: 1.7; }
+
+.article-body { max-width: 760px; margin: 0 auto; padding: 56px 24px 72px; }
+.article-body h2 { font-family: 'Libre Baskerville', serif; font-size: 1.55rem; color: var(--heading-text); margin: 48px 0 16px; line-height: 1.3; }
+.article-body h2:first-child { margin-top: 0; }
+.article-body h3 { font-family: 'Libre Baskerville', serif; font-size: 1.2rem; color: var(--heading-text); margin: 32px 0 12px; }
+.article-body p { margin-bottom: 18px; font-size: 1.05rem; }
+.article-body ul, .article-body ol { margin: 0 0 18px 24px; font-size: 1.05rem; }
+.article-body li { margin-bottom: 8px; }
+.article-body a.inline { color:#008078; font-weight:600; text-decoration: none; }
+.article-body a.inline:hover { text-decoration: underline; }
+
+.role-table { width: 100%; border-collapse: collapse; margin: 8px 0 24px; font-size: 1rem; }
+.role-table th, .role-table td { text-align: left; padding: 12px 14px; border-bottom: 1px solid rgba(0,59,73,0.12); vertical-align: top; }
+.role-table th { background: var(--bg-offset); color: var(--heading-text); font-family: 'Libre Baskerville', serif; font-weight: 700; }
+.role-table td:last-child { white-space: nowrap; color: var(--secondary); font-weight: 600; }
+.compare td:last-child { white-space: normal; color: var(--body-text); font-weight: 400; }
+.compare td:first-child { white-space: nowrap; color: var(--secondary); font-weight: 700; }
+
+.callout { background: var(--bg-offset); border-left: 4px solid var(--primary); border-radius: 0 var(--radius) var(--radius) 0; padding: 20px 24px; margin: 32px 0; }
+.callout-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--primary); margin-bottom: 8px; }
+.callout p { margin: 0; font-size: 1rem; }
+
+.key-takeaway { background: var(--secondary); border-radius: var(--radius); padding: 28px 32px; margin: 40px 0; }
+.key-takeaway .callout-label { color: var(--primary); }
+.key-takeaway p { color: rgba(255,255,255,0.85); margin: 0; font-size: 1.05rem; }
+
+.glossary { list-style: none; margin: 8px 0 24px; padding: 0; }
+.glossary li { background: var(--bg-offset); border-radius: var(--radius); padding: 14px 18px; margin-bottom: 10px; font-size: 1rem; }
+.glossary li strong { color: var(--heading-text); font-family: 'Libre Baskerville', serif; }
+
+.step-list { list-style: none; margin: 0 0 24px; counter-reset: steps; }
+.step-list li { counter-increment: steps; padding: 16px 16px 16px 60px; position: relative; background: var(--bg-offset); border-radius: var(--radius); margin-bottom: 12px; font-size: 1.02rem; }
+.step-list li::before { content: counter(steps); position: absolute; left: 18px; top: 50%; transform: translateY(-50%); width: 30px; height: 30px; background: var(--primary); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.88rem; }
+.step-list li strong { color: var(--heading-text); }
+
+.cta-block { background: linear-gradient(135deg, var(--secondary), #005a6b); border-radius: var(--radius); padding: 36px 32px; margin: 48px 0; text-align: center; }
+.cta-block h3 { font-family: 'Libre Baskerville', serif; color: #fff; font-size: 1.4rem; margin-bottom: 10px; }
+.cta-block p { color: rgba(255,255,255,0.75); margin-bottom: 24px; font-size: 1rem; }
+.btn { display: inline-block; padding: 13px 26px; border-radius: 100px; font-family: 'Source Sans Pro', sans-serif; font-size: 0.98rem; font-weight: 700; text-decoration: none; transition: all 0.2s; margin: 6px; }
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary:hover { background: #009a93; transform: translateY(-1px); }
+.btn-outline-light { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.45); }
+.btn-outline-light:hover { border-color: #fff; transform: translateY(-1px); }
+
+.faq details { background: var(--bg-offset); border-radius: var(--radius); padding: 18px 22px; margin-bottom: 12px; }
+.faq summary { font-family: 'Libre Baskerville', serif; color: var(--secondary); font-size: 1.05rem; cursor: pointer; }
+.faq details p { margin: 12px 0 0; font-size: 1rem; }
+
+.article-nav { display: flex; gap: 16px; margin-top: 56px; padding-top: 32px; border-top: 1px solid rgba(0,59,73,0.1); flex-wrap: wrap; }
+.article-nav a { flex: 1; min-width: 200px; background: var(--bg-offset); border-radius: var(--radius); padding: 18px 20px; text-decoration: none; transition: box-shadow 0.2s; }
+.article-nav a:hover { box-shadow: 0 4px 16px rgba(0,59,73,0.1); }
+.article-nav .nav-dir { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--primary); font-weight: 700; margin-bottom: 4px; }
+.article-nav .nav-title { font-family: 'Libre Baskerville', serif; font-size: 1rem; color: var(--heading-text); }
+
+footer { background: var(--secondary); padding: 40px 24px 28px; text-align: center; }
+.footer-inner { max-width: 700px; margin: 0 auto; }
+.footer-logo { font-family: 'Libre Baskerville', serif; font-size: 1.1rem; color: #fff; font-weight: 700; margin-bottom: 10px; }
+.footer-logo span { color: var(--primary); }
+footer p { color: rgba(255,255,255,0.5); font-size: 0.85rem; margin-bottom: 6px; }
+.footer-links { display: flex; gap: 18px; justify-content: center; margin: 16px 0; flex-wrap: wrap; }
+.footer-links a { color: rgba(255,255,255,0.55); font-size: 0.85rem; text-decoration: none; transition: color 0.2s; }
+.footer-links a:hover { color: var(--primary); }
+
+@media (max-width: 640px) { .nav-links { display: none; } }
+</style>
+<meta property="og:type" content="article">
+<meta property="og:title" content="How Goods Move: The Journey of an Import to New Zealand">
+<meta property="og:description" content="Every stage of a New Zealand import, in order, from the supplier's factory to the delivery address, and who is responsible at each step.">
+<meta property="og:url" content="https://biosecuritytraining.nz/articles/how-goods-move-import-journey-nz.html">
+<meta property="og:image" content="https://biosecuritytraining.nz/images/freight-forwarding-careers-hero.webp">
+<meta property="og:image:alt" content="A container freight yard in New Zealand">
+<meta property="og:site_name" content="Biosecurity Training NZ">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Goods Move: The Journey of an Import to New Zealand">
+<meta name="twitter:description" content="Every stage of a New Zealand import, in order, from the supplier's factory to the delivery address, and who is responsible at each step.">
+<meta name="twitter:image" content="https://biosecuritytraining.nz/images/freight-forwarding-careers-hero.webp">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Gordon Findlay">
+</head>
+<body><style>#topbanner-upc{display:block;background:#00B5AD;color:#fff;text-decoration:none;overflow:hidden;padding:10px 0;font-family:'Libre Baskerville',Georgia,serif;font-weight:600;font-size:15px;line-height:1.4}#topbanner-upc .tb-track{display:inline-flex;white-space:nowrap;animation:tb-scroll 32s linear infinite;will-change:transform}#topbanner-upc .tb-msg{flex:0 0 auto;padding:0 2.5rem}#topbanner-upc:hover .tb-track{animation-play-state:paused}@keyframes tb-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}@media (prefers-reduced-motion:reduce){#topbanner-upc{text-align:center}#topbanner-upc .tb-track{animation:none;display:block}#topbanner-upc .tb-msg{display:none}#topbanner-upc .tb-msg:first-child{display:inline;padding:0 16px}}</style><a id="topbanner-upc" href="/unwanted-pests-challenge.html" aria-label="New game: Border Watch · Can you spot New Zealand's 12 most unwanted pests? Play now →"><span class="tb-track" aria-hidden="true"><span class="tb-msg">New game: Border Watch · Can you spot New Zealand's 12 most unwanted pests? Play now →</span><span class="tb-msg">New game: Border Watch · Can you spot New Zealand's 12 most unwanted pests? Play now →</span><span class="tb-msg">New game: Border Watch · Can you spot New Zealand's 12 most unwanted pests? Play now →</span><span class="tb-msg">New game: Border Watch · Can you spot New Zealand's 12 most unwanted pests? Play now →</span><span class="tb-msg">New game: Border Watch · Can you spot New Zealand's 12 most unwanted pests? Play now →</span><span class="tb-msg">New game: Border Watch · Can you spot New Zealand's 12 most unwanted pests? Play now →</span><span class="tb-msg">New game: Border Watch · Can you spot New Zealand's 12 most unwanted pests? Play now →</span><span class="tb-msg">New game: Border Watch · Can you spot New Zealand's 12 most unwanted pests? Play now →</span></span></a>
+
+<nav>
+<div class="nav-inner">
+<a href="/" class="nav-logo">Biosecurity Training <span>NZ</span></a>
+<ul class="nav-links">
+<li><a href="https://biosecuritytraining.nz/start-your-career.html">Start Your Career</a></li>
+<li><a href="https://biosecuritytraining.nz/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a></li>
+<li><a href="https://biosecuritytraining.nz/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a></li>
+<li><a href="https://biosecuritytraining.nz/articles/what-is-the-biosecurity-business-pledge.html">Business Pledge</a></li>
+<li><a href="https://biosecuritytraining.nz/articles/qconz-ap-biosecurity-training-course.html">QCONZ Course</a></li>
+<li><a href="https://biosecuritytraining.nz/articles/">Articles</a></li>
+<li><a href="https://biosecuritytraining.nz/training.html">Training</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="article-hero">
+<div class="article-hero-inner">
+<nav class="breadcrumb">
+<a href="/">Home</a>
+<span>&rsaquo;</span>
+<a href="https://biosecuritytraining.nz/articles/">Articles</a>
+<span>&rsaquo;</span>
+<span style="color: rgba(255,255,255,0.7);">The Journey of an Import</span>
+</nav>
+<span class="article-kicker">Freight Forwarding</span>
+<h1>How Goods Move: The Journey of an Import to New Zealand</h1>
+<p class="lead">An import into New Zealand follows the same nine stages every time, from the supplier's factory to the delivery address. Two of those stages are clearances that no shipment gets past without: a biosecurity clearance from the Ministry for Primary Industries, and a customs clearance from the New Zealand Customs Service.</p>
+</div>
+</div>
+
+<div class="article-body">
+
+<h2>What is the journey of an import to New Zealand?</h2>
+<p>The journey of an import is the sequence of movements and clearances a consignment passes through between an overseas supplier and a New Zealand delivery address. The mode changes, the paperwork changes, and the time it takes changes. The sequence does not.</p>
+<ol class="step-list">
+<li><strong>The order and the booking.</strong> The buyer and seller agree the sale, and the importer or its freight forwarder books space with a carrier.</li>
+<li><strong>Preparation and export clearance.</strong> The goods are packed, the timber packaging is treated, the certificates are obtained, and the shipment clears the exporting country's customs.</li>
+<li><strong>The main leg.</strong> The consignment sails or flies to New Zealand under a bill of lading or an air waybill.</li>
+<li><strong>Arrival and reporting.</strong> The carrier reports the vessel or aircraft and its cargo to the border agencies before it gets here.</li>
+<li><strong>Discharge at the port.</strong> Containers come off the ship, go into the container yard, and are staged for collection.</li>
+<li><strong>Biosecurity.</strong> Risk goods move to an MPI approved transitional facility, where they are held, inspected and unpacked under supervision until MPI gives biosecurity clearance.</li>
+<li><strong>The customs entry.</strong> An import declaration goes to Customs, which assesses the duty, GST and levies owed.</li>
+<li><strong>Payment and release.</strong> Once the money is paid and both clearances are in place, the goods are free to move.</li>
+<li><strong>Delivery and the empty back.</strong> The consignment goes to the importer by road or rail, and the container returns to the depot.</li>
+</ol>
+<p>Stages six and seven often run at the same time rather than one after the other. Both clearances have to be complete before the goods can legally go anywhere.</p>
+
+<div class="callout">
+<div class="callout-label">In short</div>
+<p>Goods arriving in New Zealand need two separate clearances from two separate agencies. MPI clears them for biosecurity risk under the Biosecurity Act 1993. Customs clears them for revenue and legality under the Customs and Excise Act 2018. Neither one substitutes for the other.</p>
+</div>
+
+<h2>Who does what on a New Zealand import?</h2>
+<p>A single container passes through a lot of hands. Here is who each of them is and where they appear.</p>
+<table class="role-table compare">
+<thead>
+<tr><th>Who</th><th>What they do</th><th>Where they appear</th></tr>
+</thead>
+<tbody>
+<tr><td>Overseas supplier</td><td>Makes or supplies the goods, packs them, and issues the commercial invoice and packing list.</td><td>Stages 1 and 2</td></tr>
+<tr><td>Freight forwarder</td><td>Books the space, checks the goods against New Zealand import requirements, prepares the documents, and coordinates every hand-off.</td><td>All of it</td></tr>
+<tr><td>Carrier</td><td>Moves the goods on its own ship or aircraft, issues the transport document, and reports the cargo on arrival.</td><td>Stages 3 and 4</td></tr>
+<tr><td>Port or terminal</td><td>Discharges the container, stacks it in the yard, and releases it at the landside gate.</td><td>Stage 5</td></tr>
+<tr><td>Transitional facility</td><td>Holds uncleared risk goods on an MPI approved site until biosecurity clearance is given.</td><td>Stage 6</td></tr>
+<tr><td>Accredited Person</td><td>Supervises the unpacking of risk goods at the facility and reports anything found.</td><td>Stage 6</td></tr>
+<tr><td>MPI</td><td>Sets the import health standards, inspects, directs treatment, and gives biosecurity clearance.</td><td>Stage 6</td></tr>
+<tr><td>Customs broker</td><td>Prepares and lodges the import declaration, usually as the importer's agent.</td><td>Stage 7</td></tr>
+<tr><td>NZ Customs</td><td>Assesses duty, GST and levies, checks the goods are legally allowed in, and releases them.</td><td>Stages 7 and 8</td></tr>
+<tr><td>Importer</td><td>Owns the goods, pays what is owed, and carries legal responsibility for the accuracy of the entry.</td><td>Stages 1, 8 and 9</td></tr>
+</tbody>
+</table>
+<p>Those last three roles get confused more than any others. For a proper breakdown, read <a class="inline" href="https://biosecuritytraining.nz/articles/freight-forwarder-vs-customs-broker-vs-3pl.html">freight forwarder vs customs broker vs 3PL, and who does what</a>.</p>
+
+<h2>What happens before the goods leave the supplier?</h2>
+<p>Most import problems are made here, weeks before anything reaches a New Zealand wharf. The sale is agreed, the Incoterm is set, and the packing is done. Each of those decisions determines who pays for what, who carries the risk, and whether the consignment gets held at the border.</p>
+<p>The Incoterm is the one importers most often get wrong. It sets the point where cost and risk pass from seller to buyer, and it decides which of you is arranging the main carriage, the insurance and the import clearance. If you are not certain which rule applies to your shipment, start with our guide to <a class="inline" href="https://findlayandco.co.nz/incoterms-2020-explained-nz.html">Incoterms 2020 for New Zealand importers and exporters</a>, or read the <a class="inline" href="https://findlayandco.co.nz/common-incoterms-mistakes-nz-businesses.html">common Incoterms mistakes that cost New Zealand businesses money</a>.</p>
+<p>The packaging matters just as much. Wooden pallets, crates and dunnage have to meet ISPM-15, the international standard for treating wood packaging so it does not carry pests, and they have to carry the ISPM-15 mark. Plant products need a phytosanitary certificate from the exporting country. Food, meat and animal products need a health or sanitary certificate. A forwarder who checks these before the container is sealed saves the importer a hold, a treatment bill and a delay.</p>
+
+<div class="callout">
+<div class="callout-label">What MPI looks for</div>
+<p>Soil and plant matter on tyres, tracks and undersides. Untreated or unmarked timber packaging. Live insects, seeds, nests and webbing inside the container. Machinery and vehicles are inspected closely because they carry contamination in places a casual look misses.</p>
+</div>
+
+<h2>What happens on the way here?</h2>
+<p>Once the goods are loaded, the carrier issues the transport document for the main leg. For sea freight this is a bill of lading, which acts as the carriage contract, a receipt for the goods, and often a document of title. For air freight it is an air waybill, which is a contract and a receipt but is not a document of title.</p>
+<p>Sea freight carries most of what New Zealand imports by volume and takes weeks. Air freight takes days and costs far more per kilogram, so it is used for goods that are light, urgent, valuable or perishable. Full container load and less than container load also behave differently on arrival: a full container can go straight to the importer's approved facility, while a consolidated container is unpacked at a depot and the individual consignments are separated before they go anywhere.</p>
+
+<h2>What happens when the ship arrives?</h2>
+<p>Before a vessel gets here it has to meet MPI's Craft Risk Management Standard, which covers the ship itself, including its hull biofouling. The carrier reports its cargo to the border agencies, and those cargo reports are what the agencies use to decide which containers to look at.</p>
+<p>At the wharf, gantry cranes lift containers off the ship. Straddle carriers move them into the container yard, where they are stacked and tracked until they are collected at the landside gate by truck or rail. New Zealand's busiest container ports are the Port of Tauranga and Ports of Auckland, followed by Lyttelton, Napier, Otago at Port Chalmers, CentrePort in Wellington, and Nelson. Inland ports extend that network away from the coast: Tauranga runs containers to and from a Hamilton inland hub, and Auckland has MetroPort.</p>
+<p>Coming off the ship is not clearance. A container sitting in the yard is still uncleared, and it cannot be unpacked anywhere that is not approved for the job.</p>
+
+<h2>Where does biosecurity clearance happen?</h2>
+<p>Uncleared risk goods go to a transitional facility, which is a site MPI has approved to receive and hold them. They stay there until MPI gives biosecurity clearance. The facility runs to an MPI standard and an approved operating manual, and it cannot release goods on its own say-so.</p>
+<p>Inside the facility, an Accredited Person supervises the unpacking of risk goods. An AP is trained and certified by MPI to carry out specified biosecurity work on MPI's behalf, including inspecting containers and reporting what is found. If the container is contaminated, the AP stops and calls it in rather than carrying on.</p>
+<p>Clearance is given when the goods and the supporting documents meet the relevant Import Health Standard, the document that sets out what New Zealand requires for that commodity from that country. Sea containers themselves are covered by their own import health standard. If the goods fail, MPI can direct treatment such as fumigation or heat treatment, direct cleaning, or in serious cases require the consignment to be re-exported. The cost of all of that falls on the importer.</p>
+<p>For more on the facilities and the people, read <a class="inline" href="https://biosecuritytraining.nz/articles/what-is-a-transitional-facility-in-new-zealand.html">what a transitional facility is in New Zealand</a> and <a class="inline" href="https://biosecuritytraining.nz/articles/what-is-an-accredited-person-ap-new-zealand.html">what an Accredited Person does</a>.</p>
+
+<h2>How does the customs entry work?</h2>
+<p>Customs clearance runs on the customs value of the goods, which is what they cost before transport and insurance are added. What you lodge depends on where that value sits.</p>
+<table class="role-table compare">
+<thead>
+<tr><th>Customs value</th><th>What is lodged</th><th>What is owed</th></tr>
+</thead>
+<tbody>
+<tr><td>NZ$1,000 or less</td><td>A simplified import declaration, or a write-off request on an import cargo report.</td><td>GST is usually collected by the overseas supplier at the point of sale, so nothing is generally owed at the border. Alcohol and tobacco are charged regardless of value.</td></tr>
+<tr><td>Over NZ$1,000</td><td>A standard import declaration, lodged electronically. The importer needs a Customs Number.</td><td>Duty at the rate set by the tariff classification, GST at 15 percent, and the Customs and MPI levies that apply to the consignment.</td></tr>
+</tbody>
+</table>
+<p>Entries are lodged through the Trade Single Window, the online portal Customs and MPI both use for border transactions. Three things off the commercial invoice drive the assessment: what the goods are, where they were made, and what they are worth. The tariff classification decides the duty rate, the certificate of origin can lower it under a trade agreement, and the invoice value sets the base the duty and GST are calculated on.</p>
+<p>Where goods need a customs clearance, the import entry has to be completed within 20 days of arrival in New Zealand. Customs and MPI also charge goods management levies on imports, and those rates changed on 1 April 2026, so budget against the current schedule rather than an old quote.</p>
+<p>Getting the classification or the value wrong is expensive in both directions. Too high and the importer overpays. Too low and there is a hold, an amended entry and a penalty.</p>
+
+<div class="key-takeaway">
+<div class="callout-label">Key takeaway</div>
+<p>The customs entry is prepared from the commercial invoice, lodged through the Trade Single Window, assessed by Customs for duty, GST and levies, paid by the importer, and only then does Customs release the goods. Biosecurity clearance runs alongside it under MPI. Both have to land before anything moves.</p>
+</div>
+
+<h2>What happens after the goods are released?</h2>
+<p>With both clearances in place, the consignment moves inland by road or rail to the importer or to a third party logistics warehouse. A full container is usually unpacked at the delivery address, and the empty container then goes back to the depot the shipping line nominates. Shipping lines and ports allow a set number of free days before storage and container charges start running, so the gap between arrival and collection has a direct cost.</p>
+<p>The importer signs for the goods, and the proof of delivery closes out the shipment. If anything is short or damaged, the outturn report and the delivery paperwork are the evidence behind an insurance claim.</p>
+
+<h2>Where do imports actually get held up?</h2>
+<p>Holds cluster in a few predictable places.</p>
+<ul>
+<li><strong>Documents that disagree with each other.</strong> The consignee name on the bill of lading has to match the invoice, and the weights on the packing list have to match the entry. One mismatch stops the entry while it is sorted.</li>
+<li><strong>Missing or wrong certificates.</strong> No phytosanitary certificate for plant products, no ISPM-15 mark on the timber, no health certificate for animal products.</li>
+<li><strong>Contamination found on inspection.</strong> Soil, seeds or live insects mean treatment, and treatment means time and money.</li>
+<li><strong>A tariff classification that does not hold up.</strong> Customs can query the code, which can change the duty rate and trigger an amended entry.</li>
+<li><strong>Waiting on payment.</strong> Customs releases the goods after the duty, GST and levies are paid, not before.</li>
+</ul>
+<p>Every one of these is visible before the container is sealed overseas. That is the argument for using a forwarder who checks the requirements early, and it is most of what <a class="inline" href="https://biosecuritytraining.nz/articles/what-does-a-freight-forwarder-do-nz.html">a freight forwarder actually does</a>.</p>
+
+<h2>A short glossary of import terms</h2>
+<ul class="glossary">
+<li><strong>Bill of lading.</strong> The sea carriage contract and receipt for the goods. It can also be a document of title, meaning whoever holds it can claim the cargo.</li>
+<li><strong>Air waybill.</strong> The air carriage contract and receipt. Unlike a bill of lading, it is not a document of title.</li>
+<li><strong>Customs value.</strong> The value of the goods for customs purposes, worked out before transport and insurance are added.</li>
+<li><strong>Tariff classification.</strong> The code that says exactly what a product is. It decides the duty rate that applies.</li>
+<li><strong>Trade Single Window.</strong> The electronic portal through which import and export declarations and their supporting documents are lodged with Customs and MPI.</li>
+<li><strong>Transitional facility.</strong> An MPI approved site where imported goods that may carry biosecurity risk are held, inspected and unpacked before clearance.</li>
+<li><strong>Import Health Standard.</strong> The MPI document setting out what has to be done for a given commodity from a given country before it can be cleared into New Zealand.</li>
+<li><strong>ISPM-15.</strong> The international standard for treating wooden packaging so it does not carry pests. Treated packaging carries a stamped mark.</li>
+<li><strong>Accredited Person.</strong> Someone trained and certified by MPI to carry out specified biosecurity activities, including supervising the unpacking of risk goods.</li>
+<li><strong>Outturn report.</strong> The record of what was actually landed, noting any shortage, surplus or damage.</li>
+</ul>
+
+<div class="cta-block">
+<h3>Learn the whole chain, not just your bit</h3>
+<p>Capability Solutions runs free biosecurity and warehouse courses, and two paid courses for people working in import and export.</p>
+<a href="https://capabilitysolutions.co.nz/introduction-to-freight-forwarding.html" class="btn btn-primary">Introduction to Freight Forwarding</a>
+<a class="btn btn-outline-light" href="https://biosecuritytraining.nz/start-your-career.html">Start Your Career</a>
+</div>
+
+<h2>Training that covers this ground</h2>
+<p>Capability Solutions offers free courses at <a class="inline" href="https://capabilitysolutions.co.nz/">capabilitysolutions.co.nz</a>, including Biosecurity Awareness for anyone who opens or unpacks imported containers, Working Safely with MPI for staff at transitional facilities, and Forklift Awareness for warehouse teams.</p>
+<p>Two paid courses go further. <a class="inline" href="https://capabilitysolutions.co.nz/introduction-to-freight-forwarding.html">Introduction to Freight Forwarding</a> follows a single shipment across seven chapters and teaches the role from the ground up. <a class="inline" href="https://capabilitysolutions.co.nz/incoterms-2020-training.html">Incoterms 2020</a> covers where cost and risk transfer in a trade deal. Both are $179 plus GST.</p>
+<p>If you want to see the jobs behind each stage of the chain, try the <a class="inline" href="https://biosecuritytraining.nz/import-pathway-explorer.html">Import Pathway Career Explorer</a> or read our <a class="inline" href="https://biosecuritytraining.nz/articles/import-pathway-careers-new-zealand.html">guide to import pathway careers in New Zealand</a>.</p>
+
+<h2>Common questions</h2>
+<div class="faq">
+<details>
+<summary>What are the stages of importing goods into New Zealand?</summary>
+<p>Nine stages: the order and booking, preparation and export clearance overseas, the sea or air leg, arrival and cargo reporting, discharge at the port, biosecurity clearance at a transitional facility, the customs entry, payment and release, then inland delivery and the empty container going back. The biosecurity and customs stages often run at the same time.</p>
+</details>
+<details>
+<summary>Do imported goods need both a customs clearance and a biosecurity clearance?</summary>
+<p>Yes. They come from two different agencies under two different Acts. MPI gives biosecurity clearance under the Biosecurity Act 1993 once the goods meet the relevant Import Health Standard. NZ Customs releases the goods under the Customs and Excise Act 2018 once the entry is correct and the duty, GST and levies are paid. Goods cannot move until both are in place.</p>
+</details>
+<details>
+<summary>What is a transitional facility and why do containers go there?</summary>
+<p>A transitional facility is a site MPI has approved to receive and hold imported goods that may carry biosecurity risk. Uncleared risk goods must go to one on arrival and stay there until MPI gives biosecurity clearance. The facility operates to an MPI standard and an approved operating manual, and an Accredited Person supervises the unpacking of risk goods.</p>
+</details>
+<details>
+<summary>When do I need a standard import declaration rather than a simplified one?</summary>
+<p>Goods with a customs value over NZ$1,000 need a standard import declaration lodged electronically, and the importer needs a Customs Number. Goods valued at NZ$1,000 or less can usually be cleared on a simplified import declaration or a write-off request on an import cargo report. Alcohol and tobacco attract duty and GST no matter what they are worth.</p>
+</details>
+<details>
+<summary>How long do I have to lodge an import entry in New Zealand?</summary>
+<p>Where goods require customs clearance, the import entry must be completed within 20 days of the goods arriving in New Zealand. Leaving it late also costs money at the other end, because port storage and container charges start once the free days allowed by the terminal and the shipping line run out.</p>
+</details>
+<details>
+<summary>Who lodges the customs entry, the importer or the freight forwarder?</summary>
+<p>Usually the freight forwarder or a customs broker, acting as the importer's agent. Many New Zealand freight forwarders are customs brokers as well and lodge the entries themselves. Legal responsibility for the accuracy of the declaration stays with the importer, which is why the information given to the broker matters.</p>
+</details>
+<details>
+<summary>What is the Trade Single Window?</summary>
+<p>The Trade Single Window is the electronic portal used to lodge import and export declarations and their supporting documents with New Zealand Customs and MPI. Rather than filing separately with each agency, a trader submits through one channel and the agencies draw what they need from it.</p>
+</details>
+<details>
+<summary>What holds up an import at the New Zealand border?</summary>
+<p>Documents that disagree with each other, a missing phytosanitary or health certificate, untreated or unmarked timber packaging, soil or live pests found on inspection, a tariff classification Customs queries, and waiting on payment of the duty and GST. Nearly all of it is avoidable if the requirements are checked before the container is sealed overseas.</p>
+</details>
+</div>
+
+<div class="article-nav">
+<a href="https://biosecuritytraining.nz/articles/what-does-a-freight-forwarder-do-nz.html">
+<div class="nav-dir">Related article</div>
+<div class="nav-title">What Does a Freight Forwarder Actually Do?</div>
+</a>
+<a href="https://biosecuritytraining.nz/articles/freight-forwarder-vs-customs-broker-vs-3pl.html">
+<div class="nav-dir">Related article</div>
+<div class="nav-title">Freight Forwarder vs Customs Broker vs 3PL: Who Does What?</div>
+</a>
+<a href="https://biosecuritytraining.nz/articles/what-is-a-transitional-facility-in-new-zealand.html">
+<div class="nav-dir">Related article</div>
+<div class="nav-title">What is a Transitional Facility in New Zealand?</div>
+</a>
+</div>
+
+</div>
+
+<footer>
+<div class="footer-inner">
+<div class="footer-logo">Biosecurity Training <span>NZ</span></div>
+<div class="footer-links">
+<a href="/">Home</a>
+<a href="https://biosecuritytraining.nz/start-your-career.html">Start Your Career</a>
+<a href="https://biosecuritytraining.nz/articles/nz-biosecurity-what-every-business-needs-to-know.html">For Businesses</a>
+<a href="https://biosecuritytraining.nz/articles/what-is-an-accredited-person-ap-new-zealand.html">Accredited Person</a>
+<a href="https://biosecuritytraining.nz/articles/what-is-the-biosecurity-business-pledge.html">Business Pledge</a>
+<a href="https://biosecuritytraining.nz/articles/qconz-ap-biosecurity-training-course.html">QCONZ Course</a>
+<a href="https://biosecuritytraining.nz/articles/">Articles</a>
+<a href="https://biosecuritytraining.nz/training.html">Training</a>
+</div>
+<p>&copy; 2026 Biosecurity Training NZ.</p>
+</div>
+</footer>
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Article",
+"headline": "How Goods Move: The Journey of an Import to New Zealand",
+"description": "Every stage of a New Zealand import in order, from the overseas supplier to the delivery address, covering the transitional facility, biosecurity clearance, the customs entry and release.",
+"url": "https://biosecuritytraining.nz/articles/how-goods-move-import-journey-nz.html",
+"datePublished": "2026-09-15",
+"dateModified": "2026-09-15",
+"author": { "@type": "Person", "name": "Gordon Findlay", "worksFor": { "@type": "Organization", "name": "Findlay and Co (Capability Solutions)" } },
+"publisher": { "@type": "Organization", "name": "Biosecurity Training NZ", "url": "https://biosecuritytraining.nz" },
+"image": { "@type": "ImageObject", "url": "https://biosecuritytraining.nz/images/freight-forwarding-careers-hero.webp", "description": "A container freight yard in New Zealand" },
+"inLanguage": "en-NZ"
+}
+</script>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [
+{ "@type": "Question", "name": "What are the stages of importing goods into New Zealand?", "acceptedAnswer": { "@type": "Answer", "text": "Nine stages: the order and booking, preparation and export clearance overseas, the sea or air leg, arrival and cargo reporting, discharge at the port, biosecurity clearance at a transitional facility, the customs entry, payment and release, then inland delivery and the empty container going back. The biosecurity and customs stages often run at the same time." } },
+{ "@type": "Question", "name": "Do imported goods need both a customs clearance and a biosecurity clearance?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. They come from two different agencies under two different Acts. MPI gives biosecurity clearance under the Biosecurity Act 1993 once the goods meet the relevant Import Health Standard. NZ Customs releases the goods under the Customs and Excise Act 2018 once the entry is correct and the duty, GST and levies are paid. Goods cannot move until both are in place." } },
+{ "@type": "Question", "name": "What is a transitional facility and why do containers go there?", "acceptedAnswer": { "@type": "Answer", "text": "A transitional facility is a site MPI has approved to receive and hold imported goods that may carry biosecurity risk. Uncleared risk goods must go to one on arrival and stay there until MPI gives biosecurity clearance. The facility operates to an MPI standard and an approved operating manual, and an Accredited Person supervises the unpacking of risk goods." } },
+{ "@type": "Question", "name": "When do I need a standard import declaration rather than a simplified one?", "acceptedAnswer": { "@type": "Answer", "text": "Goods with a customs value over NZ$1,000 need a standard import declaration lodged electronically, and the importer needs a Customs Number. Goods valued at NZ$1,000 or less can usually be cleared on a simplified import declaration or a write-off request on an import cargo report. Alcohol and tobacco attract duty and GST no matter what they are worth." } },
+{ "@type": "Question", "name": "How long do I have to lodge an import entry in New Zealand?", "acceptedAnswer": { "@type": "Answer", "text": "Where goods require customs clearance, the import entry must be completed within 20 days of the goods arriving in New Zealand. Leaving it late also costs money at the other end, because port storage and container charges start once the free days allowed by the terminal and the shipping line run out." } },
+{ "@type": "Question", "name": "Who lodges the customs entry, the importer or the freight forwarder?", "acceptedAnswer": { "@type": "Answer", "text": "Usually the freight forwarder or a customs broker, acting as the importer's agent. Many New Zealand freight forwarders are customs brokers as well and lodge the entries themselves. Legal responsibility for the accuracy of the declaration stays with the importer, which is why the information given to the broker matters." } },
+{ "@type": "Question", "name": "What is the Trade Single Window?", "acceptedAnswer": { "@type": "Answer", "text": "The Trade Single Window is the electronic portal used to lodge import and export declarations and their supporting documents with New Zealand Customs and MPI. Rather than filing separately with each agency, a trader submits through one channel and the agencies draw what they need from it." } },
+{ "@type": "Question", "name": "What holds up an import at the New Zealand border?", "acceptedAnswer": { "@type": "Answer", "text": "Documents that disagree with each other, a missing phytosanitary or health certificate, untreated or unmarked timber packaging, soil or live pests found on inspection, a tariff classification Customs queries, and waiting on payment of the duty and GST. Nearly all of it is avoidable if the requirements are checked before the container is sealed overseas." } }
+]
+}
+</script>
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+"name": "Home",
+"item": "https://biosecuritytraining.nz/"
+},
+{
+"@type": "ListItem",
+"position": 2,
+"name": "Articles",
+"item": "https://biosecuritytraining.nz/articles/"
+},
+{
+"@type": "ListItem",
+"position": 3,
+"name": "How Goods Move: The Journey of an Import to New Zealand",
+"item": "https://biosecuritytraining.nz/articles/how-goods-move-import-journey-nz.html"
+}
+]
+}
+</script>
+
+<!-- CCOS mobile hamburger nav -->
+<style id="pw-nav-style">.pw-hamburger{ display:none; background:none; border:none; cursor:pointer; padding:8px; width:44px; height:44px; -webkit-tap-highlight-color:transparent; }
+.pw-hamburger span{ display:block; width:24px; height:2px; background:#fff; margin:5px auto; border-radius:2px; transition:transform .25s ease, opacity .2s ease; }
+.pw-hamburger.pw-active span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+.pw-hamburger.pw-active span:nth-child(2){ opacity:0; }
+.pw-hamburger.pw-active span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+@media (max-width:768px){
+nav{ position:relative; }
+nav .nav-inner{ position:static; }
+.pw-hamburger{ display:block; }
+.nav-links{ position:absolute; top:64px; left:0; right:0; flex-direction:column; background:#003B49; padding:6px 0; gap:0; box-shadow:0 10px 24px rgba(0,0,0,.35); z-index:200; }
+.nav-links.pw-open{ display:flex; }
+.nav-links a{ padding:13px 22px; display:block; font-size:1rem; }
+}</style>
+<script>
+(function initBioNav(){
+function boot(){
+var nav=document.querySelector('nav'); if(!nav) return;
+var inner=nav.querySelector('.nav-inner'); var links=nav.querySelector('.nav-links');
+if(!inner||!links||inner.querySelector('.pw-hamburger')) return;
+var btn=document.createElement('button'); btn.className='pw-hamburger'; btn.type='button';
+btn.setAttribute('aria-label','Menu'); btn.setAttribute('aria-expanded','false');
+btn.innerHTML='<span></span><span></span><span></span>';
+inner.appendChild(btn);
+btn.addEventListener('click',function(){ var o=links.classList.toggle('pw-open'); btn.classList.toggle('pw-active',o); btn.setAttribute('aria-expanded',o?'true':'false'); });
+links.addEventListener('click',function(e){ if(e.target.tagName==='A'){ links.classList.remove('pw-open'); btn.classList.remove('pw-active'); btn.setAttribute('aria-expanded','false'); } });
+}
+if(document.readyState!=='loading') boot(); else document.addEventListener('DOMContentLoaded', boot);
+})();
+</script>
+</body>
+</html>
