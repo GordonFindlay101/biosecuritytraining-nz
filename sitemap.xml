@@ -1,118 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-  <url>
-    <loc>https://biosecuritytraining.nz/</loc>
-    <lastmod>2026-07-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/training.html</loc>
-    <lastmod>2026-07-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/articles/nz-biosecurity-what-every-business-needs-to-know.html</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/articles/what-is-an-accredited-person-ap-new-zealand.html</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/articles/what-is-the-biosecurity-business-pledge.html</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/articles/qconz-ap-biosecurity-training-course.html</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/articles/how-to-start-a-career-in-freight-forwarding-new-zealand.html</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/articles/site-access-management-for-transitional-facilities-sitekey.html</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/articles/what-does-a-freight-forwarder-do-nz.html</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/articles/freight-forwarder-vs-customs-broker-vs-3pl.html</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/unwanted-pests-challenge.html</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <video:video>
-      <video:thumbnail_loc>https://biosecuritytraining.nz/media/border-watch-poster.jpg</video:thumbnail_loc>
-      <video:title>Border Watch: New Zealand's 12 Most Unwanted Pests and Diseases</video:title>
-      <video:description>A 60-second briefing on the twelve highest-risk pests and diseases New Zealand works to keep out, and the one action that matters most: if you see something unusual, do not touch it, photograph it, and call Biosecurity New Zealand on 0800 80 99 66.</video:description>
-      <video:content_loc>https://biosecuritytraining.nz/media/border-watch-montage.mp4</video:content_loc>
-      <video:duration>64</video:duration>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/start-your-career.html</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/import-pathway-explorer.html</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/articles/import-pathway-careers-new-zealand.html</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/articles/what-is-a-transitional-facility-in-new-zealand.html</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/articles/which-biosecurity-training-do-you-need.html</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/articles/forklift-safety-awareness-warehouse-teams-nz.html</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://biosecuritytraining.nz/articles/</loc>
-    <lastmod>2026-08-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+<url>
+<loc>https://biosecuritytraining.nz/</loc>
+<lastmod>2026-09-15</lastmod>
+<changefreq>monthly</changefreq>
+<priority>1.0</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/training.html</loc>
+<lastmod>2026-07-29</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/articles/nz-biosecurity-what-every-business-needs-to-know.html</loc>
+<lastmod>2026-08-16</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/articles/what-is-an-accredited-person-ap-new-zealand.html</loc>
+<lastmod>2026-08-16</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/articles/what-is-the-biosecurity-business-pledge.html</loc>
+<lastmod>2026-08-16</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/articles/qconz-ap-biosecurity-training-course.html</loc>
+<lastmod>2026-08-16</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/articles/how-to-start-a-career-in-freight-forwarding-new-zealand.html</loc>
+<lastmod>2026-08-16</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/articles/site-access-management-for-transitional-facilities-sitekey.html</loc>
+<lastmod>2026-08-16</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/articles/what-does-a-freight-forwarder-do-nz.html</loc>
+<lastmod>2026-09-15</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/articles/freight-forwarder-vs-customs-broker-vs-3pl.html</loc>
+<lastmod>2026-08-16</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/articles/how-goods-move-import-journey-nz.html</loc>
+<lastmod>2026-09-15</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/unwanted-pests-challenge.html</loc>
+<lastmod>2026-08-16</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+<video:video>
+<video:thumbnail_loc>https://biosecuritytraining.nz/media/border-watch-poster.jpg</video:thumbnail_loc>
+<video:title>Border Watch: New Zealand's 12 Most Unwanted Pests and Diseases</video:title>
+<video:description>A 60-second briefing on the twelve highest-risk pests and diseases New Zealand works to keep out, and the one action that matters most: if you see something unusual, do not touch it, photograph it, and call Biosecurity New Zealand on 0800 80 99 66.</video:description>
+<video:content_loc>https://biosecuritytraining.nz/media/border-watch-montage.mp4</video:content_loc>
+<video:duration>64</video:duration>
+</video:video>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/start-your-career.html</loc>
+<lastmod>2026-08-16</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/import-pathway-explorer.html</loc>
+<lastmod>2026-08-16</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/articles/import-pathway-careers-new-zealand.html</loc>
+<lastmod>2026-08-16</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/articles/what-is-a-transitional-facility-in-new-zealand.html</loc>
+<lastmod>2026-08-16</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/articles/which-biosecurity-training-do-you-need.html</loc>
+<lastmod>2026-08-16</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/articles/forklift-safety-awareness-warehouse-teams-nz.html</loc>
+<lastmod>2026-08-16</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://biosecuritytraining.nz/articles/</loc>
+<lastmod>2026-09-15</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
 </urlset>
