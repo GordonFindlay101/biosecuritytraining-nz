@@ -27,7 +27,9 @@ Biosecurity Training NZ provides free online biosecurity awareness training for 
 
 ## Interactive Tools
 
-- [Border Watch: The Unwanted 12](https://biosecuritytraining.nz/unwanted-pests-challenge.html): A free browser game and 60-second video briefing covering the twelve highest-risk pests and diseases New Zealand works to keep out, with the reporting number 0800 80 99 66
+- [Border Watch, a free biosecurity game](https://biosecuritytraining.nz/unwanted-pests-challenge.html): A free eight minute browser game and 60 second video briefing on the twelve highest-risk pests and diseases New Zealand works to keep out, ending in a 10 question certification, with the reporting number 0800 80 99 66. No sign in
+- [Border Watch for schools](https://biosecuritytraining.nz/biosecurity-game-for-schools.html): How teachers run Border Watch in class, on a projector with the timer off or one device per student, plus a six arrival practice round
+- [Border Watch for transitional facilities](https://biosecuritytraining.nz/transitional-facility-biosecurity-refresher.html): Border Watch as a toolbox talk or induction refresher for staff at MPI approved transitional facilities, the six pests that travel with freight, and how it sits alongside MPI's awareness module
 - [Import Pathway Career Explorer](https://biosecuritytraining.nz/import-pathway-explorer.html): An interactive walk through a real New Zealand import, meeting every role from shipping line and freight forwarder to customs broker, MPI biosecurity, warehouse and retailer
 
 ## Key Facts
@@ -42,4 +44,4 @@ Biosecurity Training NZ provides free online biosecurity awareness training for 
 - Site coverage: biosecurity compliance, Transitional Facility operation, and careers across the New Zealand import pathway
 - Paid accreditation: QCONZ AP course (MPI-approved)
 - Content authored by: Gordon Findlay, Findlay and Co (Capability Solutions)
-- Last updated: 2026-08-16
+- Last updated: 2026-11-19
