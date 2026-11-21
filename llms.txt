@@ -9,6 +9,8 @@ Biosecurity Training NZ provides free online biosecurity awareness training for 
 - [Home](https://biosecuritytraining.nz/): Overview of all training resources and accreditation pathways
 - [Training Courses](https://biosecuritytraining.nz/training.html): Free TF staff training and MPI-approved AP training via QCONZ
 - [How to write a biosecurity plan for your dairy farm](https://biosecuritytraining.nz/articles/how-to-write-a-dairy-farm-biosecurity-plan-nz.html): the steps for an on-farm biosecurity plan for a New Zealand dairy farm, from DairyNZ and MPI guidance.
+- [What goes in a dairy farm biosecurity plan](https://biosecuritytraining.nz/articles/what-goes-in-a-dairy-farm-biosecurity-plan-nz.html): the parts of the plan, from the farm map and entry points to who to ring if something turns up.
+- [When a New Zealand dairy farm needs a biosecurity plan](https://biosecuritytraining.nz/articles/do-dairy-farms-need-a-biosecurity-plan-nz.html): the duty to report under the Biosecurity Act, sharemilking agreements, processors, and how many farms have one.
 - [What is a Transitional Facility in New Zealand?](https://biosecuritytraining.nz/articles/what-is-a-transitional-facility-in-new-zealand.html): TFGen standard, Operating Manual requirement, operator training obligations
 - [What is an Accredited Person (AP) in New Zealand?](https://biosecuritytraining.nz/articles/what-is-an-accredited-person-ap-new-zealand.html): AP role, which businesses need one, how to become one
 - [NZ Biosecurity: What Every Business Needs to Know](https://biosecuritytraining.nz/articles/nz-biosecurity-what-every-business-needs-to-know.html): Business obligations under the Biosecurity Act 1993
